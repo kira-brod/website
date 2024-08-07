@@ -2,26 +2,198 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+* {
+  /* cursor:none; */
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+h1 {
+  font-size: 7rem;
+  line-height: 6rem;
+  color: black;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.hero-text {
+  /* font-size: 1.38875em; */
+  line-height: 1em;
+  color: #C51515;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.button {
+  /* background-color: white; */
+  color: black;
+}
+
+.button:hover {
+  background-color: black;
+  color: white;
+}
+
+/* button p:hover {
+  color: white;
+} */
+
+p {
+  /* font-size: 1.38875em; */
+  line-height: 1.5em;
+  font-size: 1rem;
+  color: black;
+}
+
+.project-name-page {
+  color: black;
+  font-size: 3.438rem;
+}
+
+.project-title {
+  line-height: 1em;
+  font-size: 1.25rem;
+  color: black;
+}
+
+.sub-title {
+  line-height: 1em;
+  /* font-size: 1.25rem; */
+  color: black;
+}
+
+.projects-hr {
+  border-color: black;
+}
+
+.jamsesh-hr {
+  border-color: #9381FF;
+  border-width: 1px;
+  
+}
+
+.rxpert-hr {
+  border-color: #8DA7BE;
+  border-width: 1px;
+  
+}
+
+.list {
+  display: flex;
+  gap: 8px;
+  padding: 16px;
+
+  list-style: none;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.list::-webkit-scrollbar {
+  display: none;
+}
+
+.item {
+  flex-shrink: 0;
+  width: 80%;
+  height: 90vh;
+
+  background-color: #FFF;
+
+  scroll-snap-align: center;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+
+  font-family: sans-serif;
+  font-size: 64px;
+  font-weight: bold;
+}
+
+.list-wrapper {
+  position: relative;
+}
+
+.buttonScroll {
+  position: absolute;
+  top: 50%;
+
+  width: 3rem;
+  height: 3rem;
+
+  transform: translateY(-50%);
+}
+
+.button--previous {
+  left: 1.5rem;
+
+  transform: rotate(180deg);
+}
+
+.button--next {
+  right: 1.5rem;
+}
+
+.subtext {
+  font-size: 1rem;
+  color: gray;
+}
+
+h2 {
+  font-weight: 700;
+  color: black;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+}
+
+.kb {
+  color: #D9D3D3;
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+
+.projects-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.projects-scroll {
+  -ms-overflow-style: none;
+}
+
+
+.scroll-section-outer {
+  overflow: hidden;
+}
+
+.scroll-section-inner {
+  overflow-x: hidden;
+  height: 100vh;
+  width: 250vw;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.scroll-section {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cursor {
+  background-color: darkviolet;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
 }
