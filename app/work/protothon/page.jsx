@@ -5,34 +5,71 @@ import Image from "next/image"
 import Link from "next/link"
 import { Footer } from "@/app/components/Footer"
 import { motion } from "framer-motion"
-import { useRef } from "react"
+// import { Carousel } from "@coreui/coreui"
+// import { useRef } from "react"
+import EmblaCarousel from "@/app/components/EmblaCarousel"
+import { ArrowRightIcon } from "@heroicons/react/24/outline"
+import { useEffect, useState } from "react"
+
+const OPTIONS = { loop: true }
+const SLIDE_COUNT = 5
+// const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
+const SLIDES = [{ image: "/img/p1-cover.png" },
+{ image: "/img/p2.png" },
+{ image: "/img/p3.png" },
+{ image: "/img/p4.png" },
+{ image: "/img/painpointsp45.png" },
+{ image: "/img/p5.png" },
+{ image: "/img/p6.png" },
+{ image: "/img/p7.png" },
+{ image: "/img/p8.png" },
+{ image: "/img/p9.png" },
+{ image: "/img/p10.png" },
+{ image: "/img/p11.png" },
+{ image: "/img/p12.png" }]
+
+
 
 
 export default function Protothon() {
 
+    const [scrolled, setScrolled] = useState(0);
 
+    useEffect(() => {
+        const handleScroll = (event) => {
+        //   console.log('Page scrolled:', window.pageYOffset);
+          setScrolled(window.pageYOffset);
+        };
+    
+        window.addEventListener('scroll', handleScroll);
+    
+        return () => {
+          window.removeEventListener('scroll', handleScroll);
+         
+        };
+      }, []);
 
-    const list = useRef()
+    // const list = useRef()
 
     // // We want to know the width of one of the items. We'll use this to decide how many pixels we want our carousel to scroll.
     // const item = useRef();
-    const itemWidth = list.offsetWidth;
+    // const itemWidth = list.offsetWidth;
 
-    function handleClick(direction) {
-        // Based on the direction we call `scrollBy` with the item width we got earlier
-        if (direction === "previous") {
-            list.scrollTo({ left: -itemWidth, behavior: "smooth" });
-        } else {
-            list.scrollTo({ left: itemWidth, behavior: "smooth" });
-        }
-    }
+    // function handleClick(direction) {
+    //     // Based on the direction we call `scrollBy` with the item width we got earlier
+    //     if (direction === "previous") {
+    //         list.scrollTo({ left: -itemWidth, behavior: "smooth" });
+    //     } else {
+    //         list.scrollTo({ left: itemWidth, behavior: "smooth" });
+    //     }
+    // }
 
     return (
-        <div className="overflow-x-hidden">
+        <main className="overflow-x-hidden">
             <div className="">
-                <NavBar />
+                <NavBar project={true} scrolled={scrolled}/>
             </div>
-            <div className="hero-text grid grid-cols-1 lg:grid-cols-3 px-20">
+            <div className="hero-text grid grid-cols-1 lg:grid-cols-3 px-20 mt-2">
                 <div className="col-span-2">
                     <div className="grid grid-rows-2">
                         <div className="py-10">
@@ -63,37 +100,90 @@ export default function Protothon() {
                 <Image className="shadow-inner" src="/img/map.png" alt="design-buffer" width={0} height={0} sizes="100vw" style={{ width: '100%', height: 'auto' }} />
             </div>
             <div className="diving-in px-32 py-20 grid grid-cols-1 md:grid-cols-2 justify-items-center">
-                <div className="place-content-center mt-14 md:mt-0 mr-0 md:mr-10 lg:mr-0">
-                    <h2 className="pb-1 text-[#8DA7BE] text-sm">Context</h2>
+                <div className="place-content-center mt-14 md:mt-0 mr-0 md:mr-10 lg:mr-10">
+                    <h2 className="pb-1 text-[#00839A] text-sm">Context</h2>
                     <h2 className="pb-5">Problem</h2>
                     <p className="pb-3">This past year has kept the Seattle Fire Department extremely busy with a rising call load. We have seen an increase in calls across many areas, including vacant building fires, scenes of violence, automatic fire alarms, suspected overdoses and responses to those who are unhoused.</p>
                     <p>No other specific design feedback was given, the rest was focused on bugs found during the testing as well as the order in which the case information was presented.</p>
                 </div>
                 <div className="grid justify-items-center">
-                    <Link href="https://leetcare.notion.site/02-Brandon-San-4939f286ec054b908a7f702016cea7f5">
-                        <Image className="place-self-center" src="/img/stats.png" alt="main profile" width={500} height={500} />
-                    </Link>
+                    <Image className="place-self-center" src="/img/stats.png" alt="main profile" width={500} height={500} />
                 </div>
             </div>
-            <div className="inspiration px-32 pb-20 grid grid-cols-1">
+            <hr className=" rxpert-hr" />
+            <div className="inspiration px-32 pb-20 pt-10 grid grid-cols-1">
                 <div className="mt-14 text-center ">
-                    <h2 className="pb-5">Meeting One</h2>
-                    <p className="pb-3">Our first meeting focused on getting to know the other team members and working out our working habits. </p>
+                    <h2 className="pb-5">Team Questionnare</h2>
                     <Image className="place-self-center drop-shadow-2xl" src="/img/personality.png" alt="design system" width={1100} height={1100} />
                 </div>
             </div>
-            <div class="list-wrapper">
-                <ul class="list">
-                    <li ref={list} className="item"><div className="content">Item 1</div></li>
-                    <li ref={list} className="item"><div className="content">Item 2</div></li>
-                    <li ref={list} className="item"><div className="content">Item 3</div></li>
-                    <li ref={list} className="item"><div className="content">Item 4</div></li>
-                    <li ref={list} className="item"><div className="content">Item 5</div></li>
-                </ul>
-                <button onClick={handleClick} className="buttonScroll button--previous" type="button">➜</button>
-                <button onClick={handleClick} className="buttonScroll button--next" type="button">➜</button>
+            <div className="design-system px-32  py-32 grid grid-cols-1 md:grid-cols-2 bg-[#04025A] justify-items-center">
+                <Link href="https://docs.google.com/document/d/1Raj_XagLUzPX20Gpo4Rs8fotKOtDsTJr4ZEthWPACso/edit?usp=sharing">
+                    <div className="grid place-content-center ml-0 md:mr-5 outline py-10 px-5 outline-white outline-1 rounded-md ">
+                        <h2 className="pb-5 text-center text-white">Background Research</h2>
+                        <p className="text-center text-white">Before starting on the design, it was important for us to understand how the fire department works and what they need to have successful operations.</p>
+                        <button>
+                            <div className=" pt-16 flex justify-start items-center text-white">Click to read more
+                                <ArrowRightIcon className="w-5 h-5 ml-2" />
+                            </div>
+                        </button>
+                    </div>
+                </Link>
+                <Link href="https://docs.google.com/document/d/1i33HmuWv-kAiQvdlZPLhtj-DeeQ4zaHPPxbfkNLu2eE/edit?usp=sharing">
+                    <div className="ml-0 mt-20 md:mt-0 md:ml-5  outline outline-white outline-1 py-10 px-5 rounded-md">
+                        <h2 className="pb-5 text-center text-white">Meeting Notes</h2>
+                        <p className="text-center text-white">Instead of staying on call for majority of the day, we wanted to ensure that we had breaks to process our individual thoughts. While we met, we jotted down notes on ideas and tasks.</p>
+                        <p className="text-center pt-10 justify-start items-center flex text-white">Click to read more
+                            <ArrowRightIcon className="w-5 h-5 ml-2" />
+                        </p>
+                    </div>
+                </Link>
+            </div>
+            <div className="diving-in px-32 py-20 grid grid-cols-1 md:grid-cols-2 justify-items-center">
+                <div className="grid justify-items-center ">
+                    <Image className="place-self-center" src="/img/lo-fi.png" alt="main profile" width={500} height={500} />
+                </div>
+                <div className="place-content-center mt-14 md:mt-0 mr-0 md:ml-10 lg:mr-0">
+                    <h2 className="pb-1 text-[#00839A] text-sm">Design</h2>
+                    <h2 className="pb-5">Lo-Fi Sketches</h2>
+                    <p className="pb-3">Before starting on our digital design, we all took time to visualize the different interfaces that we had in mind. These were my initial sketches for the map view, incident view, dashboard, and incident tracking interfaces.</p>
+                    <p>After everyone was done sketching, we met back up to discuss our ideas. It was interesting to see how everyone had different visualize for the interfaces. After a thorough discussion, we settled on the designs that we liked and split up the work.</p>
+                </div>
+            </div>
+            <div className="diving-in px-32 py-20 grid grid-cols-1 md:grid-cols-2 bg-[#CCE6EB] justify-items-center">
+                <div className="place-content-center mt-14 md:mt-0 mr-0 md:mr-10 lg:mr-10">
+                    <h2 className="pb-1 text-[#00839A] text-sm">Design</h2>
+                    <h2 className="pb-5">Style Guide</h2>
+                    <p className="pb-3">Since we were splitting up the design, we wanted to ensure that it was cohesive between interfaces. We were able to quickly decide on a color palate and font style.</p>
+                    <p>We wanted to stick with a calmer color palette yet still have some warning colors such as yellow and red for open incidents. We also wanted to separate incidents based on battalion which required a bigger color palette.</p>
+                </div>
+                <div className="grid justify-items-center">
+                    <Image className="place-self-center" src="/img/style-guide.png" alt="main profile" width={500} height={500} />
+                </div>
+            </div>
+            <div className="inspiration px-32 py-20 grid grid-cols-1 justify-items-center">
+                <h2 className="pb-1 text-[#00839A] text-sm">Design</h2>
+                <h2 className="pb-5">Map View</h2>
+                <p className="pb-5 md:px-24 text-center">My task was designing the map view. For this, we wanted to have the fire department be able to see all the incidents for that day, whether closed or open. To log an incident, you can click on an area on the map and start filling out information about the incident.</p>
+                <div className="grid grid-cols-1 md:grid-cols-2">
+                    <Image className="place-self-center" src="/img/Incidents.png" alt="main profile" width={700} height={700} />
+                    <Image className="place-self-center" src="/img/ReportInc.png" alt="main profile" width={700} height={700} />
+                </div>
+            </div>
+            <div className="diving-in px-32 py-20 grid grid-cols-1 md:grid-cols-2 bg-[#CCE6EB] justify-items-center">
+                <div className="grid justify-items-center">
+                    <Image className="place-self-center" src="/img/cases.png" alt="main profile" width={500} height={500} />
+                </div>
+                <div className="place-content-center mt-14 md:mt-0 mr-0 md:ml-10 lg:mr-10">
+                    <h2 className="pb-5">Incident Tracking Page</h2>
+                    <p className="pb-3">After finishing the map view, I was able to help another member of my team design the incidents page. We discussed how the visual of the incidents should be similar to the map view.</p>
+                    <p>We chose to also add filters to the top of the page so that users could choose what incidents they wanted to see. The colors to the left of each incident correspond to which battalion they occured in.</p>
+                </div>
+            </div>
+            <div>
+                <EmblaCarousel slides={SLIDES} options={OPTIONS} />
             </div>
             <Footer />
-        </div >
+        </main >
     )
 }

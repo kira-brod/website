@@ -4,9 +4,11 @@ import { useState } from "react";
 import Link from "next/link";
 
 
-export default function NavBar() {
+export default function NavBar(props) {
 
     const [isOpen, setIsOpen] = useState(false);
+
+    const {project, scrolled} = props;
 
     const handleClick = (event) => {
         if (!isOpen) {
@@ -17,7 +19,7 @@ export default function NavBar() {
     }
 
     return (
-        <div className={"justify-between w-screen mx-auto px-4 " + (isOpen ? 'flex-col' : 'md:flex')}>
+        <div className={(project ? 'fixed z-10 ' : '') + "justify-between py-2 w-screen bg-white mx-auto px-10 " + (isOpen ? 'flex-col' : 'md:flex') + (scrolled > 0 ? ' drop-shadow-md' : '') }>
             <div className="flex justify-between items-center">
                 <Link href="/" className="kb">kb.</Link>
                 <button onClick={handleClick}>

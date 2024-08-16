@@ -1,17 +1,34 @@
+'use client'
 import NavBar from "@/app/components/NavBar"
 import Container from "@/app/components/Container"
 import Image from "next/image"
 import { Footer } from "@/app/components/Footer"
+import { useState, useEffect } from "react"
 
 
 export default function JamSesh() {
 
+    const [scrolled, setScrolled] = useState(0);
+
+    useEffect(() => {
+        const handleScroll = (event) => {
+            // console.log('Page scrolled:', window.pageYOffset);
+            setScrolled(window.pageYOffset);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+
+        };
+    }, []);
     return (
         <div className="overflow-x-hidden">
             <div className="">
-                <NavBar />
+                <NavBar project={true} scrolled={scrolled} />
             </div>
-            <div className="hero-text grid grid-cols-1 lg:grid-cols-3 px-20">
+            <div className="hero-text grid grid-cols-1 lg:grid-cols-3 px-20 mt-2">
                 <div className="col-span-2">
                     <div className="grid grid-rows-2">
                         <div className="py-10">
@@ -81,7 +98,7 @@ export default function JamSesh() {
                     <Image className="place-self-center" src="/img/Design-System.png" alt="design system" width={400} height={300} />
                 </div>
             </div>
-            <hr className=" jamsesh-hr mx-44"/>
+            <hr className=" jamsesh-hr mx-44" />
             <div className="diving-in px-32  py-20 grid grid-cols-1 md:grid-cols-2 justify-items-center">
                 <div className="justify-center">
                     <Image className="place-self-center" src="/img/Main-profile.png" alt="main profile" width={400} height={300} />
