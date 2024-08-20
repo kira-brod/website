@@ -28,7 +28,7 @@ export default function NavBar(props) {
             </div>
             <div className={"md:flex md:flex-row items-center justify-start md:space-x-1 pb-3 md:pb-0 " + (isOpen ? 'flex-col' : 'hidden')}>
                 <Link href="/work" className={"block " + (isOpen ? '' : 'pl-6')}>WORK</Link>
-                <a className={"block " + (isOpen ? '' : 'pl-6')}>PERSONAL</a>
+                <Link href="/personal" className={"block " + (isOpen ? '' : 'pl-6')}>PERSONAL</Link>
             </div>
         </div>
     )

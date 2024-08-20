@@ -98,7 +98,7 @@ export default function JamSesh() {
                     <Image className="place-self-center" src="/img/Design-System.png" alt="design system" width={400} height={300} />
                 </div>
             </div>
-            <hr className=" jamsesh-hr mx-44" />
+            <hr className=" jamsesh-hr" />
             <div className="diving-in px-32  py-20 grid grid-cols-1 md:grid-cols-2 justify-items-center">
                 <div className="justify-center">
                     <Image className="place-self-center" src="/img/Main-profile.png" alt="main profile" width={400} height={300} />
