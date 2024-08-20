@@ -52,7 +52,7 @@ function ScrollSection() {
                     <div className="scroll-section">
                         <Link href="work/jamsesh" className="">
                             <div className="grid justify-items-center">
-                                <Image className="" src="/img/jamsesh.png" alt="main profile" width={500} height={300} />
+                                <Image className="" src="/img/jamsesh1.png" alt="main profile" width={500} height={300} />
                                 <h2 className="project-title mt-5 ">Jam Sesh</h2>
                                 <p className="mt-2">App to share music with your friends.</p>
                             </div>
