@@ -181,7 +181,7 @@ export default function Rxpert() {
                 </div>
             </div>
             <div className="py-20">
-                <Image className="" src="/img/homepage-buffer.png" alt="design-buffer" width={0} height={0} sizes="100vw" style={{ width: '100%', height: 'auto' }} />
+                <Image className="" src="/img/homepage-buffer1.png" alt="design-buffer" width={0} height={0} sizes="100vw" style={{ width: '100%', height: 'auto' }} />
             </div>
             <div className="design-system px-32 py-20 grid grid-cols-1  md:grid-cols-2 justify-items-center">
                 <div className="justify-center md:ml-5 lg:ml-0">
