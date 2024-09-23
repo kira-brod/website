@@ -167,10 +167,11 @@ export default function Rxpert() {
                     </div>
                 </div>
             </div>
-            <div className="inspiration px-32 py-20 grid grid-cols-1 justify-items-center bg-[#0B1338]">
+            <div className="inspiration py-20 grid grid-cols-1 justify-items-center bg-[#0B1338]">
                 <div className="mt-14 md:mt-0 md:ml-5 lg:ml-0 place-content-center">
-                    <h2 className="pb-1 text-[#8DA7BE] text-sm">Revised Goals</h2>
                     <div className="mx-auto max-w-6xl px-4 pb-4 md:px-0 md:pb-0">
+                        <h2 className="pb-1 text-[#8DA7BE] text-sm">Revised Goals</h2>
+                        {/* <div className="mx-auto max-w-6xl px-4 pb-4 md:px-0 md:pb-0"> */}
                         <div className="grid grid-cols-1 md:grid-cols-3 justify-items-center ">
                             <div className="mr-16">
                                 <h2 className="pb-5 text-white">Case Generation</h2>
