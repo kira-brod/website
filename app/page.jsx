@@ -117,7 +117,7 @@ export function Hero() {
                 <p className="text-xl font-bold mt-14 text-center lg:text-left">RxPert</p>
                 <p className="mt-3 text-sm text-center lg:text-left">A tool meant to help professors develop patient cases for their curriculums </p>
               </div>
-              <div className="col-span-2 justify-items-center">
+              <div className="col-span-2 flex justify-center">
                 <Link href="/work/rxpert">
                   <Image className="dr" src="/img/newHero.png" alt="Rxpert home page" width={700} height={500} />
                 </Link>
@@ -129,7 +129,7 @@ export function Hero() {
         <div className={bgColor}>
           <div className="mx-auto max-w-5xl">
             <div className="grid grid-cols-1 lg:grid-cols-3 py-20">
-              <div className="col-span-2 justify-items-center">
+              <div className="col-span-2 lg:flex justify-center hidden ">
                 <Link href="/work/protothon">
                   <Image className="dr" src="/img/newSFD-go-digital.png" alt="Protothon" width={700} height={500} />
                 </Link>
@@ -138,6 +138,11 @@ export function Hero() {
                 <p className="text-4xl font-bold text-center lg:text-left">Track and dispatch with ease.</p>
                 <p className="text-xl font-bold mt-14 text-center lg:text-left">Protothon</p>
                 <p className="mt-3 text-sm text-center lg:text-left">A web app designed for resource and event tracking for the Seattle Fire Department </p>
+              </div>
+              <div className="col-span-2 flex justify-center lg:hidden">
+                <Link href="/work/protothon">
+                  <Image className="dr" src="/img/newSFD-go-digital.png" alt="Protothon" width={700} height={500} />
+                </Link>
               </div>
             </div>
           </div>
@@ -151,7 +156,7 @@ export function Hero() {
                 <p className="text-xl font-bold mt-14 text-center lg:text-left">Jam Sesh</p>
                 <p className="mt-3 text-sm text-center lg:text-left">A tool meant to help professors develop patient cases for their curriculums </p>
               </div>
-              <div className="col-span-2 justify-items-center ">
+              <div className="col-span-2 flex  justify-center ">
                 <Link href="/work/jamsesh">
                   <Image className="dr" src="/img/newJamSesh.png" alt="Jam Sesh" width={700} height={500} />
                 </Link>
