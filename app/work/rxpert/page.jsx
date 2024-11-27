@@ -74,7 +74,7 @@ export default function Rxpert() {
                     <Image className="place-self-center drop-shadow-2xl" src="/img/flow.png" alt="design system" width={1100} height={1100} />
                 </div>
             </div>
-            <hr className=" rxpert-hr mx-44"/>
+            <hr className=" rxpert-hr"/>
             <div className="diving-in px-32 py-20 grid grid-cols-1 md:grid-cols-2 justify-items-center">
                 <div className="place-content-center mt-14 md:mt-0 mr-0 md:mr-10 lg:mr-0">
                     <h2 className="pb-1 text-[#8DA7BE] text-sm">Design</h2>
@@ -125,7 +125,7 @@ export default function Rxpert() {
                 </div>
             </div>
             <div className="inspiration px-32 py-20 grid grid-cols-1 justify-items-center">
-                <h2 className="pb-1 text-[#8DA7BE] text-sm">Design</h2>
+                {/* <h2 className="pb-1 text-[#8DA7BE] text-sm">Design</h2> */}
                 <h2 className="pb-5">Create Case Page</h2>
                 <p className="pb-5 md:px-24 text-center">We wanted to ensure that the Create Case page had a sleek and clean design that was easy to follow with instructions for the users. Once the user has filled out all the necessary information, their case would be generated on the right.</p>
                 <div className="grid grid-cols-1 md:grid-cols-2">
