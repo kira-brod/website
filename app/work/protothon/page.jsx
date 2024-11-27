@@ -67,7 +67,7 @@ export default function Protothon() {
     return (
         <main className="overflow-x-hidden">
             <div className="">
-                <NavBar project={true} scrolled={scrolled} />
+                <NavBar project={true} scrolled={scrolled} color="bg-white"/>
             </div>
             <div className="hero-text grid grid-cols-1 lg:grid-cols-3 mx-auto max-w-6xl px-4 md:px-0 mt-2">
                 <div className="col-span-2">

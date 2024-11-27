@@ -39,7 +39,7 @@ export default function Rxpert() {
     return (
         <main className="overflow-x-hidden">
             <div className="">
-                <NavBar project={true} scrolled={scrolled} />
+                <NavBar project={true} scrolled={scrolled} color="bg-white" />
             </div>
             <div className="hero-text grid grid-cols-1 lg:grid-cols-3 mt-2 mx-auto space-y-8 max-w-6xl pt-8 px-4 pb-4 md:px-0 md:pb-0">
                 <div className="col-span-2">
