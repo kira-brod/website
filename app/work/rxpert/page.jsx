@@ -101,7 +101,7 @@ export default function Rxpert() {
             <div className="mx-auto max-w-5xl py-20">
                 <div className="grid grid-cols-3">
                     <div className="col-span-2 -ml-5">
-                        <Image src="/img/Dashboard.png" alt="dashboard" width={600} height={300} />
+                        <Image src="/img/dash.png" alt="dashboard rxpert" width={600} height={300} />
                     </div>
                     <div className="col-span-1 place-content-center">
                         <p className="text-3xl mb-5 font-bold">Access everything you need from one screen.</p>
