@@ -52,7 +52,7 @@ export default function Rxpert() {
                         </p>
                     </div>
                     <div className="mt-20 grid grid-cols-1 mx-10 lg:mx-0 lg:grid-cols-4">
-                        <p className="text-center lg:text-left col-span-2">RxPert is a tool meant for professors to use for patient case generating.  A usual patient case takes between three to four hours to create but with the help of RxPert, professors are able to put in a few key pieces of information and have their case be generated for them.</p>
+                        <p className="text-center lg:text-left col-span-2">RxPert is a tool meant for professors to use for patient case generating.  A usual patient case takes between one to two hours to create but with the help of RxPert, professors are able to put in a few key pieces of information and have their case be generated for them.</p>
                     </div>
                 </div>
                 <hr className="landing" />
@@ -189,7 +189,7 @@ export default function Rxpert() {
                 <p className="mt-5">One of our biggest struggles for this project has been user testing. The professors’ priority is their class and they often have little time to give elsewhere. From the limited user testing that has been conducted, we often find ourselves needing to make decisions on the user experience by way of extrapolating based on what was said by the professor. By getting to know the professors outside of their classroom selves, I believe that that would help us gain more insight on their thought processes since introspection can often be flawed.</p>
             </div>
 
-            <div>
+            <div  className="">
                 <hr className="landing" />
                 <div className="mx-auto max-w-5xl py-20">
                     <div className="grid grid-cols-1 lg:grid-cols-2">
