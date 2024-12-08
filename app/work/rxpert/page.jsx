@@ -63,6 +63,7 @@ export default function Rxpert() {
                 <p className="text-center mx-20 lg:mx-0 lg:text-left text-3xl font-bold leading-[2.5rem]">
                     Current pharmacy professors are spending hours on creating cases or simply reusing old ones because they don’t have the time.
                 </p>
+                <p className="mt-5">I was introduced to the idea of a patient case generator by three students who were looking for a UX designer to design the tool. I jumped on the idea because I believed in the purpose of the tool, as well as getting the opportunity to create something new.</p>
             </div>
 
             <div className="diving-in py-20 grid grid-cols-1 mx-auto max-w-5xl px-4 md:px-0 md:grid-cols-3 ">
@@ -176,8 +177,16 @@ export default function Rxpert() {
                     <h2 className="pb-5 text-3xl">Users</h2>
                     <p className="pb-12">After some discussion with one of the pharmacy professors at UW, they offered to test run RxPert for Fall Quarter 2024. This will be our first official user and we are excited to see RxPert come to life.</p>
                     <h2 className="pb-5 text-3xl">Optimization</h2>
-                    <p className="pb-12">It is always important to keep testing your design and updating it for better usability. As new interfaces will continue to roll out, we will continue to test them and work the feedback into our design.</p>
+                    <p className="">It is always important to keep testing your design and updating it for better usability. As new interfaces will continue to roll out, we will continue to test them and work the feedback into our design.</p>
                 </div>
+            </div>
+
+            <div className="py-20 mx-auto max-w-5xl lg:pr-44">
+                <p className="leading-3 text-center lg:text-left mb-3">Personal Reflection</p>
+                <p className="text-center mx-20 lg:mx-0 lg:text-left text-3xl font-bold leading-[2.5rem]">
+                Taking time to understand the user, not only about how they navigate the platform, but who they are as a person.
+                </p>
+                <p className="mt-5">One of our biggest struggles for this project has been user testing. The professors’ priority is their class and they often have little time to give elsewhere. From the limited user testing that has been conducted, we often find ourselves needing to make decisions on the user experience by way of extrapolating based on what was said by the professor. By getting to know the professors outside of their classroom selves, I believe that that would help us gain more insight on their thought processes since introspection can often be flawed.</p>
             </div>
 
             <div>
