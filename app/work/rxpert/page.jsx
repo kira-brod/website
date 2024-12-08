@@ -63,7 +63,7 @@ export default function Rxpert() {
                 <p className="text-center mx-20 lg:mx-0 lg:text-left text-3xl font-bold leading-[2.5rem]">
                     Current pharmacy professors are spending hours on creating cases or simply reusing old ones because they don’t have the time.
                 </p>
-                <p className="mt-5">I was introduced to the idea of a patient case generator by three students who were looking for a UX designer to design the tool. I jumped on the idea because I believed in the purpose of the tool, as well as getting the opportunity to create something new.</p>
+                <p className="mt-5">Originally, I was introduced to the idea of a patient simulator by three students who were looking for a UX designer to design the tool. This would've been meant for students who wanted practice with patient interaction. I jumped on the idea because I believed in the purpose of the tool, as well as getting the opportunity to create something new. After doing some user testing and talking to professors, we found that there was more of a market for a patient case generator, thus switching courses with our product.</p>
             </div>
 
             <div className="diving-in py-20 grid grid-cols-1 mx-auto max-w-5xl px-4 md:px-0 md:grid-cols-3 ">
@@ -83,12 +83,13 @@ export default function Rxpert() {
             </div>
 
             <div className="mx-auto max-w-5xl py-20">
-                <h2 className="pb-5">User Flow</h2>
+                <h2 className="pb-3 text-3xl">User Flow</h2>
+                <p className="pb-10 mr-0 lg:mr-60">It was important for us to understand how a professor would navigate through our product and creating a user flow allowed us to connect the different interfaces together smoothly.</p>
                 <Image className=" drop-shadow-2xl" src="/img/flow.png" alt="design system" width={1100} height={1100} />
             </div>
 
             <div className="mx-auto max-w-5xl py-20">
-                <h2 className="">Lo-Fi and System Design</h2>
+                <h2 className="text-3xl">Lo-Fi and System Design</h2>
                 <div className="grid grid-cols-9 place-content-start">
                     <div className="col-span-5 -ml-5">
                         <Image src="/img/lofi.png" alt="lofi" width={600} height={300} />
@@ -162,6 +163,7 @@ export default function Rxpert() {
                     <div className="col-span-1 place-content-center">
                         <p className="text-3xl mb-5 font-bold">Share your cases and interact with others.</p>
                         <p>Upload your cases for feedback and have access to other’s cases to use in your curriculum.</p>
+                        <p className="mt-10">* Received feedback that professors would not want to use their time to leave feedback/interact with cases - this feature was put on hold</p>
                     </div>
                 </div>
             </div>
@@ -171,6 +173,7 @@ export default function Rxpert() {
                     <div>
                         <h2 className="pb-5 text-3xl">Future with RxPert</h2>
                         <p className="pb-3">We are looking forward to release RxPert out to the public within the next couple months.</p>
+                        <p className="mt-10">We are currently refining the user experience of creating and editing the case. We want to ensure that it is intuitive for professors.</p>
                     </div>
                 </div>
                 <div className="place-content-center mt-14 md:mt-0 mr-0 md:ml-10 lg:mr-10">
