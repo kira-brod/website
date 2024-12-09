@@ -61,9 +61,9 @@ export default function Rxpert() {
             <div className="py-20 mx-auto max-w-5xl lg:pr-44">
                 <p className="leading-3 text-center lg:text-left mb-3">Problem</p>
                 <p className="text-center mx-20 lg:mx-0 lg:text-left text-3xl font-bold leading-[2.5rem]">
-                    Current pharmacy professors are spending hours on creating cases or simply reusing old ones because they don’t have the time.
+                    Current pharmacy professors are spending hours on creating cases or simply reusing old ones because they don&apos;t have the time.
                 </p>
-                <p className="mt-5">Originally, I was introduced to the idea of a patient simulator by three students who were looking for a UX designer to design the tool. This would've been meant for students who wanted practice with patient interaction. I jumped on the idea because I believed in the purpose of the tool, as well as getting the opportunity to create something new. After doing some user testing and talking to professors, we found that there was more of a market for a patient case generator, thus switching courses with our product.</p>
+                <p className="mt-5">Originally, I was introduced to the idea of a patient simulator by three students who were looking for a UX designer to design the tool. This would&apos;ve been meant for students who wanted practice with patient interaction. I jumped on the idea because I believed in the purpose of the tool, as well as getting the opportunity to create something new. After doing some user testing and talking to professors, we found that there was more of a market for a patient case generator, thus switching courses with our product.</p>
             </div>
 
             <div className="diving-in py-20 grid grid-cols-1 mx-auto max-w-5xl px-4 md:px-0 md:grid-cols-3 ">
