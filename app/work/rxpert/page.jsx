@@ -170,7 +170,7 @@ export default function Rxpert() {
 
             <div className="diving-in py-20 grid grid-cols-1   mx-auto max-w-5xl px-4 md:px-0 md:grid-cols-2 justify-items-center">
                 <div className="grid content-center mr-0 md:mr-10">
-                    <div>
+                    <div className="">
                         <h2 className="pb-5 text-3xl">Future with RxPert</h2>
                         <p className="pb-3">We are looking forward to release RxPert out to the public within the next couple months.</p>
                         <p className="mt-10">We are currently refining the user experience of creating and editing the case. We want to ensure that it is intuitive for professors.</p>
