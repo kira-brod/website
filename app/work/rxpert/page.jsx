@@ -170,16 +170,17 @@ export default function Rxpert() {
             </div>
 
             <div className="diving-in py-20 grid grid-cols-1   mx-auto max-w-5xl px-4 md:px-0 md:grid-cols-2 justify-items-center">
-                <div className="grid content-center mr-0 md:mr-10">
+                <div className="grid content-center mr-0 md:mr-14">
                     <div className="">
                         <h2 className="pb-5 text-3xl">Future with RxPert</h2>
                         <p className="pb-3">We are looking forward to release RxPert out to the public within the next couple months.</p>
                         <p className="mt-10">We are currently refining the user experience of creating and editing the case. We want to ensure that it is intuitive for professors.</p>
                     </div>
                 </div>
-                <div className="place-content-center mt-14 md:mt-0 mr-0 md:ml-10 lg:mr-10">
-                    <h2 className="pb-5 text-3xl">Users</h2>
-                    <p className="pb-12">After some discussion with one of the pharmacy professors at UW, they offered to test run RxPert for Fall Quarter 2024. This will be our first official user and we are excited to see RxPert come to life.</p>
+                <div className="place-content-center mt-14 md:mt-0 mr-0 lg:mr-10">
+                    <h2 className="pb-5 text-3xl">Users/User Testing</h2>
+                    <p className="pb-3">After some discussion with one of the pharmacy professors at UW, they offered to test run RxPert for Fall Quarter 2024. This will be our first official user and we are excited to see RxPert come to life.</p>
+                    <p className="pb-12">After finals season, we will be sending out surveys to professors to track how they edit cases. We will also be providing them with a case to edit, being able to see what changes the most often versus what doesn't change at all.</p>
                     <h2 className="pb-5 text-3xl">Optimization</h2>
                     <p className="">It is always important to keep testing your design and updating it for better usability. As new interfaces will continue to roll out, we will continue to test them and work the feedback into our design.</p>
                 </div>
