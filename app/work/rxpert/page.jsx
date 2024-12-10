@@ -78,7 +78,7 @@ export default function Rxpert() {
                     <h2 className="pb-5 text-3xl">Editable Display</h2>
                     <p className="pb-12">Intuitive flow to edit the case, whether it be through chat or the case editor for specific parts.</p>
                     <h2 className="pb-5 text-3xl">Integration</h2>
-                    <p className="pb-12">For the future, we are interested in making cases interactable where students can talk with the patient in the case.</p>
+                    <p className="">For the future, we are interested in making cases interactable where students can talk with the patient in the case.</p>
                 </div>
             </div>
 
