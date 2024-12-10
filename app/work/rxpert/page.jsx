@@ -130,16 +130,17 @@ export default function Rxpert() {
                         <Link target="_blank" href="https://leetcare.notion.site/01-Dr-Suchy-11f12020111d80e99be2d07cacb59fd3">
                             <Image className="place-self-center" src="/img/testing.png" alt="main profile" width={600} height={700} />
                         </Link>
-                        <p className="justify-center ml-5">Click to read more</p>
+                        {/* <p className="justify-center ml-5 mr-32">This is an example of one of the user interviews we have conducted, click to read more</p> */}
                     </div>
                     <div className="col-span-1 place-content-center">
                         <p className="text-3xl mb-5 font-bold">User Testing Findings</p>
+                        <p className="mb-5">To the left is an example of the user interviews that we conducted, feel free to click to read more.</p>
                         <ul className="list-disc ml-4">
                             <li>Cases take 1-2 hours to create</li>
                             <li>30 min if editing a pre-existing case</li>
                             <li>Uncertainty with relying on AI for racial/cultural accuracy</li>
                             <li>Form can be overwhelming but generating through chat may feel like a lot of typing</li>
-                            <li>stick with form generation and use chat for editing</li>
+                            <li>Stick with form generation and use chat for editing</li>
                             <li>Questions for the case are basic, tune model </li>
                         </ul>
                     </div>
