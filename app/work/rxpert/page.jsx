@@ -83,6 +83,29 @@ export default function Rxpert() {
             </div>
 
             <div className="mx-auto max-w-5xl py-20">
+                <div className="grid grid-cols-3">
+                    <div className="grid justify-items-start -ml-5 col-span-1">
+                        <Link target="_blank" href="https://leetcare.notion.site/01-Dr-Suchy-11f12020111d80e99be2d07cacb59fd3">
+                            <Image className="place-self-center" src="/img/Suchy.png" alt="main profile" width={600} height={700} />
+                        </Link>
+                        {/* <p className="justify-center ml-5 mr-32">This is an example of one of the user interviews we have conducted, click to read more</p> */}
+                    </div>
+                    <div className="col-span-2 ml-16 place-content-center">
+                        <p className="text-3xl mb-5 font-bold">User Testing Findings</p>
+                        <p className="mb-5">To the left is an example of the user interviews that we conducted, feel free to click to read more.</p>
+                        <ul className="list-disc ml-4">
+                            <li>Cases take 1-2 hours to create</li>
+                            <li>30 min if editing a pre-existing case</li>
+                            <li>Uncertainty with relying on AI for racial/cultural competency as well as integrating diverse scenarios</li>
+                            <li>Form can be overwhelming but generating through chat may feel like a lot of typing</li>
+                            <li>Stick with form generation and use chat for editing</li>
+                            <li>Questions for the case are basic, tune model </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div className="mx-auto max-w-5xl py-20">
                 <h2 className="pb-3 text-3xl">User Flow</h2>
                 <p className="pb-10 mr-0 lg:mr-60">It was important for us to understand how a professor would navigate through our product and creating a user flow allowed us to connect the different interfaces together smoothly.</p>
                 <Image className=" drop-shadow-2xl" src="/img/flow.png" alt="design system" width={1100} height={1100} />
@@ -148,28 +171,7 @@ export default function Rxpert() {
                 </div>
             </div>
 
-            <div className="mx-auto max-w-5xl py-20">
-                <div className="grid grid-cols-3">
-                    <div className="grid justify-items-start -ml-5 col-span-2">
-                        <Link target="_blank" href="https://leetcare.notion.site/01-Dr-Suchy-11f12020111d80e99be2d07cacb59fd3">
-                            <Image className="place-self-center" src="/img/testing.png" alt="main profile" width={600} height={700} />
-                        </Link>
-                        {/* <p className="justify-center ml-5 mr-32">This is an example of one of the user interviews we have conducted, click to read more</p> */}
-                    </div>
-                    <div className="col-span-1 place-content-center">
-                        <p className="text-3xl mb-5 font-bold">User Testing Findings</p>
-                        <p className="mb-5">To the left is an example of the user interviews that we conducted, feel free to click to read more.</p>
-                        <ul className="list-disc ml-4">
-                            <li>Cases take 1-2 hours to create</li>
-                            <li>30 min if editing a pre-existing case</li>
-                            <li>Uncertainty with relying on AI for racial/cultural accuracy</li>
-                            <li>Form can be overwhelming but generating through chat may feel like a lot of typing</li>
-                            <li>Stick with form generation and use chat for editing</li>
-                            <li>Questions for the case are basic, tune model </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+            
 
             
 
