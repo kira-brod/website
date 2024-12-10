@@ -63,7 +63,7 @@ export default function Rxpert() {
                 <p className="text-center mx-20 lg:mx-0 lg:text-left text-3xl font-bold leading-[2.5rem]">
                     Current pharmacy professors are spending hours on creating cases or simply reusing old ones because they don&apos;t have the time.
                 </p>
-                <p className="mt-5">Originally, I was introduced to the idea of a patient simulator by three students who were looking for a UX designer to design the tool. This would&apos;ve been meant for students who wanted practice with patient interaction. I jumped on the idea because I believed in the purpose of the tool, as well as getting the opportunity to create something new. After doing some user testing and talking to professors, we found that there was more of a market for a patient case generator, thus switching courses with our product.</p>
+                <p className="mt-5">Originally, I was introduced to the idea of a patient simulator by three students who were looking for a UX designer to design the tool. This would&apos;ve been meant for students who wanted practice with patient interaction. I jumped on the idea because I believed in the purpose of the tool, as well as getting the opportunity to create something new. After doing some informal surveying and talking to professors, we found that there was more of a market for a patient case generator, thus switching courses with our product.</p>
             </div>
 
             <div className="diving-in py-20 grid grid-cols-1 mx-auto max-w-5xl px-4 md:px-0 md:grid-cols-3 ">
@@ -126,6 +126,30 @@ export default function Rxpert() {
 
             <div className="mx-auto max-w-5xl py-20">
                 <div className="grid grid-cols-3">
+                    <div className="col-span-2 -ml-5">
+                        <Image src="/img/CommunityHub.png" alt="Community hub" width={600} height={300} />
+                    </div>
+                    <div className="col-span-1 place-content-center">
+                        <p className="text-3xl mb-5 font-bold">Share your cases and interact with others.</p>
+                        <p>Upload your cases for feedback and have access to other’s cases to use in your curriculum.</p>
+                        <p className="mt-10">* Received feedback that professors would not want to use their time to leave feedback/interact with cases - this feature was put on hold</p>
+                    </div>
+                </div>
+            </div>
+
+            
+
+            <div className="py-20 mx-auto max-w-5xl">
+                <p className="text-3xl  font-bold">Edit your case with the help of AI.</p>
+                <p>Click the icon in the corner after the case is generated and edit it till you are happy with the result.</p>
+                <div className="grid mt-5 grid-cols-2 -ml-5">
+                    <Image src="/img/chat1.png" alt="dashboard" width={600} height={300} />
+                    <Image src="/img/chat2.png" alt="dashboard" width={600} height={300} />
+                </div>
+            </div>
+
+            <div className="mx-auto max-w-5xl py-20">
+                <div className="grid grid-cols-3">
                     <div className="grid justify-items-start -ml-5 col-span-2">
                         <Link target="_blank" href="https://leetcare.notion.site/01-Dr-Suchy-11f12020111d80e99be2d07cacb59fd3">
                             <Image className="place-self-center" src="/img/testing.png" alt="main profile" width={600} height={700} />
@@ -147,27 +171,7 @@ export default function Rxpert() {
                 </div>
             </div>
 
-            <div className="py-20 mx-auto max-w-5xl">
-                <p className="text-3xl  font-bold">Edit your case with the help of AI.</p>
-                <p>Click the icon in the corner after the case is generated and edit it till you are happy with the result.</p>
-                <div className="grid mt-5 grid-cols-2 -ml-5">
-                    <Image src="/img/chat1.png" alt="dashboard" width={600} height={300} />
-                    <Image src="/img/chat2.png" alt="dashboard" width={600} height={300} />
-                </div>
-            </div>
-
-            <div className="mx-auto max-w-5xl py-20">
-                <div className="grid grid-cols-3">
-                    <div className="col-span-2 -ml-5">
-                        <Image src="/img/CommunityHub.png" alt="Community hub" width={600} height={300} />
-                    </div>
-                    <div className="col-span-1 place-content-center">
-                        <p className="text-3xl mb-5 font-bold">Share your cases and interact with others.</p>
-                        <p>Upload your cases for feedback and have access to other’s cases to use in your curriculum.</p>
-                        <p className="mt-10">* Received feedback that professors would not want to use their time to leave feedback/interact with cases - this feature was put on hold</p>
-                    </div>
-                </div>
-            </div>
+            
 
             <div className="diving-in py-20 grid grid-cols-1   mx-auto max-w-5xl px-4 md:px-0 md:grid-cols-2 justify-items-center">
                 <div className="grid content-center mr-0 md:mr-14">
@@ -180,7 +184,7 @@ export default function Rxpert() {
                 <div className="place-content-center mt-14 md:mt-0 mr-0 lg:mr-10">
                     <h2 className="pb-5 text-3xl">Users/User Testing</h2>
                     <p className="pb-3">After some discussion with one of the pharmacy professors at UW, they offered to test run RxPert for Fall Quarter 2024. This will be our first official user and we are excited to see RxPert come to life.</p>
-                    <p className="pb-12">After finals season, we will be sending out surveys to professors to track how they edit cases. We will also be providing them with a case to edit, being able to see what changes the most often versus what doesn't change at all.</p>
+                    <p className="pb-12">After finals season, we will be sending out surveys to professors to track how they edit cases. We will also be providing them with a case to edit, being able to see what changes the most often versus what doesn&apos;t change at all.</p>
                     <h2 className="pb-5 text-3xl">Optimization</h2>
                     <p className="">It is always important to keep testing your design and updating it for better usability. As new interfaces will continue to roll out, we will continue to test them and work the feedback into our design.</p>
                 </div>
