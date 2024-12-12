@@ -85,7 +85,7 @@ export default function Rxpert() {
             <div className="mx-10 lg:mx-auto max-w-5xl py-20 ">
                 <div className="lg:pr-44 pr-0">
                     <p className="mb-5  font-bold">User Research and Testing</p>
-                    <p className="mb-5">After ensuring that there was interesting in the product, we jumped right into designing it. Our goal was to have a functioning prototype that the professors could use and then give feedback on. We are actively user testing and listed below are some of the main concerns at the moment.</p>
+                    <p className="mb-5">After ensuring that there was interesting in the product, we jumped right into designing it. Our goal was to have a functioning prototype that the professors could use and then give feedback on.</p>
                     <p className="mb-5">We initially had the chat and form be on the left side for the case generating, where the professor could pick whether they wanted to use the form, or chat with the AI directly to create the case. The generated case would then appear on the right side of the screen, including all the information that the professor provided.</p>
                     <p className="text-3xl font-bold mb-5">We quickly noticed that the professors had not realized they were able to switch tabs.</p>
                     <p className="mb-5">After doing some research, we realized that other digital tools don&apos;t give there users different options of doing one task. We decided that we would stick with the form for case generating and chat for case editing after the case has been generated.</p>
@@ -98,7 +98,7 @@ export default function Rxpert() {
                         {/* <p className="justify-center ml-5 mr-32">This is an example of one of the user interviews we have conducted, click to read more</p> */}
                     </div>
                     <div className="col-span-2 lg:ml-16 place-content-center">
-                        <p className="mb-5">Feel free to click on the Dr. Suchy user testing file for an example of one of our testing sessions.</p>
+                        <p className="mb-5"> We are actively user testing and listed below are some of the main concerns. Click on the Dr. Suchy file for an example of one of our testing sessions.</p>
                         <ul className="list-disc ml-4">
                             <li>Cases take 1-2 hours to create</li>
                             <li>30 min if editing a pre-existing case</li>
@@ -189,7 +189,11 @@ export default function Rxpert() {
                     <div className="">
                         <h2 className="pb-5 text-3xl">Future with RxPert</h2>
                         <p className="pb-3">We are looking forward to release RxPert out to the public within the next couple months.</p>
-                        <p className="mt-10">We are currently refining the user experience of creating and editing the case. We want to ensure that it is intuitive for professors.</p>
+                        <p className="">Currently, we are refining the user experience of creating and editing the case. We want to ensure that it is intuitive for professors.</p>
+                        <div className="flex justify-start items-center mt-16">
+                            <Link target="_blank" className="hover:underline" href="https://www.rx-pert.com/">Try RxPert</Link>
+                            <ArrowUpRightIcon className="w-5 h-5 ml-2" />
+                        </div>
                     </div>
                 </div>
                 <div className="place-content-center mt-14 md:mt-0 mr-0 lg:mr-10">
@@ -202,7 +206,7 @@ export default function Rxpert() {
             </div>
 
             <div className="py-20 mx-10 lg:mx-auto max-w-5xl lg:pr-44">
-                <p className="leading-3  mb-3">Personal Reflection</p>
+                <p className="leading-3 font-bold mb-3">Personal Reflection</p>
                 <p className="text-3xl font-bold leading-[2.5rem]">
                     Taking time to understand the user, not only about how they navigate the platform, but who they are as a person.
                 </p>
