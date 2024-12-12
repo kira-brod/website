@@ -148,7 +148,7 @@ export function Hero() {
           </div>
         </div>
 
-        <div className={bgColor}>
+        {/* <div className={bgColor}>
           <div className="mx-auto max-w-5xl">
             <div className="grid grid-cols-1 lg:grid-cols-3 py-20">
               <div className="pr-0 lg:pr-10 col-span-1 place-content-center">
@@ -164,9 +164,10 @@ export function Hero() {
             </div>
           </div>
           <hr className="landing" />
-        </div>
+        </div> */}
 
         <div className={bgColor}>
+          <hr className="landing" />
           <div className="mx-auto max-w-5xl py-20">
             <div className="grid grid-cols-1 lg:grid-cols-2">
               <div className="justify-items-center lg:justify-items-start lg:place-content-center">

@@ -172,7 +172,7 @@ export default function Rxpert() {
 
 
             <div className="py-20 mx-10 lg:mx-auto max-w-5xl">
-                <p className="text-3xl  font-bold">Edit your case with the help of AI.</p>
+                <p className="text-3xl mb-5 font-bold">Edit your case with the help of AI.</p>
                 <p>Click the icon in the corner after the case is generated and edit it till you are happy with the result.</p>
                 <div className="grid mt-5 grid-cols-1 lg:grid-cols-2 -ml-5">
                     <Image src="/img/chat1.png" alt="dashboard" width={600} height={300} />
