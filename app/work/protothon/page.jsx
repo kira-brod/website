@@ -103,8 +103,8 @@ export default function Protothon() {
                     </div>
                 </div>
                 <div className="place-content-center mt-14 md:mt-0 mr-0 md:ml-10 lg:mr-10 col-span-2">
-                    <h2 className="pb-5 text-3xl">Track Incidents</h2>
-                    <p className="pb-12">Dispatchers will be able to distinguish between active and inactive incidents, as well as what resources were used for the incident. </p>
+                    <h2 className="pb-5 text-3xl">Track Incident Data</h2>
+                    <p className="pb-12">Dispatchers will be able to distinguish between active and inactive incidents, as well as resource trends among incidents and batallions. </p>
                     <h2 className="pb-5 text-3xl">Dispatch Resources</h2>
                     <p className="">Dispatchers will know what resources are available to use at the time of an incident.</p>
                 </div>
@@ -115,7 +115,8 @@ export default function Protothon() {
                     <p className="mb-3  font-bold">Research</p>
                     <p className="mb-5">The Seattle Fire Department (SFD) operates 33 fire stations grouped into five battalions, dispatching the nearest available resources based on the nature of the emergency, such as fire suppression, BLS, ALS, technical operations, or Health One services. The EMS department emphasizes cardiac arrest survival through rapid deployment of BLS and ALS resources, aiming for CPR within four minutes and paramedic services within eight minutes of an event.</p>
                     <p className="mb-5">Mobile Integrated Health Program provides enhanced services for frequent 911 callers and individuals with complex social or medical needs, offering immediate response and long-term navigation for medical, mental health, and social support.</p>
-                    <p className="text-3xl font-bold mb-5">Operational challenges: call processing within 60 seconds has dropped significantly, indicating a need for improved unit assignment and dispatch efficiency.</p>
+                    <p className="text-3xl font-bold mb-5">Operational challenges: </p> <p className="mb-5">Call processing within 60 seconds has dropped significantly, indicating a need for improved unit assignment and dispatch efficiency.</p>
+                    <p className="text-3xl font-bold mb-5">Data Utilization Gaps:</p> <p> Limited use of historical data analytics and reporting hinders trend identification, resource planning, and informed decision-making.</p>
                 </div>
             </div>
 
