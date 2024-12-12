@@ -84,9 +84,9 @@ export default function Rxpert() {
 
             <div className="mx-10 lg:mx-auto max-w-5xl py-20 ">
                 <div className="lg:pr-44 pr-0">
-                    <p className="mb-5  font-bold">User Testing Findings</p>
+                    <p className="mb-5  font-bold">User Research and Testing</p>
                     <p className="mb-5">After ensuring that there was interesting in the product, we jumped right into designing it. Our goal was to have a functioning prototype that the professors could use and then give feedback on. We are actively user testing and listed below are some of the main concerns at the moment.</p>
-                    <p className="mb-5">We initially had the chat and form be on the left side for the case generating, where the professor could pick whether they wanted to use the form, or chat with the AI directly to create the case.</p>
+                    <p className="mb-5">We initially had the chat and form be on the left side for the case generating, where the professor could pick whether they wanted to use the form, or chat with the AI directly to create the case. The generated case would then appear on the right side of the screen, including all the information that the professor provided.</p>
                     <p className="text-3xl font-bold mb-5">We quickly noticed that the professors had not realized they were able to switch tabs.</p>
                     <p className="mb-5">After doing some research, we realized that other digital tools don&apos;t give there users different options of doing one task. We decided that we would stick with the form for case generating and chat for case editing after the case has been generated.</p>
                 </div>
