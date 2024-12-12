@@ -88,7 +88,7 @@ export default function Rxpert() {
                     <p className="mb-5">After ensuring that there was interesting in the product, we jumped right into designing it. Our goal was to have a functioning prototype that the professors could use and then give feedback on.</p>
                     <p className="mb-5">We initially had the chat and form be on the left side for the case generating, where the professor could pick whether they wanted to use the form, or chat with the AI directly to create the case. The generated case would then appear on the right side of the screen, including all the information that the professor provided.</p>
                     <p className="text-3xl font-bold mb-5">We quickly noticed that the professors had not realized they were able to switch between the chat and form.</p>
-                    <p className="mb-5">After doing some research, we realized that other digital tools don&apos;t give there users different options of doing one task. We decided that we would stick with the form for case generating and chat for case editing after the case has been generated.</p>
+                    <p className="mb-5">After doing some research, we realized that other digital tools don&apos;t give there users different options of doing one task. After some A/B testing, the form was chosen for case generating and the chat for case editing.</p>
                 </div>
                 <div className="grid grid-cols-1 mt-20 lg:grid-cols-3">
                     <div className="grid justify-items-center lg:justify-items-start -ml-5 col-span-1">
