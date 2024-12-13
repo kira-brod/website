@@ -82,6 +82,15 @@ export default function Rxpert() {
                 </div>
             </div>
 
+            <div className="py-20 mx-10 lg:mx-auto max-w-5xl">
+                <p className="text-3xl mb-5 font-bold">User Personas</p>
+                <p>Our primary users are within pharmaceutical academia, specifically professors and curriculum planners.</p>
+                <div className="grid mt-5 grid-cols-1 lg:grid-cols-2 -ml-5">
+                    <Image src="/img/Karen.png" alt="dashboard" width={600} height={300} />
+                    <Image src="/img/Lisa.png" alt="dashboard" width={600} height={300} />
+                </div>
+            </div>
+
             <div className="mx-10 lg:mx-auto max-w-5xl py-20 ">
                 <div className="lg:pr-44 pr-0">
                     <p className="mb-5  font-bold">User Research and Testing</p>
