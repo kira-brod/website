@@ -66,11 +66,11 @@ export default function Protothon() {
     // }
 
     return (
-        <main className="overflow-x-hidden bg-[#CCE6EB]">
+        <main className="overflow-x-hidden bg-[#d4e9ed]">
 
             <div className={"h-screen grid content-between overflow-x-hidden "}>
                 <div className="">
-                    <NavBar project={true} scrolled={scrolled} color="bg-[#CCE6EB]" />
+                    <NavBar project={true} scrolled={scrolled} color="bg-[#d4e9ed]" />
                 </div>
 
                 <div className="mx-10 lg:mx-auto mt-14 lg:mt-0 max-w-5xl lg:pr-44">
