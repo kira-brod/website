@@ -112,7 +112,7 @@ export default function Protothon() {
 
             <div className="py-20 mx-10 lg:mx-auto max-w-5xl">
                 <p className="text-3xl mb-5 font-bold">User Personas</p>
-                <p>Our primary users are the dispatchers within the Seattle Fire Department as well as any other employees that deal with incident management.</p>
+                <p className="lg:pr-44">Our primary users are the dispatchers within the Seattle Fire Department as well as any other employees that deal with incident management.</p>
                 <div className="grid mt-5 grid-cols-1 lg:grid-cols-2 -ml-5">
                     <Image src="/img/Tom.png" alt="dashboard" width={600} height={300} />
                     <Image src="/img/Larisa.png" alt="dashboard" width={600} height={300} />
