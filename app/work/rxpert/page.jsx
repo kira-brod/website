@@ -36,8 +36,229 @@ export default function Rxpert() {
     }, []);
 
     return (
-        <main className="overflow-x-hidden">
+        <main className="overflow-x-hidden bg-[#E7EFF6]">
+            <div className={"h-screen grid content-between overflow-x-hidden "}>
+                <div className="">
+                    <NavBar project={true} scrolled={scrolled} color="bg-[#E7EFF6]" />
+                </div>
+
+                <div className="mx-10 lg:mx-auto mt-14 lg:mt-0 max-w-5xl lg:pr-44">
+                    <div>
+                        <p className="leading-3  mb-3">Designer | Four members | April 2024 - Present | Figma</p>
+                        <p className=" text-5xl font-bold leading-[3.5rem]">
+                            A digital tool designed to aid professors in generating patient cases.
+                        </p>
+                    </div>
+                    <div className="mt-20 grid grid-cols-1 lg:grid-cols-4">
+                        <p className=" col-span-2">RxPert is a tool meant for professors to use for patient case generating.  A usual patient case takes between one to two hours to create but with the help of RxPert, professors are able to put in a few key pieces of information and have their case be generated for them.</p>
+                    </div>
+                </div>
+                <hr className="landing" />
+            </div>
+
+            <div className="py-20 mx-10 lg:mx-auto max-w-5xl lg:pr-44">
+                <p className="leading-3 font-bold  mb-3">Problem</p>
+                <p className=" lg:mx-0  text-3xl font-bold leading-[2.5rem]">
+                    Current pharmacy professors are spending hours on creating cases or simply reusing old ones because they don&apos;t have the time.
+                </p>
+                <p className="mt-5 ">Originally, I was introduced to the idea of a patient simulator by three students who were looking for a UX designer to design the tool. This would&apos;ve been meant for students who wanted practice with patient interaction. I jumped on the idea because I believed in the purpose of the tool, as well as getting the opportunity to create something new. After doing some informal surveying and talking to professors, we found that there was more of a market for a patient case generator, thus switching courses with our product.</p>
+            </div>
+
+            <div className="diving-in py-20 grid grid-cols-1 mx-10 lg:mx-auto max-w-5xl  md:px-0 md:grid-cols-3 ">
+                <div className="grid content-center  mr-0 md:mr-10 col-span-1">
+                    <div>
+                        <h2 className="pb-5 text-3xl mr-0 lg:mr-10">Goals for Generator</h2>
+                    </div>
+                </div>
+                <div className="place-content-center mt-14 md:mt-0 mr-0 md:ml-10 lg:mr-10 col-span-2">
+                    <h2 className="pb-5 text-3xl">Case Generation</h2>
+                    <p className="pb-12">Professors will be able to generate on-paper cases based on their selected topic, learning objectives, and level. </p>
+                    <h2 className="pb-5 text-3xl">Editable Display</h2>
+                    <p className="pb-12">Intuitive flow to edit the case, whether it be through chat or the case editor for specific parts.</p>
+                    <h2 className="pb-5 text-3xl">Integration</h2>
+                    <p className="">For the future, we are interested in making cases interactable where students can talk with the patient in the case.</p>
+                </div>
+            </div>
+
+            <div className="py-20 mx-10 lg:mx-auto max-w-5xl">
+                <p className="text-3xl mb-5 font-bold">User Personas</p>
+                <p>Our primary users are within pharmaceutical academia, specifically professors and curriculum planners.</p>
+                <div className="grid mt-5 grid-cols-1 lg:grid-cols-2 -ml-5">
+                    <Image src="/img/Karen.png" alt="dashboard" width={600} height={300} />
+                    <Image src="/img/Lisa.png" alt="dashboard" width={600} height={300} />
+                </div>
+            </div>
+
+            <div className="mx-10 lg:mx-auto max-w-5xl py-20 ">
+                <div className="lg:pr-44 pr-0">
+                    <p className="mb-5  font-bold">User Research and Testing</p>
+                    <p className="mb-5">After ensuring that there was interesting in the product, we jumped right into designing it. Our goal was to have a functioning prototype that the professors could use and then give feedback on.</p>
+                    <p className="mb-5">We initially had the chat and form be on the left side for the case generating, where the professor could pick whether they wanted to use the form, or chat with the AI directly to create the case. The generated case would then appear on the right side of the screen, including all the information that the professor provided.</p>
+                    <p className="text-3xl font-bold mb-5">We quickly noticed that the professors had not realized they were able to switch between the chat and form.</p>
+                    <p className="mb-5">After doing some research, we realized that other digital tools don&apos;t give there users different options of doing one task. After some A/B testing, the form was chosen for case generating and the chat for case editing.</p>
+                </div>
+                <div className="grid grid-cols-1 mt-20 lg:grid-cols-3">
+                    <div className="grid justify-items-center lg:justify-items-start -ml-5 col-span-1">
+                        <Link target="_blank" href="https://leetcare.notion.site/01-Dr-Suchy-11f12020111d80e99be2d07cacb59fd3">
+                            <Image className="place-self-center" src="/img/Suchy.png" alt="main profile" width={600} height={700} />
+                        </Link>
+                        {/* <p className="justify-center ml-5 mr-32">This is an example of one of the user interviews we have conducted, click to read more</p> */}
+                    </div>
+                    <div className="col-span-2 lg:ml-16 place-content-center">
+                        <p className="mb-5"> We are actively user testing and listed below are some of the main concerns. Click on the Dr. Suchy file for an example of one of our testing sessions.</p>
+                        <ul className="list-disc ml-4">
+                            <li>Cases take 1-2 hours to create</li>
+                            <li>30 min if editing a pre-existing case</li>
+                            <li>Uncertainty with relying on AI for racial/cultural competency as well as integrating diverse scenarios</li>
+                            <li>Form can be overwhelming but generating through chat may feel like a lot of typing</li>
+                            <li>Stick with form generation and use chat for editing</li>
+                            <li>Questions for the case are basic, tune model </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div className="mx-10 lg:mx-auto max-w-5xl py-20">
+                <h2 className="pb-3 text-3xl">User Flow</h2>
+                <p className="pb-10 mr-0 lg:mr-60">It was important for us to understand how a professor would navigate through our product and creating a user flow allowed us to connect the different interfaces together smoothly.</p>
+                <Image className=" drop-shadow-2xl" src="/img/flow.png" alt="design system" width={1100} height={1100} />
+            </div>
+
+            <div className="mx-10 lg:mx-auto max-w-5xl py-20">
+                <h2 className="text-3xl">Lo-Fi and System Design</h2>
+                <div className="grid grid-cols-1 lg:grid-cols-9 place-content-start">
+                    <div className="col-span-5 -ml-5">
+                        <Image src="/img/lofi.png" alt="lofi" width={600} height={300} />
+                    </div>
+                    <div className="col-span-4 -ml-5">
+                        <Image src="/img/DS-rxpert.png" alt="design system" width={500} height={300} />
+                    </div>
+                </div>
+            </div>
+
+            <div className="mx-10 lg:mx-auto max-w-5xl py-20">
+                <div className="grid grid-cols-1 lg:grid-cols-3">
+                    <div className="col-span-2 -ml-5">
+                        <Image src="/img/dash.png" alt="dashboard rxpert" width={600} height={300} />
+                    </div>
+                    <div className="col-span-1 mt-10 lg:mt-0 place-content-center">
+                        <p className="text-3xl mb-5 font-bold">Access everything you need from one screen.</p>
+                        <p>Whether you want to generate, edit, or view a case, the dashboard provides quick and easy access for all the desired tasks.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div className="mx-10 lg:mx-auto max-w-5xl py-20">
+                <div className="grid grid-cols-1 lg:grid-cols-3">
+                    <div className="col-span-2 flex -ml-5 lg:hidden justify-end">
+                        <Image src="/img/generator.png" alt="dashboard" width={600} height={300} />
+                    </div>
+                    <div className="mt-10 col-span-1 place-content-center">
+                        <p className="text-3xl mb-5 font-bold">Fill out the form and generate your case.</p>
+                        <p>Input the case information and  have it be available to use within a few seconds.</p>
+                    </div>
+                    <div className="col-span-2 -ml-5 lg:flex justify-end hidden">
+                        <Image src="/img/generator.png" alt="dashboard" width={600} height={300} />
+                    </div>
+                </div>
+            </div>
+
+            <div className="mx-10 lg:mx-auto max-w-5xl py-20">
+                <div className="grid grid-cols-1 lg:grid-cols-3">
+                    <div className="col-span-2 -ml-5">
+                        <Image src="/img/CommunityHub.png" alt="Community hub" width={600} height={300} />
+                    </div>
+                    <div className="col-span-1 mt-10 place-content-center">
+                        <p className="text-3xl mb-5 font-bold">Share your cases and interact with others.</p>
+                        <p>Upload your cases for feedback and have access to other’s cases to use in your curriculum.</p>
+                        <p className="mt-10">* Received feedback that professors would not want to use their time to leave feedback/interact with cases - this feature was put on hold</p>
+                    </div>
+                </div>
+            </div>
+
+            <div className="py-20 mx-10 lg:mx-auto max-w-5xl">
+                <p className="text-3xl mb-5 font-bold">Edit your case with the help of AI.</p>
+                <p>Click the icon in the corner after the case is generated and edit it till you are happy with the result.</p>
+                <div className="grid mt-5 grid-cols-1 lg:grid-cols-2 -ml-5">
+                    <Image src="/img/chat1.png" alt="dashboard" width={600} height={300} />
+                    <Image src="/img/chat2.png" alt="dashboard" width={600} height={300} />
+                </div>
+            </div>
+
+
+
+            <div className="diving-in py-20 grid grid-cols-1 mx-10  lg:mx-auto max-w-5xl md:px-0 md:grid-cols-2 justify-items-center">
+                <div className="grid content-center mr-0 md:mr-14">
+                    <div className="">
+                        <h2 className="pb-5 text-3xl">Future with RxPert</h2>
+                        <p className="pb-3">We are looking forward to release RxPert out to the public within the next couple months.</p>
+                        <p className="">Currently, we are refining the user experience of creating and editing the case. We want to ensure that it is intuitive for professors.</p>
+                        <div className="flex justify-start items-center mt-16">
+                            <Link target="_blank" className="hover:underline" href="https://www.rx-pert.com/">Try RxPert</Link>
+                            <ArrowUpRightIcon className="w-5 h-5 ml-2" />
+                        </div>
+                    </div>
+                </div>
+                <div className="place-content-center mt-14 md:mt-0 mr-0 lg:mr-10">
+                    <h2 className="pb-5 text-3xl">Users/User Testing</h2>
+                    <p className="pb-3">After some discussion with one of the pharmacy professors at UW, they offered to test run RxPert for Fall Quarter 2024. This will be our first official user and we are excited to see RxPert come to life.</p>
+                    <p className="pb-12">After finals season, we will be sending out surveys to professors to track how they edit cases. We will also be providing them with a case to edit, being able to see what changes the most often versus what doesn&apos;t change at all.</p>
+                    <h2 className="pb-5 text-3xl">Optimization</h2>
+                    <p className="">It is always important to keep testing your design and updating it for better usability. As new interfaces will continue to roll out, we will continue to test them and work the feedback into our design.</p>
+                </div>
+            </div>
+
+            {/* 
+            <video
+                ref={videoRef}
+                loop={true}
+                className="size-full select-none rounded-lg object-cover"
+                width={2968}
+                height={1516}
+            >
+                <source src="/demo.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+            </video> */}
+
+            <div className="py-20 mx-10 lg:mx-auto max-w-5xl lg:pr-44">
+                <p className="leading-3 font-bold mb-3">Personal Reflection</p>
+                <p className="text-3xl font-bold leading-[2.5rem]">
+                    Taking time to understand the user, not only about how they navigate the platform, but who they are as a person.
+                </p>
+                <p className="mt-5">One of our biggest struggles for this project has been user testing. The professors’ priority is their class and they often have little time to give elsewhere. From the limited user testing that has been conducted, we often find ourselves needing to make decisions on the user experience by way of extrapolating based on what was said by the professor. By getting to know the professors outside of their classroom selves, I believe that that would help us gain more insight on their thought processes since introspection can often be flawed.</p>
+            </div>
+
             <div className="">
+                <hr className="landing" />
+                <div className="mx-auto max-w-5xl py-20">
+                    <div className="grid grid-cols-1 lg:grid-cols-2">
+                        <div className="justify-items-center lg:justify-items-start lg:place-content-center">
+                            <p className="text-4xl font-bold">Keep in touch!</p>
+                            <div className="flex">
+                                <div className="flex justify-start items-center py-2">
+                                    <Link className="hover:underline" href="mailto:kira.b@outlook.com">Email</Link>
+                                    <ArrowUpRightIcon className="w-5 h-5 ml-2" />
+                                </div>
+                                <div className="flex justify-start items-center py-2 pl-5">
+                                    <Link className="hover:underline" target="_blank" href="https://www.linkedin.com/in/kira-brodsky-90a11a275/">LinkedIn</Link>
+                                    <ArrowUpRightIcon className="w-5 h-5 ml-2" />
+                                </div>
+                            </div>
+                        </div>
+                        <div className="flex justify-center mt-10 lg:mt-0">
+                            <Image className="dr" src="/img/footer.png" alt="Rxpert home page" width={200} height={200} />
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className={" grid justify-center"}>
+                <p className="text-[#999999] pb-3">made @ home</p>
+            </div>
+
+
+
+            {/* <div className="">
                 <NavBar project={true} scrolled={scrolled} />
             </div>
             <div className="hero-text grid grid-cols-1 lg:grid-cols-3 mt-2 mx-auto space-y-8 max-w-6xl pt-8 px-4 pb-4 md:px-0 md:pb-0">
@@ -77,7 +298,6 @@ export default function Rxpert() {
                     <p className="pb-3 md:px-24 text-center">Current pharmacy students at the University of Washington have struggled to pass their capstones, which are in-person tests with patient actors simulating a pharmacy setting. Since the only time students were able to mimic the pharmacy setting was during the capstones, they were not used to leading the interactions. Students were also given on-paper cases but only had a limited amount.</p>
                 </div>
             </div>
-            {/* mx-auto space-y-8 max-w-6xl pt-8 px-4 pb-4 md:px-0 md:pb-0 */}
             <div className="inspiration  py-20 grid grid-cols-1  bg-[#0B1338]">
                 <div className="mt-14 md:mt-0 md:ml-5 lg:ml-0 place-content-center">
                     <div className="mx-auto max-w-6xl pt-8 px-4 pb-4 md:px-0 md:pb-0">
@@ -106,7 +326,7 @@ export default function Rxpert() {
                     <Image className=" drop-shadow-2xl" src="/img/flow.png" alt="design system" width={1100} height={1100} />
                 </div>
             </div>
-            {/* <hr className=" rxpert-hr" /> */}
+            <hr className=" rxpert-hr" />
             <div className="bg-[#DDE5EC] py-20">
                 <div className="diving-in grid grid-cols-1 mx-auto  max-w-6xl px-4 pb-4 md:px-0 md:pb-0  md:grid-cols-2 justify-items-center">
                     <div className="place-content-center  mr-0 mb-10 md:mb-0 md:mr-10 lg:mr-0">
@@ -125,7 +345,7 @@ export default function Rxpert() {
             <div className="py-20">
                 <div className="design-system mx-auto  max-w-6xl  px-4 pb-4 md:px-0 md:pb-0 grid grid-cols-1  md:grid-cols-2 justify-items-center">
                     <div className="justify-center mt-14 md:mt-0 md:ml-5 lg:ml-0">
-                        {/* <Image className="place-self-center" src="/img/chat-og.png" alt="main profile" width={300} height={500} /> */}
+                        <Image className="place-self-center" src="/img/chat-og.png" alt="main profile" width={300} height={500} />
                         <Image className="place-self-center" src="/img/chat.png" alt="design system" width={700} height={700} />
                     </div>
                     <div className="place-content-center ml-0 md:ml-10 mt-10 md:mt-0">
@@ -170,7 +390,7 @@ export default function Rxpert() {
                 <div className="mt-14 md:mt-0 md:ml-5 lg:ml-0 place-content-center">
                     <div className="mx-auto max-w-6xl px-4 pb-4 md:px-0 md:pb-0">
                         <h2 className="pb-1 text-[#8DA7BE] text-sm">Revised Goals</h2>
-                        {/* <div className="mx-auto max-w-6xl px-4 pb-4 md:px-0 md:pb-0"> */}
+                        <div className="mx-auto max-w-6xl px-4 pb-4 md:px-0 md:pb-0">
                         <div className="grid grid-cols-1 md:grid-cols-3 justify-items-center ">
                             <div className="mr-16">
                                 <h2 className="pb-5 text-white">Case Generation</h2>
@@ -189,7 +409,7 @@ export default function Rxpert() {
                 </div>
             </div>
             <div className="inspiration mx-auto max-w-6xl px-4 md:px-0  py-20 grid grid-cols-1 justify-items-center">
-                {/* <h2 className="pb-1 text-[#8DA7BE] text-sm">Design</h2> */}
+                <h2 className="pb-1 text-[#8DA7BE] text-sm">Design</h2>
                 <h2 className="pb-3">Profile Page</h2>
                 <p className="pb-5 md:px-24 text-center">Initially we had  a different profile design where one’s profile would link to a new page. After some discussion we redesigned the profile to have it be a pop-up and when a user wanted to edit their profile, then they would be directed to a new page.</p>
                 <div className="grid grid-cols-1 md:grid-cols-2">
@@ -202,11 +422,11 @@ export default function Rxpert() {
             </div>
             <div className="design-system mx-auto max-w-6xl px-4 md:px-0 py-20 grid grid-cols-1  md:grid-cols-2 justify-items-center">
                 <div className="justify-center md:ml-5 lg:ml-0">
-                    {/* <Image className="place-self-center" src="/img/chat-og.png" alt="main profile" width={300} height={500} /> */}
+                    <Image className="place-self-center" src="/img/chat-og.png" alt="main profile" width={300} height={500} />
                     <Image className="place-self-center" src="/img/dashboard.png" alt="design system" width={700} height={700} />
                 </div>
                 <div className="place-content-center mt-10 md:mt-0 ml-0 md:ml-10">
-                    {/* <h2 className="pb-1 text-[#8DA7BE] text-sm">Design</h2> */}
+                    <h2 className="pb-1 text-[#8DA7BE] text-sm">Design</h2>
                     <h2 className="pb-5">Dashboard</h2>
                     <p className="pb-3">Our design started off with developing  a chat screen where two thirds of the area would be taken up by that chat and the other third will have information about the patient, the rubric, and the grading based off that rubric.</p>
                     <p>Our initial design had the rubric design be more reminiscent of an actual rubric but we were having trouble figuring out how to do that and decided to go with Markdown instead. Comparing the two design ideas, I think that this one turned out sleeker.</p>
@@ -225,7 +445,7 @@ export default function Rxpert() {
             </div>
             <div className="design-system  mx-auto max-w-6xl px-4 md:px-0  py-20 grid grid-cols-1 md:grid-cols-2 justify-items-center">
                 <div className="place-content-center ml-0 md:mr-10">
-                    {/* <h2 className="pb-1 text-[#8DA7BE] text-sm">Design</h2> */}
+                    <h2 className="pb-1 text-[#8DA7BE] text-sm">Design</h2>
                     <h2 className="pb-5">Edit Generated Case</h2>
                     <p className="pb-3">We wanted the generated cases to be editable for professors, allowing them to tweak any details to fit their goal.</p>
                     <p>For the coding side of things, it was communicated to me that it would be easier to edit if the different parts of the case were broken up, hence the cards for every section.</p>
@@ -236,7 +456,7 @@ export default function Rxpert() {
             </div>
             <div className="bg-[#DDE5EC]">
                 <div className="inspiration py-20 grid grid-cols-1  mx-auto max-w-6xl px-4 md:px-0 justify-items-center">
-                    {/* <h2 className="pb-1 text-[#8DA7BE] text-sm">Design</h2> */}
+                    <h2 className="pb-1 text-[#8DA7BE] text-sm">Design</h2>
                     <h2 className="pb-3">RxPert Tutorial</h2>
                     <p className="pb-10 md:px-24 text-center">After two of our team members conducted user testing with one of the University of Washington’s pharmacy professors, they noticed that the professor struggled to figure out what to do after the case was generated. After a team discussion we decided that having a tutorial would be beneficial for out users.</p>
                     <EmblaCarousel slides={SLIDES} options={OPTIONS} />
@@ -257,7 +477,7 @@ export default function Rxpert() {
                     <p className="pb-12">It is always important to keep testing your design and updating it for better usability. As new interfaces will continue to roll out, we will continue to test them and work the feedback into our design.</p>
                 </div>
             </div>
-            <Footer />
+            <Footer /> */}
         </main >
     )
 }
