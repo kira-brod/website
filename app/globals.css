@@ -71,6 +71,12 @@ p {
   
 }
 
+.landing {
+  border-color: #cfcdcd;
+  border-width: 1px;
+  
+}
+
 .rxpert-hr {
   border-color: #8DA7BE;
   border-width: 1px;
@@ -269,9 +275,13 @@ h2 {
 }
 
 .kb {
-  color: #D9D3D3;
+  color: #868686;
   font-weight: 800;
   font-size: 1.5rem;
+}
+
+section {
+  scroll-behavior: smooth;
 }
 
 .projects-scroll::-webkit-scrollbar {

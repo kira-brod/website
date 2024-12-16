@@ -8,7 +8,7 @@ export default function NavBar(props) {
 
     const [isOpen, setIsOpen] = useState(false);
 
-    const {project, scrolled} = props;
+    const {project, scrolled, color} = props;
 
     const handleClick = (event) => {
         if (!isOpen) {
@@ -19,7 +19,7 @@ export default function NavBar(props) {
     }
 
     return (
-        <div className={(project ? 'fixed z-10 ' : '') + "justify-between py-2 w-screen bg-white mx-auto px-10 " + (isOpen ? 'flex-col' : 'md:flex') + (scrolled > 0 ? ' drop-shadow-md' : '') }>
+        <div className={(project ? 'fixed z-10 ' : '') + "justify-between py-2 w-screen mx-auto px-10 " + (isOpen ? 'flex-col' : 'md:flex') + (scrolled > 0 ? ' drop-shadow-md' : '') + " " + color }>
             <div className="flex justify-between items-center">
                 <Link href="/" className="kb">kb.</Link>
                 <button onClick={handleClick}>
@@ -27,8 +27,8 @@ export default function NavBar(props) {
                 </button>
             </div>
             <div className={"md:flex md:flex-row items-center justify-start md:space-x-1 pb-3 md:pb-0 " + (isOpen ? 'flex-col' : 'hidden')}>
-                <Link href="/work" className={"block " + (isOpen ? '' : 'pl-6')}>WORK</Link>
-                <Link href="/personal" className={"block " + (isOpen ? '' : 'pl-6')}>PERSONAL</Link>
+                <Link href="/#work" className={"block " + (isOpen ? '' : 'pl-6')}>WORK</Link>
+                <Link href="/personal" className={"block " + (isOpen ? '' : 'pl-6')}>ABOUT ME</Link>
             </div>
         </div>
     )

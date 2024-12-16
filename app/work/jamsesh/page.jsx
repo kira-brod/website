@@ -1,6 +1,5 @@
 'use client'
 import NavBar from "@/app/components/NavBar"
-import Container from "@/app/components/Container"
 import Image from "next/image"
 import { Footer } from "@/app/components/Footer"
 import { useState, useEffect } from "react"
@@ -26,7 +25,7 @@ export default function JamSesh() {
     return (
         <div className="overflow-x-hidden">
             <div className="">
-                <NavBar project={true} scrolled={scrolled} />
+                <NavBar project={true} scrolled={scrolled} color="bg-white" />
             </div>
             <div className="hero-text grid grid-cols-1 lg:grid-cols-3 mx-auto space-y-8 max-w-6xl pt-8 px-4 pb-4 md:px-0 md:pb-0 mt-2">
                 <div className="col-span-2">
