@@ -1,17 +1,34 @@
+'use client'
 import NavBar from "@/app/components/NavBar"
 import Container from "@/app/components/Container"
 import Image from "next/image"
 import { Footer } from "@/app/components/Footer"
+import { useState, useEffect } from "react"
 
 
 export default function JamSesh() {
 
+    const [scrolled, setScrolled] = useState(0);
+
+    useEffect(() => {
+        const handleScroll = (event) => {
+            // console.log('Page scrolled:', window.pageYOffset);
+            setScrolled(window.pageYOffset);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+
+        };
+    }, []);
     return (
         <div className="overflow-x-hidden">
             <div className="">
-                <NavBar />
+                <NavBar project={true} scrolled={scrolled} />
             </div>
-            <div className="hero-text grid grid-cols-1 lg:grid-cols-3 px-20">
+            <div className="hero-text grid grid-cols-1 lg:grid-cols-3 mx-auto space-y-8 max-w-6xl pt-8 px-4 pb-4 md:px-0 md:pb-0 mt-2">
                 <div className="col-span-2">
                     <div className="grid grid-rows-2">
                         <div className="py-10">
@@ -35,7 +52,7 @@ export default function JamSesh() {
             <div className="buffer bg-[#320F55] shadow-inner">
                 <Image className="shadow-inner" src="/img/Design-buffer.png" alt="design-buffer" width={0} height={0} sizes="100vw" style={{ width: '100%', height: 'auto' }} />
             </div>
-            <div className="inspiration px-32 py-20 grid grid-cols-1 md:grid-cols-2 justify-items-center">
+            <div className="inspiration mx-auto max-w-6xl px-4 md:px-0  py-20 grid grid-cols-1 md:grid-cols-2 justify-items-center">
                 <div className="justify-center">
                     <Image className="place-self-center" src="/img/Airbuds.png" alt="airbuds app cover" width={400} height={300} />
                 </div>
@@ -70,7 +87,7 @@ export default function JamSesh() {
                     </div>
                 </div>
             </div> */}
-            <div className="design-system px-32  py-20 grid grid-cols-1 md:grid-cols-2 justify-items-center">
+            <div className="design-system mx-auto max-w-6xl px-4 md:px-0  py-20 grid grid-cols-1 md:grid-cols-2 justify-items-center">
                 <div className="place-content-center">
                     <h2 className="pb-5">Design System</h2>
                     <p className="pb-3">During the process of my past designs, I have come to notice that I like to change the  way the design looks based on how I think it should look like on that display, without consulting what the rest of the design looks like.</p>
@@ -81,8 +98,8 @@ export default function JamSesh() {
                     <Image className="place-self-center" src="/img/Design-System.png" alt="design system" width={400} height={300} />
                 </div>
             </div>
-            <hr className=" jamsesh-hr mx-44"/>
-            <div className="diving-in px-32  py-20 grid grid-cols-1 md:grid-cols-2 justify-items-center">
+            <hr className=" jamsesh-hr" />
+            <div className="diving-in mx-auto max-w-6xl px-4 md:px-0 py-20 grid grid-cols-1 md:grid-cols-2 justify-items-center">
                 <div className="justify-center">
                     <Image className="place-self-center" src="/img/Main-profile.png" alt="main profile" width={400} height={300} />
                 </div>
@@ -92,25 +109,29 @@ export default function JamSesh() {
                     <p>After finishing the onboarding and the login, I moved on to the profile page. This proved to be a challenge and I went through a few redesigns along the way. I struggled with figuring out how to display an individual’s song of the day as well as their shared statistics. In the end, after many iterations, I ended up with a version that I was happy with but could see it changing in the future.</p>
                 </div>
             </div>
-            <div className="home px-32 py-20 grid grid-cols-1 md:grid-cols-2 justify-items-center  bg-[#320F55]">
-                <div className="place-content-center mr-10">
-                    <h2 className="pb-5 text-white">Home Page Design</h2>
-                    <p className="pb-3 text-white">After completing the profile page, I moved on to the general home page where users would be able to see what their friends are listening to. Just as the profile page, this home page saw a lot of redesigns.  </p>
-                    <p className="pb-3 text-white">Initially, I wanted to display songs based off their genre with an image of the album and the record peaking out from behind it. I played around with different card designs and settled on one without the vinyl with just the album cover.</p>
-                    <p className="text-white">Last minute, I was thinking about the app BeReal and how the pictures are displayed one by one and decided to try that route. After generating the design, I liked it more than I thought and decided to stick with it. Still not sure on how I feel about the stark white navbar so that is subject to change in the future.</p>
-                </div>
-                <div className="justify-center grid grid-cols-2 mt-14 md:mt-0 md:ml-5 lg:ml-0">
-                    <div>
-                        <p className=" text-white">Original</p>
-                        <Image className="place-self-center" src="/img/HomeOG.png" alt="home og" width={300} height={300} />
-                    </div>
-                    <div>
-                        <p className="text-white ">Updated</p>
-                        <Image className="place-self-center" src="/img/HomeNew.png" alt="home new" width={300} height={300} />
+            <div className=" bg-[#320F55]">
+                <div className="mx-auto max-w-6xl px-4 md:px-0">
+                    <div className="home py-20 grid grid-cols-1 md:grid-cols-2 justify-items-center">
+                        <div className="place-content-center mr-10">
+                            <h2 className="pb-5 text-white">Home Page Design</h2>
+                            <p className="pb-3 text-white">After completing the profile page, I moved on to the general home page where users would be able to see what their friends are listening to. Just as the profile page, this home page saw a lot of redesigns.  </p>
+                            <p className="pb-3 text-white">Initially, I wanted to display songs based off their genre with an image of the album and the record peaking out from behind it. I played around with different card designs and settled on one without the vinyl with just the album cover.</p>
+                            <p className="text-white">Last minute, I was thinking about the app BeReal and how the pictures are displayed one by one and decided to try that route. After generating the design, I liked it more than I thought and decided to stick with it. Still not sure on how I feel about the stark white navbar so that is subject to change in the future.</p>
+                        </div>
+                        <div className="justify-center grid grid-cols-2 mt-14 md:mt-0 md:ml-5 lg:ml-0">
+                            <div>
+                                <p className=" text-white">Original</p>
+                                <Image className="place-self-center" src="/img/HomeOG.png" alt="home og" width={300} height={300} />
+                            </div>
+                            <div>
+                                <p className="text-white ">Updated</p>
+                                <Image className="place-self-center" src="/img/HomeNew.png" alt="home new" width={300} height={300} />
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div className="diving-in px-32 py-20 grid grid-cols-1 md:grid-cols-2  justify-items-center">
+            <div className="diving-in mx-auto max-w-6xl px-4 md:px-0 py-20 grid grid-cols-1 md:grid-cols-2  justify-items-center">
                 <div className="justify-center">
                     <Image className="place-self-center" src="/img/Song-posting.png" alt="song posting" width={400} height={300} />
                 </div>
