@@ -24,49 +24,6 @@ const SLIDES = [{ image: "/img/tutorial1.png" },
 export default function Rxpert() {
 
     const [scrolled, setScrolled] = useState(0);
-    // const [inView, setInView] = useState(false);
-    // const videoRef = useRef <HTMLVideoElement>(null);
-    // const inViewRef = useRef(inView);
-    // const targetRef = useRef(null);
-
-    // test
-
-    // useEffect(() => {
-    //     inViewRef.current = inView;
-    //   }, [inView]);
-    
-    //   useEffect(() => {
-    //     const observer = new IntersectionObserver(
-    //       (entries) => {
-    //         const entry = entries[0];
-    //         if (entry.isIntersecting && !inViewRef.current) {
-    //           setInView(true);
-    //           if (videoRef.current) {
-    //             videoRef.current.play();
-    //           }
-    //         } else if (!entry.isIntersecting && inViewRef.current) {
-    //           setInView(false);
-    //           if (videoRef.current) {
-    //             videoRef.current.pause();
-    //           }
-    //         }
-    //       },
-    //       {
-    //         threshold: 0.75,
-    //       },
-    //     );
-    
-    //     const target = targetRef.current;
-    //     if (target) {
-    //       observer.observe(target);
-    //     }
-    
-    //     return () => {
-    //       if (target) {
-    //         observer.unobserve(target);
-    //       }
-    //     };
-    //   }, []);
 
     useEffect(() => {
         const handleScroll = (event) => {
