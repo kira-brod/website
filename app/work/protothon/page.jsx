@@ -5,7 +5,7 @@ import Link from "next/link"
 import { motion } from "framer-motion"
 // import { Carousel } from "@coreui/coreui"
 // import { useRef } from "react"
-import {ArrowUpRightIcon} from "@heroicons/react/24/outline"
+import { ArrowUpRightIcon } from "@heroicons/react/24/outline"
 import EmblaCarousel from "@/app/components/EmblaCarousel"
 import { ArrowRightIcon } from "@heroicons/react/24/outline"
 import { useEffect, useState } from "react"
@@ -118,12 +118,16 @@ export default function Protothon() {
             </div>
 
             <div className="mx-10 lg:mx-auto max-w-5xl py-20 ">
-                <div className="lg:pr-44 pr-0">
-                    <p className="mb-3  font-bold">Research</p>
-                    <p className="mb-5">The Seattle Fire Department (SFD) operates 33 fire stations grouped into five battalions, dispatching the nearest available resources based on the nature of the emergency, such as fire suppression, BLS, ALS, technical operations, or Health One services. The EMS department emphasizes cardiac arrest survival through rapid deployment of BLS and ALS resources, aiming for CPR within four minutes and paramedic services within eight minutes of an event.</p>
-                    <p className="mb-5">Mobile Integrated Health Program provides enhanced services for frequent 911 callers and individuals with complex social or medical needs, offering immediate response and long-term navigation for medical, mental health, and social support.</p>
-                    <p className="text-3xl font-bold mb-5">Operational challenges: </p> <p className="mb-5">Call processing within 60 seconds has dropped significantly, indicating a need for improved unit assignment and dispatch efficiency.</p>
-                    <p className="text-3xl font-bold mb-5">Data Utilization Gaps:</p> <p> Limited use of historical data analytics and reporting hinders trend identification, resource planning, and informed decision-making.</p>
+                <div className="grid lg:grid-cols-5 grid-cols-1">
+                    <div className="col-span-3 content-center pr-10">
+                        <p className="mb-3  font-bold">Research</p>
+                        <p className="mb-5">The Seattle Fire Department (SFD) operates 33 fire stations grouped into five battalions, dispatching the nearest available resources based on the nature of the emergency, such as fire suppression, BLS, ALS, technical operations, or Health One services. The EMS department emphasizes cardiac arrest survival through rapid deployment of BLS and ALS resources, aiming for CPR within four minutes and paramedic services within eight minutes of an event.</p>
+                        <p className="mb-5">Mobile Integrated Health Program provides enhanced services for frequent 911 callers and individuals with complex social or medical needs, offering immediate response and long-term navigation for medical, mental health, and social support.</p>
+                    </div>
+                    <div className="col-span-2">
+                        <p className="text-3xl font-bold mb-5">Operational challenges: </p> <p className="mb-10">Call processing within 60 seconds has dropped significantly, indicating a need for improved unit assignment and dispatch efficiency.</p>
+                        <p className="text-3xl font-bold mb-5">Data Utilization Gaps:</p> <p> Limited use of historical data analytics and reporting hinders trend identification, resource planning, and informed decision-making.</p>
+                    </div>
                 </div>
             </div>
 
@@ -157,7 +161,7 @@ export default function Protothon() {
                     </div>
                 </div>
             </div>
-            
+
             <div className="mx-10 lg:mx-auto max-w-5xl py-20">
                 <div className="grid grid-cols-1 lg:grid-cols-3">
                     <div className="col-span-2 flex -ml-5 lg:hidden justify-end">
@@ -209,7 +213,7 @@ export default function Protothon() {
             <div className="py-20 mx-10 lg:mx-auto max-w-5xl lg:pr-44">
                 <p className="leading-3 font-bold mb-3">Personal Reflection</p>
                 <p className="text-3xl font-bold leading-[2.5rem]">
-                In the future, spending more time understanding the process of operations, either through user testing or comparative analysis.
+                    In the future, spending more time understanding the process of operations, either through user testing or comparative analysis.
                 </p>
                 <p className="mt-5">Going into the design process, none of us were well versed in what a dispatcher needs in order to successfully track and attend to an incident. When doing research, there wasn&apos;t much information regarding the dispatching process, forcing us to make decisions based on what we thought the dispatcher might need. If we had more resources and time, holding interviews with dispatchers would have helped us better understand what to include in the tool through methods such as affinity mapping.</p>
             </div>
