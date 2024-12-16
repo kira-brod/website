@@ -1,6 +1,5 @@
 import NavBar from "../components/NavBar"
 import { ProjectCards } from "../components/ProjectCardList"
-import Container from "../components/Container"
 import Image from "next/image"
 import { ArrowUpRightIcon } from "@heroicons/react/24/outline"
 import Link from "next/link"

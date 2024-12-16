@@ -1,5 +1,4 @@
 'use client'
-import Container from "./components/Container"
 import NavBar from "./components/NavBar"
 import ProjectCard from "./components/ProjectCardList"
 import { ProjectCards } from "./components/ProjectCardList"
@@ -234,11 +233,9 @@ export default function Home() {
       {/* <NavBar /> */}
       <Hero />
       {/* </header> */}
-      {/* <Container> */}
       {/* <ProjectCard /> */}
       {/* <ProjectCards projects={projects} /> */}
       {/* <hr /> */}
-      {/* </Container> */}
       {/* <Footer /> */}
     </main>
   )
