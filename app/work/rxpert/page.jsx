@@ -5,6 +5,7 @@ import Link from "next/link"
 import { Footer } from "@/app/components/Footer"
 import { motion } from "framer-motion"
 import { useEffect, useState } from "react"
+import { ArrowUpRightIcon } from "@heroicons/react/24/outline"
 import EmblaCarousel from "@/app/components/EmblaCarousel"
 
 const OPTIONS = { loop: true }
