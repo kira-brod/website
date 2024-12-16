@@ -5,9 +5,11 @@ import Image from "next/image"
 import Link from "next/link"
 import { Footer } from "@/app/components/Footer"
 import { motion } from "framer-motion"
-import { useEffect, useState } from "react"
+import { useEffect, useState, useRef } from "react"
 import EmblaCarousel from "@/app/components/EmblaCarousel"
 import { ArrowUpRightIcon } from "@heroicons/react/24/outline"
+
+
 
 const OPTIONS = { loop: true }
 const SLIDE_COUNT = 5
@@ -22,6 +24,47 @@ const SLIDES = [{ image: "/img/tutorial1.png" },
 export default function Rxpert() {
 
     const [scrolled, setScrolled] = useState(0);
+    // const [inView, setInView] = useState(false);
+    // const videoRef = useRef <HTMLVideoElement>(null);
+    // const inViewRef = useRef(inView);
+    // const targetRef = useRef(null);
+
+    // useEffect(() => {
+    //     inViewRef.current = inView;
+    //   }, [inView]);
+    
+    //   useEffect(() => {
+    //     const observer = new IntersectionObserver(
+    //       (entries) => {
+    //         const entry = entries[0];
+    //         if (entry.isIntersecting && !inViewRef.current) {
+    //           setInView(true);
+    //           if (videoRef.current) {
+    //             videoRef.current.play();
+    //           }
+    //         } else if (!entry.isIntersecting && inViewRef.current) {
+    //           setInView(false);
+    //           if (videoRef.current) {
+    //             videoRef.current.pause();
+    //           }
+    //         }
+    //       },
+    //       {
+    //         threshold: 0.75,
+    //       },
+    //     );
+    
+    //     const target = targetRef.current;
+    //     if (target) {
+    //       observer.observe(target);
+    //     }
+    
+    //     return () => {
+    //       if (target) {
+    //         observer.unobserve(target);
+    //       }
+    //     };
+    //   }, []);
 
     useEffect(() => {
         const handleScroll = (event) => {
@@ -213,6 +256,18 @@ export default function Rxpert() {
                     <p className="">It is always important to keep testing your design and updating it for better usability. As new interfaces will continue to roll out, we will continue to test them and work the feedback into our design.</p>
                 </div>
             </div>
+           
+{/* 
+            <video
+                ref={videoRef}
+                loop={true}
+                className="size-full select-none rounded-lg object-cover"
+                width={2968}
+                height={1516}
+            >
+                <source src="/demo.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+            </video> */}
 
             <div className="py-20 mx-10 lg:mx-auto max-w-5xl lg:pr-44">
                 <p className="leading-3 font-bold mb-3">Personal Reflection</p>
