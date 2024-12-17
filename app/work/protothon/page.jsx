@@ -64,28 +64,30 @@ export default function Protothon() {
     // }
 
     return (
-        <main className="overflow-x-hidden bg-[#d4e9ed]">
+        <main className="overflow-x-hidden bg-[#ffffff]">
 
-            <div className={"h-screen grid content-between overflow-x-hidden "}>
+            <div className={" grid content-between overflow-x-hidden "}>
                 <div className="">
-                    <NavBar project={true} scrolled={scrolled} color="bg-[#d4e9ed]" />
+                    <NavBar project={true} scrolled={scrolled} color="bg-[#ffffff]" />
                 </div>
 
-                <div className="mx-10 lg:mx-auto mt-14 lg:mt-0 max-w-5xl lg:pr-44">
-                    <div>
-                        <p className="leading-6 lg:leading-3  mb-3">Designer | Four members | Protothon - May 4th-5th 2024 | Figma</p>
-                        <p className=" text-5xl font-bold leading-[3.5rem]">
-                            A web app designed to aid the SFD with resource allocation.
-                        </p>
-                    </div>
-                    <div className="mt-20 grid grid-cols-1 lg:grid-cols-4">
-                        <p className=" col-span-2">For the Protothon, my team chose to go with the Enterprise track. Our task was to design a platform that aims to streamline communication, resource management, and emergency response coordination for the Seattle Fire Department.</p>
+                <div className="bg-gradient-to-r from-[#4A93E1]/25 from-10% via-[#547EE9]/50 via-30% to-[#859ACD]/25 to-90%  mt-16  rounded-2xl mx-10">
+                    <div className="mx-10 lg:mx-auto mt-14 lg:mt-0 max-w-5xl lg:pr-44">
+                        <div>
+                            <p className="leading-6 lg:leading-3 mt-20 mb-3">Designer | Four members | Protothon - May 4th-5th 2024 | Figma</p>
+                            <p className=" text-5xl font-bold leading-[3.5rem]">
+                                A web app designed to aid the SFD with resource allocation.
+                            </p>
+                        </div>
+                        <div className="mt-20 mb-20 grid grid-cols-1 lg:grid-cols-4">
+                            <p className=" col-span-2">For the Protothon, my team chose to go with the Enterprise track. Our task was to design a platform that aims to streamline communication, resource management, and emergency response coordination for the Seattle Fire Department.</p>
+                        </div>
                     </div>
                 </div>
-                <hr className="landing" />
+                {/* <hr className="landing" /> */}
             </div>
 
-            <div className="py-20 mx-10 lg:mx-auto max-w-5xl lg:pr-44">
+            <div className="py-16 mx-10 lg:mx-auto max-w-5xl lg:pr-44">
                 <p className="leading-3 font-bold  mb-3">Problem</p>
                 <p className=" lg:mx-0  text-3xl font-bold leading-[2.5rem]">
                     The Seattle Fire Department is experiencing an increase in caller volume and incidents and need a way to dispatch resources.
@@ -94,21 +96,32 @@ export default function Protothon() {
                 <p className="mt-5 ">A concerning trend they have begun to see is an increase in cardiac arrests, which appears to be correlated with the rise in suspected overdoses. In all, they sent resources on a record-setting 111,319 responses in 2023 – a nearly five percent increase over the prior year. Dispatchers need a way to track their resources while making sure the proper supplies are reaching each incident.</p>
             </div>
 
-            <div className="diving-in py-20 grid grid-cols-1 mx-10 lg:mx-auto max-w-5xl  md:px-0 md:grid-cols-3 ">
-                <div className="grid content-center  mr-0 md:mr-10 col-span-1">
-                    <div>
-                        <h2 className="pb-5 text-3xl mr-0 lg:mr-10">Goals for Dispatching Tool</h2>
+            <div className="bg-[#efeff2] rounded-2xl mx-10">
+                <div className="py-16  mx-10 lg:mx-auto max-w-5xl ">
+                    <p className="leading-3 font-bold  mb-3">Goals for Dispatching Tool</p>
+                    <div className="diving-in grid grid-cols-1  mt-14 md:grid-cols-3  md:px-0 ">
+                        <div className="mr-5">
+                            <h2 className="text-6xl pb-5">01</h2>
+                            <h2 className="pb-5 text-3xl">Track Incident Data</h2>
+                            <p className="pb-12 md:pb-0">Dispatchers will be able to distinguish between active and inactive incidents, as well as resource trends among incidents and batallions. </p>
+                        </div>
+                        <div className="mr-5">
+                            <h2 className="text-6xl pb-5">02</h2>
+                            <h2 className="pb-5 text-3xl">Dispatch Resources</h2>
+                            <p className="pb-12 md:pb-0">Dispatchers will know what resources are available to use at the time of an incident.</p>
+                        </div>
+                        <div className="mr-5">
+                            <h2 className="text-6xl pb-5">03</h2>
+                            <h2 className="pb-5 text-3xl">Informed Decisions</h2>
+                            <p className="">Based on incident tracking data, dispatchers will be able to optimize their operations.</p>
+                        </div>
                     </div>
-                </div>
-                <div className="place-content-center mt-14 md:mt-0 mr-0 md:ml-10 lg:mr-10 col-span-2">
-                    <h2 className="pb-5 text-3xl">Track Incident Data</h2>
-                    <p className="pb-12">Dispatchers will be able to distinguish between active and inactive incidents, as well as resource trends among incidents and batallions. </p>
-                    <h2 className="pb-5 text-3xl">Dispatch Resources</h2>
-                    <p className="">Dispatchers will know what resources are available to use at the time of an incident.</p>
                 </div>
             </div>
 
-            <div className="py-20 mx-10 lg:mx-auto max-w-5xl">
+
+
+            <div className="py-16 mx-10 lg:mx-auto max-w-5xl">
                 <p className="text-3xl mb-5 font-bold">User Personas</p>
                 <p className="lg:pr-44">Our primary users are the dispatchers within the Seattle Fire Department as well as any other employees that deal with incident management.</p>
                 <div className="grid mt-5 grid-cols-1 lg:grid-cols-2 -ml-5">
@@ -116,8 +129,9 @@ export default function Protothon() {
                     <Image src="/img/Larisa.png" alt="dashboard" width={600} height={300} />
                 </div>
             </div>
+            <hr className="landing" />
 
-            <div className="mx-10 lg:mx-auto max-w-5xl py-20 ">
+            <div className="mx-10 lg:mx-auto max-w-5xl py-16 ">
                 <div className="grid lg:grid-cols-5 grid-cols-1">
                     <div className="col-span-3 content-center pr-10">
                         <p className="mb-3  font-bold">Research</p>
@@ -130,6 +144,7 @@ export default function Protothon() {
                     </div>
                 </div>
             </div>
+            <hr className="landing" />
 
             {/* <div className="mx-10 lg:mx-auto max-w-5xl py-20">
                 <h2 className="pb-3 text-3xl">User Flow</h2>
@@ -149,7 +164,7 @@ export default function Protothon() {
                 </div>
             </div> */}
 
-            <div className="mx-10 lg:mx-auto max-w-5xl py-20">
+            <div className="mx-10 lg:mx-auto max-w-5xl py-16">
                 <div className="grid grid-cols-1 lg:grid-cols-2">
                     <div className="-ml-5">
                         <Image src="/img/SFDlofi.png" alt="SFD lo-fi" width={600} height={300} />
@@ -162,7 +177,7 @@ export default function Protothon() {
                 </div>
             </div>
 
-            <div className="mx-10 lg:mx-auto max-w-5xl py-20">
+            <div className="mx-10 lg:mx-auto max-w-5xl py-16">
                 <div className="grid grid-cols-1 lg:grid-cols-3">
                     <div className="col-span-2 flex -ml-5 lg:hidden justify-end">
                         <Image src="/img/SFDdash.png" alt="dashboard" width={600} height={300} />
@@ -191,17 +206,18 @@ export default function Protothon() {
             </div> */}
 
 
-
-            <div className="py-20 mx-10 lg:mx-auto max-w-5xl">
-                <p className="text-3xl  font-bold mb-5">Quickly dispatch resources to all active incidents.</p>
-                <p className="lg:pr-40">In the map view, you are able to see the five different battalions. All the active incidents are marked in red while the closed incidents are marked in blue. To dispatch resources, select a location on the map and fill out corresponding information.</p>
-                <div className="grid mt-5 grid-cols-1 lg:grid-cols-2 -ml-5">
-                    <Image src="/img/Incidents1.png" alt="map" width={600} height={300} />
-                    <Image src="/img/Incidents2.png" alt="incident on map" width={600} height={300} />
+            <div className="bg-[#efeff2] rounded-2xl mx-10">
+                <div className="py-16 mx-10 lg:mx-auto max-w-5xl">
+                    <p className="text-3xl  font-bold mb-5">Quickly dispatch resources to all active incidents.</p>
+                    <p className="lg:pr-40">In the map view, you are able to see the five different battalions. All the active incidents are marked in red while the closed incidents are marked in blue. To dispatch resources, select a location on the map and fill out corresponding information.</p>
+                    <div className="grid mt-5 grid-cols-1 lg:grid-cols-2 -ml-5">
+                        <Image src="/img/Incidents1.png" alt="map" width={600} height={300} />
+                        <Image src="/img/Incidents2.png" alt="incident on map" width={600} height={300} />
+                    </div>
                 </div>
             </div>
 
-            <div className="py-20 mx-10 lg:mx-auto max-w-5xl">
+            <div className="py-16 mx-10 lg:mx-auto max-w-5xl">
                 <p className="text-3xl  font-bold mb-5">Track and filter all incidents.</p>
                 <p className="lg:pr-40">Easily find the incident you are looking for, whether using the filters or simply searching. To mark an open incident as closed, click on the incident, write down the case notes, and close the incident.</p>
                 <div className="grid mt-5 grid-cols-1 lg:grid-cols-2 -ml-5">
@@ -210,7 +226,7 @@ export default function Protothon() {
                 </div>
             </div>
 
-            <div className="py-20 mx-10 lg:mx-auto max-w-5xl lg:pr-44">
+            <div className="py-16 mx-10 lg:mx-auto max-w-5xl lg:pr-44">
                 <p className="leading-3 font-bold mb-3">Personal Reflection</p>
                 <p className="text-3xl font-bold leading-[2.5rem]">
                     In the future, spending more time understanding the process of operations, either through user testing or comparative analysis.
@@ -220,7 +236,7 @@ export default function Protothon() {
 
             <div className="">
                 <hr className="landing" />
-                <div className="mx-auto max-w-5xl py-20">
+                <div className="mx-auto max-w-5xl py-16">
                     <div className="grid grid-cols-1 lg:grid-cols-2">
                         <div className="justify-items-center lg:justify-items-start lg:place-content-center">
                             <p className="text-4xl font-bold">Keep in touch!</p>
