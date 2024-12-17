@@ -138,15 +138,15 @@ export default function Rxpert() {
                     <p className="leading-3 font-bold  mb-5">User Quotes</p>
                     <div className="diving-in grid grid-cols-1  md:grid-cols-3  md:px-0 ">
                         <div className="mr-5">
-                            <h2 className="pb-5 text-2xl">“Cases take one to two hours to create”</h2>
+                            <h2 className="pb-5 text-2xl">&quot;Cases take one to two hours to create&quot;</h2>
                             {/* <p className="pb-12 md:pb-0">Professors will be able to generate on-paper cases based on their selected topic, learning objectives, and level. </p> */}
                         </div>
                         <div className="mr-5">
-                            <h2 className=" text-2xl">“Uncertainty with relying on AI for racial/cultural competency”</h2>
+                            <h2 className=" text-2xl">&quot;Uncertainty with relying on AI for racial/cultural competency&quot;</h2>
                             {/* <p className="pb-12 md:pb-0">Intuitive flow to edit the case, whether it be through chat or the case editor for specific parts.</p> */}
                         </div>
                         <div className="mr-5">
-                            <h2 className=" text-2xl">"Generated questions for the case are basic"</h2>
+                            <h2 className=" text-2xl">&quot;Generated questions for the case are basic&quot;</h2>
                             {/* <p className="">For the future, we are interested in making cases interactable where students can talk with the patient in the case.</p> */}
                         </div>
                     </div>
