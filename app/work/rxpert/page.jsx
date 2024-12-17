@@ -142,7 +142,7 @@ export default function Rxpert() {
                             {/* <p className="pb-12 md:pb-0">Professors will be able to generate on-paper cases based on their selected topic, learning objectives, and level. </p> */}
                         </div>
                         <div className="mr-5">
-                            <h2 className=" text-2xl">&quot;Uncertainty with relying on AI for racial/cultural competency&quot;</h2>
+                            <h2 className="pb-5 md:pb-0 text-2xl">&quot;Uncertainty with relying on AI for racial/cultural competency&quot;</h2>
                             {/* <p className="pb-12 md:pb-0">Intuitive flow to edit the case, whether it be through chat or the case editor for specific parts.</p> */}
                         </div>
                         <div className="mr-5">
