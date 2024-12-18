@@ -28,7 +28,7 @@ export function Hero() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [cursorVariant, setCursorVariant] = useState('default');
 
-  const bgColor = "bg-[#E9E8F6]"
+  const bgColor = "bg-[#ffffff]"
 
   const [scrolled, setScrolled] = useState(0);
 
@@ -89,23 +89,27 @@ export function Hero() {
       ></motion.div> */}
 
 
-        <div className={"h-screen grid content-between overflow-x-hidden " + bgColor}>
-          <NavBar color={"bg-[#f6e8ee]" + bgColor} />
-          <div className="mx-auto max-w-5xl lg:pr-44">
-            <div>
-              <p className="text-center mx-20 lg:mx-0 lg:text-left text-5xl font-bold leading-[3.5rem]">
-                Hello! I’m Kira, a junior 👩‍🎓  at the University of Washington studying Informatics. Interface design is my passion 💡
-              </p>
-            </div>
-            <div>
-              <div className="flex justify-center lg:justify-start items-center mt-20 py-2">
-                <Link className="hover:underline" href="/personal">About me</Link>
-                <ArrowUpRightIcon className="w-5 h-5 ml-2" />
+        <div className={" grid content-between overflow-x-hidden " + bgColor}>
+          <div className="">
+            <NavBar color={"bg-[#f6e8ee]" + bgColor} />
+          </div>
+          <div className="bg-gradient-to-r from-[#CD85B7]/25 from-10% via-[#CD8595]/50 via-30% to-[#C085CD]/25 to-90%  mt-3  rounded-2xl mx-10">
+            <div className="mx-10 md:ml-10 xl:mx-auto mt-20 max-w-5xl lg:pr-44">
+              <div>
+                <p className="mr-20 lg:mr-0 lg:mx-0 text-left text-5xl font-bold leading-[3.5rem]">
+                  Hello! I’m Kira, a junior 👩‍🎓 at the University of Washington studying Informatics. Interface design is my passion 💡
+                </p>
               </div>
-              <p className="leading-3 text-center lg:text-left">Make what your heart desires.</p>
+              <div>
+                <div className="flex  items-center mt-20 py-2">
+                  <Link className="hover:underline" href="/personal">About me</Link>
+                  <ArrowUpRightIcon className="w-5 h-5 ml-2" />
+                </div>
+                <p className="leading-3 mb-20">Make what your heart desires.</p>
+              </div>
             </div>
           </div>
-          <hr className="landing" />
+          {/* <hr className="landing" /> */}
         </div>
 
         <div className={bgColor} id="work">
