@@ -44,7 +44,7 @@ export default function Rxpert() {
                 </div>
 
                 <div className="bg-gradient-to-r from-[#7CB6A0]/25 from-10% via-[#7CB6A0]/50 via-30% to-[#227887]/25 to-90%  mt-16  rounded-2xl mx-10">
-                    <div className="mx-10 mt-14 lg:mx-auto lg:mt-0 max-w-5xl lg:pr-44">
+                    <div className="mx-10 mt-14  md:ml-10 xl:mx-auto lg:mt-0 max-w-5xl lg:pr-44">
                         <div>
                             <p className="leading-6 lg:leading-3 mt-20  mb-3">Designer | Four members | April 2024 - Present | Figma</p>
                             <p className=" text-5xl font-bold leading-[3.5rem]">
@@ -59,7 +59,7 @@ export default function Rxpert() {
                 {/* <hr className="landing" /> */}
             </div>
 
-            <div className="py-16 mx-10 lg:mx-auto max-w-5xl lg:pr-44">
+            <div className="py-16 mx-10 md:ml-10 xl:mx-auto max-w-5xl lg:pr-44">
                 <p className="leading-3 font-bold  mb-3">Problem</p>
                 <p className=" lg:mx-0  text-3xl font-bold leading-[2.5rem]">
                     Current pharmacy professors are spending hours on creating cases or simply reusing old ones because they don&apos;t have the time.
@@ -68,7 +68,7 @@ export default function Rxpert() {
             </div>
 
             <div className="bg-[#efeff2] rounded-2xl mx-10">
-                <div className="py-16  mx-10 lg:mx-auto max-w-5xl ">
+                <div className="py-16  mx-10 md:ml-10 xl:mx-auto max-w-5xl ">
                     <p className="leading-3 font-bold  mb-3">Goals for Case Generator</p>
                     <div className="diving-in grid grid-cols-1  mt-14 md:grid-cols-3  md:px-0 ">
                         <div className="mr-5">
@@ -90,7 +90,7 @@ export default function Rxpert() {
                 </div>
             </div>
 
-            <div className="py-16 mx-10 lg:mx-auto max-w-5xl">
+            <div className="py-16 mx-10 md:ml-10 xl:mx-auto max-w-5xl">
                 <p className="text-3xl mb-5 font-bold">User Personas</p>
                 <p>Our primary users are within pharmaceutical academia, specifically professors and curriculum planners.</p>
                 <div className="grid mt-5 grid-cols-1 lg:grid-cols-2 -ml-5">
@@ -101,7 +101,7 @@ export default function Rxpert() {
 
             <hr className="landing" />
 
-            <div className="mx-10 lg:mx-auto max-w-5xl  py-16">
+            <div className="mx-10 md:ml-10 xl:mx-auto max-w-5xl  py-16">
                 <div className="lg:pr-44 pr-0">
                     <p className="mb-5  font-bold">User Research and Testing</p>
                     <p className="mb-5">After ensuring that there was interesting in the product, we jumped right into designing it. Our goal was to have a functioning prototype that the professors could use and then give feedback on.</p>
@@ -134,7 +134,7 @@ export default function Rxpert() {
             </div>
 
             <div className="bg-[#efeff2] rounded-2xl mx-10">
-                <div className="py-16  mx-10 lg:mx-auto max-w-5xl ">
+                <div className="py-16  mx-10 md:ml-10 xl:mx-auto max-w-5xl ">
                     <p className="leading-3 font-bold  mb-5">User Quotes</p>
                     <div className="diving-in grid grid-cols-1  md:grid-cols-3  md:px-0 ">
                         <div className="mr-5">
@@ -153,13 +153,13 @@ export default function Rxpert() {
                 </div>
             </div>
 
-            <div className="mx-10 lg:mx-auto max-w-5xl py-16">
+            <div className="mx-10 md:ml-10 xl:mx-auto max-w-5xl py-16">
                 <h2 className="pb-3 text-3xl">User Flow</h2>
                 <p className="pb-10 mr-0 lg:mr-60">It was important for us to understand how a professor would navigate through our product and creating a user flow allowed us to connect the different interfaces together smoothly.</p>
                 <Image className=" drop-shadow-2xl" src="/img/flow.png" alt="design system" width={1100} height={1100} />
             </div>
 
-            <div className="mx-10 lg:mx-auto max-w-5xl py-16">
+            <div className="mx-10 md:ml-10 xl:mx-auto max-w-5xl py-16">
                 <h2 className="text-3xl">Lo-Fi and System Design</h2>
                 <div className="grid grid-cols-1 lg:grid-cols-9 place-content-start">
                     <div className="col-span-5 -ml-5">
@@ -171,7 +171,7 @@ export default function Rxpert() {
                 </div>
             </div>
 
-            <div className="mx-10 lg:mx-auto max-w-5xl py-16">
+            <div className="mx-10 md:ml-10 xl:mx-auto max-w-5xl py-16">
                 <div className="grid grid-cols-1 lg:grid-cols-3">
                     <div className="col-span-2 -ml-5">
                         <Image src="/img/dash.png" alt="dashboard rxpert" width={600} height={300} />
@@ -184,7 +184,7 @@ export default function Rxpert() {
             </div>
 
             <div className="bg-[#efeff2] rounded-2xl mx-10">
-                <div className="mx-10 lg:mx-auto max-w-5xl py-16">
+                <div className="mx-10 md:ml-10 xl:mx-auto max-w-5xl py-16">
                     <div className="grid grid-cols-1 lg:grid-cols-3">
                         <div className="col-span-2 flex -ml-5 lg:hidden justify-end">
                             <Image src="/img/generator.png" alt="dashboard" width={600} height={300} />
@@ -200,7 +200,7 @@ export default function Rxpert() {
                 </div>
             </div>
 
-            <div className="mx-10 lg:mx-auto max-w-5xl py-16">
+            <div className="mx-10 md:ml-10 xl:mx-auto max-w-5xl py-16">
                 <div className="grid grid-cols-1 lg:grid-cols-3">
                     <div className="col-span-2 -ml-5">
                         <Image src="/img/CommunityHub.png" alt="Community hub" width={600} height={300} />
@@ -213,7 +213,7 @@ export default function Rxpert() {
                 </div>
             </div>
 
-            <div className="py-16 mx-10 lg:mx-auto max-w-5xl">
+            <div className="py-16 mx-10 md:ml-10 xl:mx-auto max-w-5xl">
                 <p className="text-3xl mb-5 font-bold">Edit your case with the help of AI.</p>
                 <p>Click the icon in the corner after the case is generated and edit it till you are happy with the result.</p>
                 <div className="grid mt-5 grid-cols-1 lg:grid-cols-2 -ml-5">
@@ -224,7 +224,7 @@ export default function Rxpert() {
 
 
             <div className="bg-[#efeff2] rounded-2xl mx-10">
-                <div className="diving-in py-16 grid grid-cols-1 mx-10  lg:mx-auto max-w-5xl md:px-0 md:grid-cols-2 justify-items-center">
+                <div className="diving-in py-16 grid grid-cols-1 mx-10  md:ml-10 xl:mx-auto max-w-5xl md:px-0 md:grid-cols-2 justify-items-center">
                     <div className="grid content-center mr-0 md:mr-14">
                         <div className="">
                             <h2 className="pb-5 text-3xl">Future with RxPert</h2>
@@ -258,7 +258,7 @@ export default function Rxpert() {
                 Your browser does not support the video tag.
             </video> */}
 
-            <div className="py-16 mx-10 lg:mx-auto max-w-5xl lg:pr-44">
+            <div className="py-16 mx-10 md:ml-10 xl:mx-auto max-w-5xl lg:pr-44">
                 <p className="leading-3 font-bold mb-3">Personal Reflection</p>
                 <p className="text-3xl font-bold leading-[2.5rem]">
                     Taking time to understand the user, not only about how they navigate the platform, but who they are as a person.
@@ -268,7 +268,7 @@ export default function Rxpert() {
 
             <div className="">
                 <hr className="landing" />
-                <div className="mx-auto max-w-5xl py-20">
+                <div className="mx-auto md:ml-10 xl:mx-auto max-w-5xl py-20">
                     <div className="grid grid-cols-1 lg:grid-cols-2">
                         <div className="justify-items-center lg:justify-items-start lg:place-content-center">
                             <p className="text-4xl font-bold">Keep in touch!</p>

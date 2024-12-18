@@ -30,10 +30,10 @@ export default function Personal() {
 
                 <div className="bg-gradient-to-r from-[#CD85B7]/25 from-10% via-[#CD8595]/50 via-30% to-[#C085CD]/25 to-90%  mt-16  rounded-2xl mx-10">
                     <div className="mx-10 mt-14 lg:mx-auto lg:mt-0 max-w-5xl ">
-                        <div className="grid grid-cols-1 md:grid-cols-2">
+                        <div className="grid grid-cols-1 md:ml-0 lg:ml-10 xl:ml-0 md:grid-cols-2">
                             <div className="">
                                 <div>
-                                    <p className=" text-7xl mt-44 font-bold leading-[3.5rem]">
+                                    <p className=" text-7xl  mt-44 font-bold leading-[3.5rem]">
                                         Hi, I&apos;m Kira!
                                     </p>
                                 </div>

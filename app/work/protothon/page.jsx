@@ -64,7 +64,7 @@ export default function Protothon() {
     // }
 
     return (
-        <main className="overflow-x-hidden bg-[#ffffff]">
+        <main className="overflow-x-hidden  bg-[#ffffff]">
 
             <div className={" grid content-between overflow-x-hidden "}>
                 <div className="">
@@ -72,7 +72,7 @@ export default function Protothon() {
                 </div>
 
                 <div className="bg-gradient-to-r from-[#4A93E1]/25 from-10% via-[#547EE9]/50 via-30% to-[#859ACD]/25 to-90%  mt-16  rounded-2xl mx-10">
-                    <div className="mx-10 lg:mx-auto mt-14 lg:mt-0 max-w-5xl lg:pr-44">
+                    <div className="mx-10 xl:mx-auto md:ml-10 mt-14 lg:mt-0 max-w-5xl lg:pr-44">
                         <div>
                             <p className="leading-6 lg:leading-3 mt-20 mb-3">Designer | Four members | Protothon - May 4th-5th 2024 | Figma</p>
                             <p className=" text-5xl font-bold leading-[3.5rem]">
@@ -87,7 +87,7 @@ export default function Protothon() {
                 {/* <hr className="landing" /> */}
             </div>
 
-            <div className="py-16 mx-10 lg:mx-auto max-w-5xl lg:pr-44">
+            <div className="py-16 mx-10 xl:mx-auto md:ml-10  max-w-5xl lg:pr-44">
                 <p className="leading-3 font-bold  mb-3">Problem</p>
                 <p className=" lg:mx-0  text-3xl font-bold leading-[2.5rem]">
                     The Seattle Fire Department is experiencing an increase in caller volume and incidents and need a way to dispatch resources.
@@ -97,7 +97,7 @@ export default function Protothon() {
             </div>
 
             <div className="bg-[#efeff2] rounded-2xl mx-10">
-                <div className="py-16  mx-10 lg:mx-auto max-w-5xl ">
+                <div className="py-16  mx-10 xl:mx-auto md:ml-10  max-w-5xl ">
                     <p className="leading-3 font-bold  mb-3">Goals for Dispatching Tool</p>
                     <div className="diving-in grid grid-cols-1  mt-14 md:grid-cols-3  md:px-0 ">
                         <div className="mr-5">
@@ -121,7 +121,7 @@ export default function Protothon() {
 
 
 
-            <div className="py-16 mx-10 lg:mx-auto max-w-5xl">
+            <div className="py-16 mx-10 md:ml-10  xl:mx-auto max-w-5xl">
                 <p className="text-3xl mb-5 font-bold">User Personas</p>
                 <p className="lg:pr-44">Our primary users are the dispatchers within the Seattle Fire Department as well as any other employees that deal with incident management.</p>
                 <div className="grid mt-5 grid-cols-1 lg:grid-cols-2 -ml-5">
@@ -131,7 +131,7 @@ export default function Protothon() {
             </div>
             <hr className="landing" />
 
-            <div className="mx-10 lg:mx-auto max-w-5xl py-16 ">
+            <div className="mx-10 md:ml-10  xl:mx-auto max-w-5xl py-16 ">
                 <div className="grid lg:grid-cols-5 grid-cols-1">
                     <div className="col-span-3 content-center pr-10">
                         <p className="mb-3  font-bold">Research</p>
@@ -164,7 +164,7 @@ export default function Protothon() {
                 </div>
             </div> */}
 
-            <div className="mx-10 lg:mx-auto max-w-5xl py-16">
+            <div className="mx-10 md:ml-10  xl:mx-auto max-w-5xl py-16">
                 <div className="grid grid-cols-1 lg:grid-cols-2">
                     <div className="-ml-5">
                         <Image src="/img/SFDlofi.png" alt="SFD lo-fi" width={600} height={300} />
@@ -177,7 +177,7 @@ export default function Protothon() {
                 </div>
             </div>
 
-            <div className="mx-10 lg:mx-auto max-w-5xl py-16">
+            <div className="mx-10 md:ml-10  xl:mx-auto max-w-5xl py-16">
                 <div className="grid grid-cols-1 lg:grid-cols-3">
                     <div className="col-span-2 flex -ml-5 lg:hidden justify-end">
                         <Image src="/img/SFDdash.png" alt="dashboard" width={600} height={300} />
@@ -207,7 +207,7 @@ export default function Protothon() {
 
 
             <div className="bg-[#efeff2] rounded-2xl mx-10">
-                <div className="py-16 mx-10 lg:mx-auto max-w-5xl">
+                <div className="py-16 mx-10 md:ml-10 xl:mx-auto max-w-5xl">
                     <p className="text-3xl  font-bold mb-5">Quickly dispatch resources to all active incidents.</p>
                     <p className="lg:pr-40">In the map view, you are able to see the five different battalions. All the active incidents are marked in red while the closed incidents are marked in blue. To dispatch resources, select a location on the map and fill out corresponding information.</p>
                     <div className="grid mt-5 grid-cols-1 lg:grid-cols-2 -ml-5">
@@ -217,7 +217,7 @@ export default function Protothon() {
                 </div>
             </div>
 
-            <div className="py-16 mx-10 lg:mx-auto max-w-5xl">
+            <div className="py-16 mx-10 md:ml-10 xl:mx-auto max-w-5xl">
                 <p className="text-3xl  font-bold mb-5">Track and filter all incidents.</p>
                 <p className="lg:pr-40">Easily find the incident you are looking for, whether using the filters or simply searching. To mark an open incident as closed, click on the incident, write down the case notes, and close the incident.</p>
                 <div className="grid mt-5 grid-cols-1 lg:grid-cols-2 -ml-5">
@@ -226,7 +226,7 @@ export default function Protothon() {
                 </div>
             </div>
 
-            <div className="py-16 mx-10 lg:mx-auto max-w-5xl lg:pr-44">
+            <div className="py-16 mx-10 md:ml-10 xl:mx-auto max-w-5xl lg:pr-44">
                 <p className="leading-3 font-bold mb-3">Personal Reflection</p>
                 <p className="text-3xl font-bold leading-[2.5rem]">
                     In the future, spending more time understanding the process of operations, either through user testing or comparative analysis.
@@ -236,7 +236,7 @@ export default function Protothon() {
 
             <div className="">
                 <hr className="landing" />
-                <div className="mx-auto max-w-5xl py-16">
+                <div className="mx-auto md:ml-10 xl:mx-auto max-w-5xl py-16">
                     <div className="grid grid-cols-1 lg:grid-cols-2">
                         <div className="justify-items-center lg:justify-items-start lg:place-content-center">
                             <p className="text-4xl font-bold">Keep in touch!</p>
