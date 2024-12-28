@@ -258,6 +258,21 @@ export default function Rxpert() {
                 Your browser does not support the video tag.
             </video> */}
 
+            <div className="py-16 mx-10 md:ml-10 xl:mx-auto max-w-5xl">
+                <div className="shadow-xl">
+                    <video width="2968" height="1516" controls preload="none">
+                        <source src="/demo.mp4" type="video/mp4" />
+                        <track
+                            src="/path/to/captions.vtt"
+                            kind="subtitles"
+                            srcLang="en"
+                            label="English"
+                        />
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+
             <div className="py-16 mx-10 md:ml-10 xl:mx-auto max-w-5xl lg:pr-44">
                 <p className="leading-3 font-bold mb-3">Personal Reflection</p>
                 <p className="text-3xl font-bold leading-[2.5rem]">
