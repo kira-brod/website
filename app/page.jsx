@@ -113,7 +113,7 @@ export function Hero() {
         </div>
 
         <div className={bgColor} id="work">
-          <div className="mx-auto max-w-5xl">
+          <div className="mx-10 md:ml-10 xl:mx-auto max-w-5xl">
             <div className="grid grid-cols-1 lg:grid-cols-3 py-20">
               <div className="pr-0 lg:pr-10 col-span-1 place-content-center">
                 <p className="text-4xl font-bold text-center lg:text-left">Patient case creation made easier.</p>
@@ -130,9 +130,9 @@ export function Hero() {
         </div>
 
         <div className={bgColor}>
-          <div className="mx-auto max-w-5xl">
+          <div className="mx-10 md:ml-10 xl:mx-auto max-w-5xl">
             <div className="grid grid-cols-1 lg:grid-cols-3 py-20">
-              <div className="col-span-2 lg:flex justify-center hidden ">
+              <div className="col-span-2 lg:flex justify-self-start hidden -ml-7 ">
                 <Link href="/work/protothon">
                   <Image className="dr" src="/img/newSFD-go-digital.png" alt="Protothon" width={700} height={500} />
                 </Link>
