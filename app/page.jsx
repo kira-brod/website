@@ -100,8 +100,10 @@ export function Hero() {
                   Hello! I’m Kira, a junior 👩‍🎓 at the University of Washington studying Informatics. Interface design is my passion 💡
                 </p>
               </div>
+              <p className="mt-10 mr-96">Current design director for <Link target="_blank" href ="https://www.instagram.com/uxuw.club/?hl=en"><u><strong>UX@UW</strong></u></Link> and</p>
+              <p>event coordinator for <Link target="_blank" href="https://www.instagram.com/womeninux_uw/"><u><strong>Women in User Experience</strong></u> </Link>!</p>
               <div>
-                <div className="flex  items-center mt-20 py-2">
+                <div className="flex  items-center mt-10 py-2">
                   <Link className="hover:underline" href="/personal">About me</Link>
                   <ArrowUpRightIcon className="w-5 h-5 ml-2" />
                 </div>
