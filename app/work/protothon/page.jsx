@@ -1,12 +1,12 @@
 'use client'
-import NavBar from "@/app/components/NavBar"
+import NavBar from "../../components/NavBar"
 import Image from "next/image"
 import Link from "next/link"
 import { motion } from "framer-motion"
 // import { Carousel } from "@coreui/coreui"
 // import { useRef } from "react"
 import { ArrowUpRightIcon } from "@heroicons/react/24/outline"
-import EmblaCarousel from "@/app/components/EmblaCarousel"
+
 import { ArrowRightIcon } from "@heroicons/react/24/outline"
 import { useEffect, useState } from "react"
 

@@ -1,12 +1,13 @@
 'use client'
-import NavBar from "@/app/components/NavBar"
+// import NavBar from "@/app/components/NavBar"
 import Image from "next/image"
 import Link from "next/link"
-import { Footer } from "@/app/components/Footer"
+// import { Footer } from "@/app/components/Footer"
 import { motion } from "framer-motion"
 import { useEffect, useState } from "react"
 import { ArrowUpRightIcon } from "@heroicons/react/24/outline"
-import EmblaCarousel from "@/app/components/EmblaCarousel"
+import NavBar from "../../components/NavBar"
+import { Footer } from "../../components/Footer"
 
 const OPTIONS = { loop: true }
 const SLIDE_COUNT = 5

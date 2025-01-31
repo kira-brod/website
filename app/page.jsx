@@ -94,7 +94,7 @@ export function Hero() {
             <NavBar color={"bg-[#f6e8ee]" + bgColor} />
           </div>
           <div className="bg-gradient-to-r from-[#CD85B7]/25 from-10% via-[#CD8595]/50 via-30% to-[#C085CD]/25 to-90%  mt-3  rounded-2xl mx-10">
-            <div className="mx-10 md:ml-10 xl:mx-auto mt-20 max-w-5xl lg:pr-44">
+            <div className="mx-10 xl:mx-auto mt-20 max-w-5xl lg:pr-44">
               <div>
                 <p className="mr-20 lg:mr-0 lg:mx-0 text-left text-5xl font-bold leading-[3.5rem]">
                   Hello! I’m Kira, a junior 👩‍🎓 at the University of Washington studying Informatics. Interface design is my passion 💡
