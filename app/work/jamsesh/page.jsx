@@ -140,7 +140,7 @@ export default function JamSesh() {
                     <p className="pb-3">I enjoy when apps have personal recommendations and can find it helpful when the music is split up by genre. This could easily help someone choose what song to post, especially if they can’t figure out what to pick.</p>
                 </div>
             </div>
-            <Footer />
+            {/* <Footer /> */}
         </div>
     )
 }
