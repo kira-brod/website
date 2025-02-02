@@ -16,12 +16,12 @@ const openSans = Open_Sans({
   subsets: ['latin'],
   display: 'swap',
 })
-export const jakarta = Plus_Jakarta_Sans({
-  weight: ['200', '300', '400', '500', '600', '700', '800'],
-  style: ['normal', 'italic'],
-  subsets: ['latin'],
-  display: 'swap',
-})
+// export const jakarta = Plus_Jakarta_Sans({
+//   weight: ['200', '300', '400', '500', '600', '700', '800'],
+//   style: ['normal', 'italic'],
+//   subsets: ['latin'],
+//   display: 'swap',
+// })
 export const source = Source_Serif_4({
   weight: ['200', '300'],
   style: ['normal', 'italic'],
