@@ -21,7 +21,7 @@ const projects = [{ title: "SFD Go Digital", description: "Lorem ipsum dolor sit
 { title: "SFD Go Digital", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua", image: "/img/SFD-go-digital.png" }
 ]
 
-export function Hero() {
+function Hero() {
 
   // const[isHovered, setIsHovered] = useState(false);
 
