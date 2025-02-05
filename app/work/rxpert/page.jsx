@@ -188,14 +188,14 @@ export default function Rxpert() {
                 <div className="mx-10 md:ml-10 xl:mx-auto max-w-5xl py-16">
                     <div className="grid grid-cols-1 lg:grid-cols-3">
                         <div className="col-span-2 flex -ml-5 lg:hidden justify-end">
-                            <Image src="/img/generator.png" alt="dashboard" width={600} height={300} />
+                            <Image src="/img/generate.png" alt="dashboard" width={600} height={300} />
                         </div>
                         <div className="mt-10 col-span-1 place-content-center">
                             <p className="text-3xl mb-5 font-bold">Fill out the form and generate your case.</p>
                             <p>Input the case information and  have it be available to use within a few seconds.</p>
                         </div>
                         <div className="col-span-2 -ml-5 lg:flex justify-end hidden">
-                            <Image src="/img/generator.png" alt="dashboard" width={600} height={300} />
+                            <Image src="/img/generate.png" alt="dashboard" width={600} height={300} />
                         </div>
                     </div>
                 </div>
@@ -218,8 +218,8 @@ export default function Rxpert() {
                 <p className="text-3xl mb-5 font-bold">Edit your case with the help of AI.</p>
                 <p>Click the icon in the corner after the case is generated and edit it till you are happy with the result.</p>
                 <div className="grid mt-5 grid-cols-1 lg:grid-cols-2 -ml-5">
-                    <Image src="/img/chat1.png" alt="dashboard" width={600} height={300} />
-                    <Image src="/img/chat2.png" alt="dashboard" width={600} height={300} />
+                    <Image src="/img/Edit1.png" alt="dashboard" width={600} height={300} />
+                    <Image src="/img/Edit2.png" alt="dashboard" width={600} height={300} />
                 </div>
             </div>
 
