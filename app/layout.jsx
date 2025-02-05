@@ -24,12 +24,12 @@ const openSans = Open_Sans({
 // })
 
 //test
-export const source = Source_Serif_4({
-  weight: ['200', '300'],
-  style: ['normal', 'italic'],
-  subsets: ['latin'],
-  display: 'swap',
-})
+// export const source = Source_Serif_4({
+//   weight: ['200', '300'],
+//   style: ['normal', 'italic'],
+//   subsets: ['latin'],
+//   display: 'swap',
+// })
 
 // had export  in front of it but got an error
 const metadata = {
