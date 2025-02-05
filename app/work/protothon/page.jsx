@@ -13,6 +13,7 @@ import { useEffect, useState } from "react"
 const OPTIONS = { loop: true }
 const SLIDE_COUNT = 5
 // const SLIDES = Array.from(Array(SLIDE_COUNT).keys())
+//test
 const SLIDES = [{ image: "/img/p1-cover.png" },
 { image: "/img/p2.png" },
 { image: "/img/p3.png" },
