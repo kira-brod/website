@@ -97,7 +97,7 @@ function Hero() {
             <div className="mx-10 xl:mx-auto mt-20 max-w-5xl lg:pr-44">
               <div>
                 <p className="mr-20 lg:mr-0 lg:mx-0 text-left text-5xl font-bold leading-[3.5rem]">
-                  Hello! I’m Kira, a junior 👩‍🎓 at the University of Washington studying Informatics. Interface design is my passion 💡
+                  Hello! I’m Kira, a junior 👩‍🎓 at the University of Washington studying Informatics 💻
                 </p>
               </div>
               <p className="mt-10 mr-96">Current design director for <Link target="_blank" href ="https://www.instagram.com/uxuw.club/?hl=en"><u><strong>UX@UW</strong></u></Link> and</p>
@@ -188,8 +188,8 @@ function Hero() {
                   </div>
                 </div>
               </div>
-              <div className="flex justify-center mt-10 lg:mt-0">
-                <Image className="dr" src="/img/footer.png" alt="Rxpert home page" width={200} height={200} />
+              <div className="flex justify-center mt-10 ml-32 lg:mt-0">
+                <Image className="dr" src="/img/icon.png" alt="Rxpert home page" width={200} height={200} />
               </div>
             </div>
           </div>

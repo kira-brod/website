@@ -104,7 +104,7 @@ export default function Rxpert() {
 
             <div className="mx-10 md:ml-10 xl:mx-auto max-w-5xl  py-16">
                 <div className="lg:pr-44 pr-0">
-                    <p className="mb-5  font-bold">User Research and Testing</p>
+                    <p className="text-3xl mb-5 font-bold">Initial User Testing and Research</p>
                     <p className="mb-5">After ensuring that there was interest in the product, we jumped right into designing it. Our goal was to have a functioning prototype that the professors could use and then give feedback on.</p>
                     <p className="mb-5">We initially had the chat and form be on the left side for the case generating, where the professor could pick whether they wanted to use the form, or chat with the AI directly to create the case. The generated case would then appear on the right side of the screen, including all the information that the professor provided.</p>
                     <p className="text-3xl font-bold mb-5">We quickly noticed that the professors had not realized they were able to switch between the chat and form.</p>
@@ -224,7 +224,76 @@ export default function Rxpert() {
             </div>
 
 
+            <div className="py-16 mx-10 md:ml-10 xl:mx-auto max-w-5xl">
+                <div className="lg:pr-44 pr-0">
+                    <p className="text-3xl mb-5 font-bold">User Testing</p>
+                    <p className="mb-5">When testing our design of the AI chat bot in the corner of the screen, we ran into the problem of different generations having different exposure with corner chat bots. </p>
+                    <p className="text-3xl font-bold mb-5">Professors from the older generation had trouble navigating how to edit the case, missing the edit button on the corner of the screen.</p>
+                    <p className="text-3xl font-bold mb-5">Younger professors were able to use the edit button to interact with the chat bot and edit their case.</p>
+                    <p className="mb-5">We realized that, to ensure all professors were able to navigate our tool, we needed to guide them through the generation, editing, and refining process.</p>
+                </div>
+            </div>
+
+
             <div className="bg-[#efeff2] rounded-2xl mx-10">
+                <div className="py-16  mx-10 md:ml-10 xl:mx-auto max-w-5xl ">
+                    <p className="text-3xl mb-5 font-bold">Step One: Generating the Case</p>
+                    <p>We included a progress bar at the top to inform professors what step they are on.</p>
+                    <div className="grid mt-5 grid-cols-1 lg:grid-cols-2 -ml-5">
+                        <Image src="/img/generateIteration1.png" alt="dashboard" width={600} height={300} />
+                        <Image src="/img/generateIteration2.png" alt="dashboard" width={600} height={300} />
+                    </div>
+                </div>
+            </div>
+
+
+            <div className="mx-10 md:ml-10 xl:mx-auto max-w-5xl py-16">
+                <div className="grid grid-cols-1 lg:grid-cols-3">
+                    <div className="col-span-2 flex -ml-5 lg:hidden justify-end">
+                        <Image src="/img/editIteration.png" alt="iteration of edit design" width={600} height={300} />
+                    </div>
+                    <div className="mt-10 col-span-1 place-content-center">
+                        <p className="text-3xl mb-5 font-bold">Step Two: Edit the Case With the Chat Bot</p>
+                        <p>Chat with AI on the right and see your changes in real time on the left. Approve the changes you like and decline those you don&apos;t.</p>
+                    </div>
+                    <div className="col-span-2 -ml-5 lg:flex justify-end hidden">
+                        <Image src="/img/editIteration.png" alt="iteration of edit design" width={600} height={300} />
+                    </div>
+                </div>
+            </div>
+
+            <div className="bg-[#efeff2] rounded-2xl mx-10">
+                <div className="mx-10 md:ml-10 xl:mx-auto max-w-5xl py-16">
+                    <div className="grid grid-cols-1 lg:grid-cols-3">
+                        <div className="col-span-2 -ml-5">
+                            <Image src="/img/manualIteration.png" alt="manual edits iteration" width={600} height={300} />
+                        </div>
+                        <div className="col-span-1 mt-10 place-content-center">
+                            <p className="text-3xl mb-5 font-bold">Step Three: Manually Edit Your Case</p>
+                            <p>Type directly in the case to fix any minor details that were not fixed during editing with the AI.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="mx-10 md:ml-10 xl:mx-auto max-w-5xl py-16">
+                <div className="grid grid-cols-1 lg:grid-cols-3">
+                    <div className="col-span-2 flex -ml-5 lg:hidden justify-end">
+                        <Image src="/img/chainOfThought.png" alt="chain of thought version" width={600} height={300} />
+                    </div>
+                    <div className="mt-10 col-span-1 place-content-center">
+                        <p className="text-3xl mb-5 font-bold">Potential Future Design: Chain of Thought</p>
+                        <p>Chain of thought lets professors see how the AI generated the case</p>
+                    </div>
+                    <div className="col-span-2 -ml-5 lg:flex justify-end hidden">
+                        <Image src="/img/chainOfThought.png" alt="chain of thought version" width={600} height={300} />
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div className="bg-[#efeff2] rounded-2xl mx-10 ">
                 <div className="diving-in py-16 grid grid-cols-1 mx-10  md:ml-10 xl:mx-auto max-w-5xl md:px-0 md:grid-cols-2 justify-items-center">
                     <div className="grid content-center mr-0 md:mr-14">
                         <div className="">
@@ -239,8 +308,10 @@ export default function Rxpert() {
                     </div>
                     <div className="place-content-center mt-14 md:mt-0 mr-0 lg:mr-10">
                         <h2 className="pb-5 text-3xl">Users/User Testing</h2>
-                        <p className="pb-3">After some discussion with one of the pharmacy professors at UW, they offered to test run RxPert for Fall Quarter 2024. This will be our first official user and we are excited to see RxPert come to life.</p>
-                        <p className="pb-12">After finals season, we will be sending out surveys to professors to track how they edit cases. We will also be providing them with a case to edit, being able to see what changes the most often versus what doesn&apos;t change at all.</p>
+                        <p className="pb-3">We conducted a meeting with one of the pharmacy professors who creates exams and they shared with us that out of the 50 question exams, a third of them are mini cases. They also mentioned that it takes them around three days to create one exam, needing to make three exams in total. </p>
+                        <p className="pb-12">We generated a mini case for them and after reading through it, they were impressed by the content and asked for us to send them the case.</p>
+                        {/* <p className="pb-3">After some discussion with one of the pharmacy professors at UW, they offered to test run RxPert for Fall Quarter 2024. This will be our first official user and we are excited to see RxPert come to life.</p>
+                        <p className="pb-12">After finals season, we will be sending out surveys to professors to track how they edit cases. We will also be providing them with a case to edit, being able to see what changes the most often versus what doesn&apos;t change at all.</p> */}
                         <h2 className="pb-5 text-3xl">Optimization</h2>
                         <p className="">It is always important to keep testing your design and updating it for better usability. As new interfaces will continue to roll out, we will continue to test them and work the feedback into our design.</p>
                     </div>
@@ -299,8 +370,8 @@ export default function Rxpert() {
                                 </div>
                             </div>
                         </div>
-                        <div className="flex justify-center mt-10 lg:mt-0">
-                            <Image className="dr" src="/img/footer.png" alt="Rxpert home page" width={200} height={200} />
+                        <div className="flex justify-center mt-10 ml-32 lg:mt-0">
+                            <Image className="dr" src="/img/icon.png" alt="Rxpert home page" width={200} height={200} />
                         </div>
                     </div>
                 </div>
