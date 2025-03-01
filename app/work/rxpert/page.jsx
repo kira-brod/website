@@ -60,6 +60,19 @@ export default function Rxpert() {
                 {/* <hr className="landing" /> */}
             </div>
 
+
+            <div className="mt-3 bg-gradient-to-r from-[#7CB6A0]/25 from-10% via-[#7CB6A0]/50 via-30% to-[#227887]/25 to-90%   rounded-2xl mx-10">
+                <div className="py-16 mx-10 md:ml-10 xl:mx-auto max-w-5xl lg:pr-44">
+                    <p className="leading-3 font-bold  mb-3">Outcome</p>
+                    <p className=" lg:mx-0  text-3xl font-bold leading-[2.5rem]">
+                        Streamlined patient case creation through an AI patient case generator, shortening the time spent on case creation by a sixth of the time.
+                    </p>
+                    {/* <p className="mt-5 ">Originally, I was introduced to the idea of a patient simulator by three students who were looking for a UX designer to design the tool. This would&apos;ve been meant for students who wanted practice with patient interaction. I jumped on the idea because I believed in the purpose of the tool, as well as getting the opportunity to create something new. After doing some informal surveying and talking to professors, we found that there was more of a market for a patient case generator, thus switching courses with our product.</p> */}
+                </div>
+            </div>
+
+            {/* <hr className="landing" /> */}
+
             <div className="py-16 mx-10 md:ml-10 xl:mx-auto max-w-5xl lg:pr-44">
                 <p className="leading-3 font-bold  mb-3">Problem</p>
                 <p className=" lg:mx-0  text-3xl font-bold leading-[2.5rem]">
@@ -237,6 +250,7 @@ export default function Rxpert() {
 
             <div className="bg-[#efeff2] rounded-2xl mx-10">
                 <div className="py-16  mx-10 md:ml-10 xl:mx-auto max-w-5xl ">
+                    <p className="leading-3 font-bold  mb-3">Iteration</p>
                     <p className="text-3xl mb-5 font-bold">Step One: Generating the Case</p>
                     <p>We included a progress bar at the top to inform professors what step they are on.</p>
                     <div className="grid mt-5 grid-cols-1 lg:grid-cols-2 -ml-5">
@@ -253,6 +267,7 @@ export default function Rxpert() {
                         <Image src="/img/editIteration.png" alt="iteration of edit design" width={600} height={300} />
                     </div>
                     <div className="mt-10 col-span-1 place-content-center">
+                        <p className="leading-3 font-bold  mb-3">Iteration</p>
                         <p className="text-3xl mb-5 font-bold">Step Two: Edit the Case With the Chat Bot</p>
                         <p>Chat with AI on the right and see your changes in real time on the left. Approve the changes you like and decline those you don&apos;t.</p>
                     </div>
@@ -269,6 +284,7 @@ export default function Rxpert() {
                             <Image src="/img/manualIteration.png" alt="manual edits iteration" width={600} height={300} />
                         </div>
                         <div className="col-span-1 mt-10 place-content-center">
+                            <p className="leading-3 font-bold  mb-3">Iteration</p>
                             <p className="text-3xl mb-5 font-bold">Step Three: Manually Edit Your Case</p>
                             <p>Type directly in the case to fix any minor details that were not fixed during editing with the AI.</p>
                         </div>
@@ -283,7 +299,7 @@ export default function Rxpert() {
                     </div>
                     <div className="mt-10 col-span-1 place-content-center">
                         <p className="text-3xl mb-5 font-bold">Potential Future Design: Chain of Thought</p>
-                        <p>Chain of thought lets professors see how the AI generated the case</p>
+                        <p>Chain of thought lets professors see the process of how the AI generated the case.</p>
                     </div>
                     <div className="col-span-2 -ml-5 lg:flex justify-end hidden">
                         <Image src="/img/chainOfThought.png" alt="chain of thought version" width={600} height={300} />
