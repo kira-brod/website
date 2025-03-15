@@ -100,7 +100,7 @@ function Hero() {
                   Hello! I’m Kira, a junior 👩‍🎓 at the University of Washington studying Informatics 💻
                 </p>
               </div>
-              <p className="mt-24 mr-96">Current design director for <Link target="_blank" href ="https://www.instagram.com/uxuw.club/?hl=en"><u><strong>UX@UW</strong></u></Link> and</p>
+              <p className="mt-24 mr-96">Current design director for <Link target="_blank" href="https://www.instagram.com/uxuw.club/?hl=en"><u><strong>UX@UW</strong></u></Link> and</p>
               <p>event coordinator for <Link target="_blank" href="https://www.instagram.com/womeninux_uw/"><u><strong>Women in User Experience</strong></u> </Link>!</p>
               <div>
                 <div className="flex  items-center mt-10 y-2">
@@ -115,42 +115,46 @@ function Hero() {
         </div>
 
         <div className={bgColor} id="work">
-          <div className="mx-10 md:ml-10 xl:mx-auto max-w-5xl">
-            <div className="grid grid-cols-1 lg:grid-cols-3 py-20">
-              <div className="pr-0 lg:pr-10 col-span-1 place-content-center">
-                <p className="text-4xl font-bold text-center lg:text-left">Patient case creation made easier.</p>
-                <p className="text-xl font-bold mt-14 text-center lg:text-left">RxPert</p>
-                <p className="mt-3 text-sm text-center lg:text-left">A tool meant to help professors develop patient cases for their curriculums </p>
-              </div>
-              <div className="col-span-2 flex justify-center">
-                <Link href="/work/rxpert">
-                  <Image className="dr" src="/img/newHero.png" alt="Rxpert home page" width={700} height={500} />
-                </Link>
+          <Link href="/work/rxpert">
+            <div className="mx-10 md:ml-10 xl:mx-auto max-w-5xl">
+              <div className="grid grid-cols-1 lg:grid-cols-3 py-20">
+                <div className="pr-0 lg:pr-10 col-span-1 place-content-center">
+                  <p className="text-4xl font-bold text-center lg:text-left">Patient case creation made easier.</p>
+                  <p className="text-xl font-bold mt-14 text-center lg:text-left">RxPert</p>
+                  <p className="mt-3 text-sm text-center lg:text-left">A tool meant to help professors develop patient cases for their curriculums </p>
+                </div>
+                <div className="col-span-2 flex justify-center">
+
+                  <Image className="dr" src="/img/rxpertCover.png" alt="Rxpert " width={700} height={500} />
+
+                </div>
               </div>
             </div>
-          </div>
+          </Link>
         </div>
 
         <div className={bgColor}>
-          <div className="mx-10 md:ml-10 xl:mx-auto max-w-5xl">
-            <div className="grid grid-cols-1 lg:grid-cols-3 py-20">
-              <div className="col-span-2 lg:flex justify-self-start hidden -ml-7 ">
-                <Link href="/work/protothon">
-                  <Image className="dr" src="/img/newSFD-go-digital.png" alt="Protothon" width={700} height={500} />
-                </Link>
-              </div>
-              <div className="pl-0 lg:pl-10 col-span-1 place-content-center">
-                <p className="text-4xl font-bold text-center lg:text-left">Track and dispatch with ease.</p>
-                <p className="text-xl font-bold mt-14 text-center lg:text-left">Protothon</p>
-                <p className="mt-3 text-sm text-center lg:text-left">A web app designed for resource and event tracking for the Seattle Fire Department </p>
-              </div>
-              <div className="col-span-2 flex justify-center lg:hidden">
-                <Link href="/work/protothon">
-                  <Image className="dr" src="/img/newSFD-go-digital.png" alt="Protothon" width={700} height={500} />
-                </Link>
+          <Link href="/work/protothon">
+            <div className="mx-10 md:ml-10 xl:mx-auto max-w-5xl">
+              <div className="grid grid-cols-1 lg:grid-cols-3 py-20">
+                <div className="col-span-2 lg:flex justify-self-start hidden -ml-7 ">
+
+                  <Image className="dr" src="/img/sfdCover.png" alt="Protothon" width={700} height={500} />
+
+                </div>
+                <div className="pl-0 lg:pl-10 col-span-1 place-content-center">
+                  <p className="text-4xl font-bold text-center lg:text-left">Track and dispatch with ease.</p>
+                  <p className="text-xl font-bold mt-14 text-center lg:text-left">Protothon</p>
+                  <p className="mt-3 text-sm text-center lg:text-left">A web app designed for resource and event tracking for the Seattle Fire Department </p>
+                </div>
+                <div className="col-span-2 flex justify-center lg:hidden">
+                  {/* <Link href="/work/protothon"> */}
+                    <Image className="dr" src="/img/sfdCover.png" alt="Protothon" width={700} height={500} />
+                  {/* </Link> */}
+                </div>
               </div>
             </div>
-          </div>
+          </Link>
         </div>
 
         {/* <div className={bgColor}>

@@ -113,10 +113,10 @@ export default function Rxpert() {
                 </div>
             </div>
 
-            <hr className="landing" />
+            {/* <hr className="landing" /> */}
 
-            <div className="mx-10 md:ml-10 xl:mx-auto max-w-5xl  py-16">
-                <div className="lg:pr-44 pr-0">
+            {/* <div className="mx-10 md:ml-10 xl:mx-auto max-w-5xl  py-16"> */}
+            {/* <div className="lg:pr-44 pr-0">
                     <p className="text-3xl mb-5 font-bold">Initial User Testing and Research</p>
                     <p className="mb-5">After ensuring that there was interest in the product, we jumped right into designing it. Our goal was to have a functioning prototype that the professors could use and then give feedback on.</p>
                     <p className="mb-5">We initially had the chat and form be on the left side for the case generating, where the professor could pick whether they wanted to use the form, or chat with the AI directly to create the case. The generated case would then appear on the right side of the screen, including all the information that the professor provided.</p>
@@ -126,8 +126,8 @@ export default function Rxpert() {
                         <Link target="_blank" className="hover:underline" href="https://leetcare.notion.site/01-Dr-Suchy-11f12020111d80e99be2d07cacb59fd3">User Test Example</Link>
                         <ArrowUpRightIcon className="w-5 h-5 ml-2" />
                     </div>
-                </div>
-                {/* <div className="grid grid-cols-1 mt-20 lg:grid-cols-3">
+                </div> */}
+            {/* <div className="grid grid-cols-1 mt-20 lg:grid-cols-3">
                     <div className="grid justify-items-center lg:justify-items-start -ml-5 col-span-1">
                         <Link target="_blank" href="https://leetcare.notion.site/01-Dr-Suchy-11f12020111d80e99be2d07cacb59fd3">
                             <Image className="place-self-center" src="/img/Suchy.png" alt="main profile" width={600} height={700} />
@@ -145,7 +145,7 @@ export default function Rxpert() {
                         </ul>
                     </div>
                 </div> */}
-            </div>
+            {/* </div> */}
 
             <div className="bg-[#efeff2] rounded-2xl mx-10">
                 <div className="py-16  mx-10 md:ml-10 xl:mx-auto max-w-5xl ">
@@ -227,12 +227,14 @@ export default function Rxpert() {
                 </div>
             </div>
 
-            <div className="py-16 mx-10 md:ml-10 xl:mx-auto max-w-5xl">
-                <p className="text-3xl mb-5 font-bold">Edit your case with the help of AI.</p>
-                <p>Click the icon in the corner after the case is generated and edit it till you are happy with the result.</p>
-                <div className="grid mt-5 grid-cols-1 lg:grid-cols-2 -ml-5">
-                    <Image src="/img/Edit1.png" alt="dashboard" width={600} height={300} />
-                    <Image src="/img/Edit2.png" alt="dashboard" width={600} height={300} />
+            <div className="bg-[#efeff2] rounded-2xl mx-10">
+                <div className="py-16 mx-10 md:ml-10 xl:mx-auto max-w-5xl">
+                    <p className="text-3xl mb-5 font-bold">Edit your case with the help of AI.</p>
+                    <p>Click the icon in the corner after the case is generated and edit it till you are happy with the result.</p>
+                    <div className="grid mt-5 grid-cols-1 lg:grid-cols-2 -ml-5">
+                        <Image src="/img/Edit1.png" alt="dashboard" width={600} height={300} />
+                        <Image src="/img/Edit2.png" alt="dashboard" width={600} height={300} />
+                    </div>
                 </div>
             </div>
 
