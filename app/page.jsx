@@ -100,7 +100,8 @@ function Hero() {
                   Hello! I’m Kira, a junior 👩‍🎓 at the University of Washington studying Informatics 💻
                 </p>
               </div>
-              <p className="mt-24 mr-96">Current design director for <Link target="_blank" href="https://www.instagram.com/uxuw.club/?hl=en"><u><strong>UX@UW</strong></u></Link> and</p>
+              <p className="mt-24 ">Current design director for <Link target="_blank" href="https://www.instagram.com/uxuw.club/?hl=en"><u><strong>UX@UW</strong></u></Link>, <strong>Figma Campus Leader</strong>, and</p>
+              {/* <p>Figma Campus leader, and</p> */}
               <p>event coordinator for <Link target="_blank" href="https://www.instagram.com/womeninux_uw/"><u><strong>Women in User Experience</strong></u> </Link>!</p>
               <div>
                 <div className="flex  items-center mt-10 y-2">
