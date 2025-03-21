@@ -183,6 +183,8 @@ export default function Rxpert() {
                         <Image src="/img/DS-rxpert.png" alt="design system" width={500} height={300} />
                     </div>
                 </div>
+                <p className="lg:pr-44 pr-0 mt-5">Sketching out my ideas on paper let me experiment more in less time, helping me narrow down what designs were feasible versus just a fun idea. When sketching ideas, it was important for me to <strong>reference UI designs that already </strong>exist so that the user has some <strong>familiarity</strong> going into the product. </p>
+                <p className="lg:pr-44 pr-0 mt-3">For the case generator, I was inspired by ChatGPT's document view, that creates a new side panel where users are able to access the document in a separate window rather than in the chat. I liked this design because it allowed the user to <strong>focus on the document</strong> rather than getting lost in the chat.</p>
             </div>
 
             <div className="mx-10 md:ml-10 xl:mx-auto max-w-5xl py-16">
