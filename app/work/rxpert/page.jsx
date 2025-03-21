@@ -299,9 +299,10 @@ export default function Rxpert() {
                     <div className="col-span-2 flex -ml-5 lg:hidden justify-end">
                         <Image src="/img/chainOfThought.png" alt="chain of thought version" width={600} height={300} />
                     </div>
-                    <div className="mt-10 col-span-1 place-content-center">
+                    <div className="col-span-1 place-content-center">
                         <p className="text-3xl mb-5 font-bold">Potential Future Design: Chain of Thought</p>
-                        <p>Chain of thought lets professors see the process of how the AI generated the case.</p>
+                        <p>Professors were unsure as to whether they would be able to trust AI to develop accurate patient cases. </p>
+                        <p className="mt-3">By providing them with an alternative UI design, they would be able to verify that the case information is accurate based on the chain of thought process.</p>
                     </div>
                     <div className="col-span-2 -ml-5 lg:flex justify-end hidden">
                         <Image src="/img/chainOfThought.png" alt="chain of thought version" width={600} height={300} />
