@@ -158,7 +158,7 @@ export default function Personal() {
                             </div>
                         </div>
                         <div className="flex justify-center mt-10 lg:mt-0">
-                            <Image className="dr" src="/img/footer.png" alt="Rxpert home page" width={200} height={200} />
+                            <Image className="dr" src="/img/icon.png" alt="Rxpert home page" width={200} height={200} />
                         </div>
                     </div>
                 </div>
