@@ -19,7 +19,7 @@ export default function NavBar(props) {
     }
 
     return (
-        <div className={(project ? 'fixed z-10 ' : '') + "justify-between py-2 w-screen mx-auto px-10 " + (isOpen ? 'flex-col' : 'md:flex') + (scrolled > 0 ? ' drop-shadow-md' : '') + " " + color }>
+        <div className={(project ? 'fixed z-20 ' : '') + "justify-between py-2 w-screen mx-auto px-10 " + (isOpen ? 'flex-col' : 'md:flex') + (scrolled > 0 ? ' drop-shadow-md' : '') + " " + color }>
             <div className="flex justify-between items-center">
                 <Link href="/" className="kb">kb.</Link>
                 <button onClick={handleClick}>
@@ -27,8 +27,8 @@ export default function NavBar(props) {
                 </button>
             </div>
             <div className={"md:flex md:flex-row items-center justify-start md:space-x-1 pb-3 md:pb-0 " + (isOpen ? 'flex-col' : 'hidden')}>
-                <Link href="/#work" className={"block " + (isOpen ? '' : 'pl-6')}>Work</Link>
-                <Link href="/personal" className={"block " + (isOpen ? '' : 'pl-6')}>About Me</Link>
+                <Link href="/#work" className={"block text-white " + (isOpen ? '' : 'pl-6')}>Work</Link>
+                <Link href="/personal" className={"block text-white " + (isOpen ? '' : 'pl-6')}>About Me</Link>
             </div>
         </div>
     )

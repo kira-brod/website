@@ -28,7 +28,7 @@ function Hero() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [cursorVariant, setCursorVariant] = useState('default');
 
-  const bgColor = "bg-[#ffffff]"
+  const bgColor = "bg-[#12113D]"
 
   const [scrolled, setScrolled] = useState(0);
 
@@ -93,29 +93,47 @@ function Hero() {
           <div className="">
             <NavBar color={"bg-[#f6e8ee]" + bgColor} />
           </div>
-          <div className="bg-gradient-to-r from-[#CD85B7]/25 from-10% via-[#CD8595]/50 via-30% to-[#C085CD]/25 to-90%  mt-3  rounded-2xl mx-10">
-            <div className="mx-10 xl:mx-auto mt-20 max-w-5xl lg:pr-44">
+          <div className="mt-3 mx-10">
+            <div className="mx-10 xl:mx-auto mt-20 max-w-5xl">
               <div>
-                <p className="mr-20 lg:mr-0 lg:mx-0 text-left text-5xl font-bold leading-[3.5rem]">
-                  Hello! I’m Kira, a junior 👩‍🎓 at the University of Washington studying Informatics 💻
+                <p className=" lg:mx-0 text-center text-5xl font-bold leading-[3.5rem] text-white">
+                  Hello, I’m Kira
                 </p>
               </div>
-              <p className="mt-24 ">Current design director for <Link target="_blank" href="https://www.instagram.com/uxuw.club/?hl=en"><u><strong>UX@UW</strong></u></Link>, <strong>Figma Campus Leader</strong>, and</p>
+              <p className="mt-5 px-10 lg:px-64 text-center text-white text-xl ">A junior at the University of Washington studying Informatics. Check out my work! </p>
+              <div className="grid grid-cols-2 mt-24 mb-5 px-10 lg:mx-24 justify-items-center">
+                <p className="text-white text-sm">President of UX@UW</p>
+                <p className="text-white text-sm">Figma Campus Leader</p>
+              </div>
+              {/* Current design director for <Link target="_blank" href="https://www.instagram.com/uxuw.club/?hl=en"><u><strong>UX@UW</strong></u></Link>, <strong>Figma Campus Leader</strong>, and</p> */}
               {/* <p>Figma Campus leader, and</p> */}
-              <p>event coordinator for <Link target="_blank" href="https://www.instagram.com/womeninux_uw/"><u><strong>Women in User Experience</strong></u> </Link>!</p>
-              <div>
+              {/* <p>event coordinator for <Link target="_blank" href="https://www.instagram.com/womeninux_uw/"><u><strong>Women in User Experience</strong></u> </Link>!</p> */}
+              {/* <div>
                 <div className="flex  items-center mt-10 y-2">
                   <Link className="hover:underline" href="/personal">About me</Link>
                   <ArrowUpRightIcon className="w-5 h-5 ml-2" />
                 </div>
                 <p className="leading-3 mb-20">Make what your heart desires.</p>
-              </div>
+              </div> */}
             </div>
           </div>
           {/* <hr className="landing" /> */}
         </div>
 
-        <div className={bgColor} id="work">
+        <div className={"grid grid-cols-1 lg:grid-cols-2 " + bgColor} >
+          <Link href="/work/rxpert">
+            <div className="rounded-3xl mr-1">
+              <Image className="dr rounded-3xl justify-self-end" src="/img/Rxpert.png" alt="Rxpert " width={600} height={500} />
+            </div>
+          </Link>
+          <Link href="/work/protothon">
+            <div className="rounded-3xl ml-1">
+              <Image className="dr rounded-3xl" src="/img/sfd.png" alt="Protothon" width={600} height={500} />
+            </div>
+          </Link>
+        </div>
+
+        {/* <div className={bgColor} id="work">
           <Link href="/work/rxpert">
             <div className="mx-10 md:ml-10 xl:mx-auto max-w-5xl">
               <div className="grid grid-cols-1 lg:grid-cols-3 py-20">
@@ -132,9 +150,9 @@ function Hero() {
               </div>
             </div>
           </Link>
-        </div>
+        </div> */}
 
-        <div className={bgColor}>
+        {/* <div className={bgColor}>
           <Link href="/work/protothon">
             <div className="mx-10 md:ml-10 xl:mx-auto max-w-5xl">
               <div className="grid grid-cols-1 lg:grid-cols-3 py-20">
@@ -149,14 +167,12 @@ function Hero() {
                   <p className="mt-3 text-sm text-center lg:text-left">A web app designed for resource and event tracking for the Seattle Fire Department </p>
                 </div>
                 <div className="col-span-2 flex justify-center lg:hidden">
-                  {/* <Link href="/work/protothon"> */}
-                    <Image className="dr" src="/img/sfdCover.png" alt="Protothon" width={700} height={500} />
-                  {/* </Link> */}
+                  <Image className="dr" src="/img/sfdCover.png" alt="Protothon" width={700} height={500} />
                 </div>
               </div>
             </div>
           </Link>
-        </div>
+        </div> */}
 
         {/* <div className={bgColor}>
           <div className="mx-auto max-w-5xl">
@@ -177,25 +193,23 @@ function Hero() {
         </div> */}
 
         <div className={bgColor}>
-          <hr className="landing" />
+          {/* <hr className="landing" /> */}
           <div className="mx-auto max-w-5xl py-20">
-            <div className="grid grid-cols-1 lg:grid-cols-2">
-              <div className="justify-items-center lg:justify-items-start lg:place-content-center">
-                <p className="text-4xl font-bold">Keep in touch!</p>
-                <div className="flex">
-                  <div className="flex justify-start items-center py-2">
-                    <Link className="hover:underline" href="mailto:kira.b@outlook.com">Email</Link>
-                    <ArrowUpRightIcon className="w-5 h-5 ml-2" />
-                  </div>
-                  <div className="flex justify-start items-center py-2 pl-5">
-                    <Link className="hover:underline" target="_blank" href="https://www.linkedin.com/in/kira-brodsky-90a11a275/">LinkedIn</Link>
-                    <ArrowUpRightIcon className="w-5 h-5 ml-2" />
-                  </div>
+            <div className="grid grid-cols-1 lg:grid-cols-2 justify-items-center">
+              <p className="text-4xl font-bold text-white">Keep in touch!</p>
+              <div className="flex">
+                <div className="flex justify-start items-center py-2">
+                  <Link className="hover:underline text-white" href="mailto:kira.b@outlook.com">Email</Link>
+                  <ArrowUpRightIcon className="w-5 h-5 ml-2 text-white" />
+                </div>
+                <div className="flex justify-start items-center py-2 pl-5">
+                  <Link className="hover:underline text-white" target="_blank" href="https://www.linkedin.com/in/kira-brodsky-90a11a275/">LinkedIn</Link>
+                  <ArrowUpRightIcon className="w-5 h-5 ml-2 text-white" />
                 </div>
               </div>
-              <div className="flex justify-center mt-10 ml-32 lg:mt-0">
+              {/* <div className="flex justify-center mt-10 ml-32 lg:mt-0">
                 <Image className="dr" src="/img/icon.png" alt="Rxpert home page" width={200} height={200} />
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

@@ -1,5 +1,5 @@
 import './globals.css'
-import { Inter, Open_Sans, Roboto, Source_Serif_4 } from 'next/font/google'
+import { Inter, Open_Sans, Roboto, Source_Serif_4, DM_Sans } from 'next/font/google'
 import { Plus_Jakarta_Sans } from 'next/font/google'
 // import Head from 'next/head'
 
@@ -15,6 +15,12 @@ const openSans = Open_Sans({
   style: ['normal', 'italic'],
   subsets: ['latin'],
   display: 'swap',
+})
+
+const dmSans = DM_Sans ({
+  weight: ['300', '400', '500', '700', '800'],
+  style: ['normal', 'italic'],
+  subsets: ['latin']
 })
 // export const jakarta = Plus_Jakarta_Sans({
 //   weight: ['200', '300', '400', '500', '600', '700', '800'],
@@ -47,7 +53,7 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/favicon.ico" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
       </Head> */}
-      <body className={inter.className}>{children}</body>
+      <body className={dmSans.className}>{children}</body>
     </html>
   )
 }

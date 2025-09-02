@@ -286,6 +286,29 @@ h2 {
   font-size: 1.5rem;
 }
 
+li {
+  border-left-color: #999999;
+  border-left-style: solid;
+  border-left-width: 2px;
+  padding-left: 35px;
+  padding-right: 25px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+p {
+  line-height: 1.3rem;
+}
+
+/* li:hover {
+  border-left-color: #0564FC;
+  border-left-style: solid;
+  border-left-width: 2px;
+  background-color: #0F2263;
+  border-radius: 0px 5px 5px 0px;
+} */
+
+
 section {
   scroll-behavior: smooth;
 }
