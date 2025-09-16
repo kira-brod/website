@@ -120,17 +120,29 @@ function Hero() {
           {/* <hr className="landing" /> */}
         </div>
 
-        <div className={"grid grid-cols-1 lg:grid-cols-2 " + bgColor} >
-          <Link href="/work/rxpert">
-            <div className="rounded-3xl mr-1">
-              <Image className="dr rounded-3xl justify-self-end" src="/img/Rxpert.png" alt="Rxpert " width={600} height={500} />
-            </div>
-          </Link>
-          <Link href="/work/protothon">
-            <div className="rounded-3xl ml-1">
-              <Image className="dr rounded-3xl" src="/img/sfd.png" alt="Protothon" width={600} height={500} />
-            </div>
-          </Link>
+        <div className={"grid grid-cols-1 " + bgColor}>
+          <div className={ bgColor}>
+            <Link href="/work/">
+              <div className={"rounded-3xl ml-1" + bgColor}>
+                <Image className="dr rounded-3xl justify-self-center" src="/img/Gotham.png" alt="Gotham" width={1210} height={1210} />
+              </div>
+            </Link>
+          </div>
+
+          <div className={"grid grid-cols-1 lg:grid-cols-2 pt-2 " + bgColor} >
+            <Link href="/work/rxpert">
+              <div className="rounded-3xl mr-1">
+                <Image className="dr rounded-3xl justify-self-end" src="/img/Rxpert.png" alt="Rxpert " width={600} height={500} />
+              </div>
+            </Link>
+            <Link href="/work/protothon">
+              <div className="rounded-3xl ml-1">
+                <Image className="dr rounded-3xl" src="/img/sfd.png" alt="Protothon" width={600} height={500} />
+              </div>
+            </Link>
+          </div>
+
+          
         </div>
 
         {/* <div className={bgColor} id="work">
