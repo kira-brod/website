@@ -108,7 +108,7 @@ export default function Rxpert() {
                 <div className=" mt-28">
                     <p className="text-white text-xl mx-96 text-center z-10">Challenge</p>
                     <p className="text-white text-3xl font-bold mx-64 text-center z-10 mt-5">How to balance the need for more practice with the hesitancy of AI adoption?</p>
-                    <p className="mt-5 text-center text-white italic mx-80 ">"Capstone practice is so much harder with AI, but if you do it in pieces and just have students practice that, then it's more doable in the short term"</p>
+                    <p className="mt-5 text-center text-white italic mx-80 ">&quot;Capstone practice is so much harder with AI, but if you do it in pieces and just have students practice that, then it's more doable in the short term&quot;</p>
                     <p className="mt-2 text-center text-white font-bold text-sm">Professor at the UW School of Pharmacy</p>
                 </div>
 

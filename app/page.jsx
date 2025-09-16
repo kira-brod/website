@@ -122,7 +122,7 @@ function Hero() {
 
         <div className={"grid grid-cols-1 " + bgColor}>
           <div className={ bgColor}>
-            <Link href="/work/">
+            <Link href="/work/protothon">
               <div className={"rounded-3xl ml-1" + bgColor}>
                 <Image className="dr rounded-3xl justify-self-center" src="/img/Gotham.png" alt="Gotham" width={1210} height={1210} />
               </div>
