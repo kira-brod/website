@@ -53,15 +53,15 @@ export default function Rxpert() {
                         <div className="flex justify-center space-x-3 mt-5">
                             <div className="flex justify-start items-center py-2 border-2 px-4 rounded-full">
                                 <FaceSmileIcon className="w-5 h-5 mr-2 text-white" />
-                                <p className=" text-white font-bold" href="mailto:kira.b@outlook.com">Empathy Statements</p>
+                                <p className=" text-white font-bold">Empathy Statements</p>
                             </div>
                             <div className="flex justify-start items-center py-2 border-2 px-4 rounded-full">
                                 <ListBulletIcon className="w-5 h-5 mr-2 text-white" />
-                                <p className=" text-white font-bold" href="mailto:kira.b@outlook.com">Agenda Setting</p>
+                                <p className=" text-white font-bold" >Agenda Setting</p>
                             </div>
                             <div className="flex justify-start items-center py-2 border-2 px-4 rounded-full">
                                 <ChatBubbleOvalLeftEllipsisIcon className="w-5 h-5 mr-2 text-white" />
-                                <p className=" text-white font-bold" href="mailto:kira.b@outlook.com">Reflection Statements</p>
+                                <p className=" text-white font-bold" >Reflection Statements</p>
                             </div>
                         </div>
                     </div>

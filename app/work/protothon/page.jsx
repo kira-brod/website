@@ -45,26 +45,45 @@ export default function Rxpert() {
 
                     <div className=" mt-28">
                         <p className="text-white text-xl mx-96 text-center z-10">Problem</p>
-                        <p className="text-white text-3xl font-bold mx-64 text-center z-10 mt-5">Lack of accessible real life patient practice leads students to fail their final exam which involves a mock pharmacy visit with a patient actor.</p>
+                        <p className="text-white text-3xl font-bold mx-64 text-center z-10 mt-5">The Seattle Fire Department is experiencing an increase in caller volume and incidents and need a way to dispatch resources.</p>
                     </div>
 
                     <div className=" mt-28">
-                        <p className=" text-2xl font-bold mx-44 text-center z-10 bg-gradient-to-r from-[#76ABFF] to-[#D563FF] bg-clip-text text-transparent">Common Pitfalls of Students</p>
+                        <p className=" text-2xl font-bold mx-44 text-center z-10 bg-gradient-to-r from-[#76ABFF] to-[#D563FF] bg-clip-text text-transparent">Goals for Dispatching Tools</p>
                         <div className="flex justify-center space-x-3 mt-5">
                             <div className="flex justify-start items-center py-2 border-2 px-4 rounded-full">
                                 <FaceSmileIcon className="w-5 h-5 mr-2 text-white" />
-                                <p className=" text-white font-bold" href="mailto:kira.b@outlook.com">Empathy Statements</p>
+                                <p className=" text-white font-bold">Track Incident Data</p>
                             </div>
                             <div className="flex justify-start items-center py-2 border-2 px-4 rounded-full">
                                 <ListBulletIcon className="w-5 h-5 mr-2 text-white" />
-                                <p className=" text-white font-bold" href="mailto:kira.b@outlook.com">Agenda Setting</p>
+                                <p className=" text-white font-bold" >Dispatch Resources</p>
                             </div>
                             <div className="flex justify-start items-center py-2 border-2 px-4 rounded-full">
                                 <ChatBubbleOvalLeftEllipsisIcon className="w-5 h-5 mr-2 text-white" />
-                                <p className=" text-white font-bold" href="mailto:kira.b@outlook.com">Reflection Statements</p>
+                                <p className=" text-white font-bold">Informed Decisions</p>
                             </div>
                         </div>
                     </div>
+                </div>
+
+                <div className="grid grid-cols-2 mx-auto max-w-5xl mt-28">
+                    <div className="grid grid-cols-1">
+                        <p className="text-white">01</p>
+                        <p className="text-white mt-10">02</p>
+                    </div>
+                    <div className="grid grid-cols-1">
+                        <div>
+                            <p className="text-white">Operational Challenges</p>
+                            <p className="text-white">Call processing within 60 seconds has dropped significantly, indicating a need for improved unit assignment and dispatch efficiency.</p>
+                        </div>
+                        <div className="mt-10">
+                            <p className="text-white">Data Utilization Gaps</p>
+                            <p className="text-white">Limited use of historical data analytics and reporting hinders trend identification, resource planning, and informed decision-making.</p>
+                        </div>
+
+                    </div>
+
                 </div>
 
                 <div className="grid grid-cols-2 mt-28 justify-items-center place-items-center">
