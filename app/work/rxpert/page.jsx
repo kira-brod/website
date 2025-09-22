@@ -95,13 +95,13 @@ export default function Rxpert() {
                         </li>
                     </ul>
                     <div className={slide1 ? "active" : " hidden"}>
-                        <Image className=" " src="/img/slide 1.png" alt="dashboard" width={500} height={500} />
+                        <Image className=" " src="/img/Slide 1.png" alt="dashboard" width={500} height={500} />
                     </div>
                     <div className={slide2 ? "active" : " hidden"}>
-                        <Image className=" " src="/img/slide 2.png" alt="dashboard" width={500} height={500} />
+                        <Image className=" " src="/img/Slide 2.png" alt="dashboard" width={500} height={500} />
                     </div>
                     <div className={slide3 ? "active" : " hidden"}>
-                        <Image className=" " src="/img/slide 3.png" alt="dashboard" width={500} height={500} />
+                        <Image className=" " src="/img/Slide 3.png" alt="dashboard" width={500} height={500} />
                     </div>
                 </div>
 
@@ -113,7 +113,7 @@ export default function Rxpert() {
                 </div>
 
                 <div className="mt-28 grid grid-cols-1 lg:grid-cols-2 place-items-center">
-                    <Image className=" " src="/img/Subset.png" alt="dashboard" width={500} height={500} />
+                    <Image className=" " src="/img/sub.png" alt="dashboard" width={500} height={500} />
                     <div>
                         <p className="text-white text-2xl font-bold mx-20  z-10">AI evaluation tends to be better on smaller subsets of tasks.</p>
                         <p className="text-white text-2xl font-bold mx-20  z-10 mt-10">This allows students to practice the interaction parts they want, with a more accurate evaluation.</p>
