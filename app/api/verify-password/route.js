@@ -4,8 +4,12 @@ export async function POST(request) {
   try {
     const { password } = await request.json();
     
-    // Store this in .env.local as PROJECT_PASSWORD
     const correctPassword = process.env.PROJECT_PASSWORD;
+    
+    // Temporary debug log
+    console.log('Received password length:', password?.length);
+    console.log('Expected password exists:', !!correctPassword);
+    console.log('Expected password length:', correctPassword?.length);
     
     if (password === correctPassword) {
       return NextResponse.json({ success: true });
