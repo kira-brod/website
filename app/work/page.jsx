@@ -3,7 +3,7 @@ import { ProjectCards } from "../../components/ProjectCardList"
 import Image from "next/image"
 import { ArrowUpRightIcon } from "@heroicons/react/24/outline"
 import Link from "next/link"
-import { Footer } from "../../comnpmponents/Footer"
+import { Footer } from "../../components/Footer"
 import ScrollSection from "../../components/ScrollSection"
 import { Cursor } from "../../components/Cursor"
 
