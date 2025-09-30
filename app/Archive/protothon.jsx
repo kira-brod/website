@@ -28,6 +28,8 @@ const SLIDES = [{ image: "/img/p1-cover.png" },
 { image: "/img/p11.png" },
 { image: "/img/p12.png" }]
 
+//hello
+
 
 
 
