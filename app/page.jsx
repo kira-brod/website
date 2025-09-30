@@ -1,10 +1,10 @@
 'use client'
-import NavBar from "./components/NavBar"
-import ProjectCard from "./components/ProjectCardList"
-import { ProjectCards } from "./components/ProjectCardList"
-import { DescriptionPill } from "./components/ProjectCardList"
+import NavBar from "../components/NavBar"
+import ProjectCard from "../components/ProjectCardList"
+import { ProjectCards } from "../components/ProjectCardList"
+import { DescriptionPill } from "../components/ProjectCardList"
 import { jakarta } from "./layout"
-import { Footer } from "./components/Footer"
+import { Footer } from "../components/Footer"
 import { ArrowRightIcon, ArrowUpRightIcon } from "@heroicons/react/24/outline"
 import Image from "next/image"
 // import { useState } from "react"
@@ -13,7 +13,7 @@ import Link from "next/link"
 import { source } from "./layout"
 import { useEffect, useState } from "react"
 import { color, motion } from "framer-motion"
-import { Cursor } from "./components/Cursor"
+import { Cursor } from "../components/Cursor"
 
 
 const projects = [{ title: "SFD Go Digital", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua", image: "/img/SFD-go-digital.png" },
@@ -129,14 +129,14 @@ function Hero() {
             </Link>
           </div> */}
 
-          <div className={"grid grid-cols-1 lg:grid-cols-2 pt-2 " + bgColor} >
+          <div className={"grid grid-cols-1  lg:grid-cols-2 pt-2 " + bgColor} >
             <Link href="/work/rxpert">
               <div className="rounded-3xl mr-1">
                 <Image className="dr rounded-3xl justify-self-end" src="/img/Rxpert.png" alt="Rxpert " width={600} height={500} />
               </div>
             </Link>
             <Link href="/work/palantir">
-              <div className="rounded-3xl ml-1">
+              <div className="rounded-3xl ml-1 mt-5 lg:mt-0">
                 <Image className="dr rounded-3xl" src="/img/Gotham small.png" alt="Protothon" width={600} height={500} />
               </div>
             </Link>

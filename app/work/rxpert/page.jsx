@@ -6,7 +6,7 @@ import Link from "next/link"
 import { motion } from "framer-motion"
 import { useEffect, useState } from "react"
 import { ArrowUpRightIcon, ChatBubbleBottomCenterIcon, ChatBubbleOvalLeftEllipsisIcon, FaceSmileIcon, ListBulletIcon } from "@heroicons/react/24/outline"
-import NavBar from "../../components/NavBar"
+import NavBar from "../../../components/NavBar"
 
 export default function Rxpert() {
 
@@ -16,6 +16,13 @@ export default function Rxpert() {
     const [slide3, setSlide3] = useState(false);
 
     const bgcolor = "#0F2263"
+
+    const scrollToTarget = () => {
+        const targetElement = document.getElementById('conclusion');
+        if (targetElement) {
+            targetElement.scrollIntoView({ behavior: 'smooth' }); 
+        }
+    };
 
     useEffect(() => {
         const handleScroll = (event) => {
@@ -41,6 +48,7 @@ export default function Rxpert() {
                     <p className="text-5xl font-bold text-white mb-2  z-10">RxPert</p>
                     <p className="text-white mb-5 z-10 text-sm">April 2024 - Present</p>
                     <p className="text-white text-xl mx-80 text-center z-10">A digital tool designed to act as a virtual pharmacy patient to help students better prepare for patient actor tests.</p>
+                    <button onClick={scrollToTarget} className="bg-[#524DD9] text-white px-4 py-2 mt-10 rounded-lg z-10">Jump to Current Progress</button>
                     <Image className="-mt-24 " src="/img/hero rxpert.png" alt="dashboard" width={1200} height={1200} />
 
                     <div className=" mt-28">
@@ -119,6 +127,11 @@ export default function Rxpert() {
                         <p className="text-white text-2xl font-bold mx-20  z-10 mt-10">This allows students to practice the interaction parts they want, with a more accurate evaluation.</p>
                     </div>
                 </div>
+
+                <div className=" mt-28  mb-10" id="conclusion">
+                        <p className="text-white text-xl mx-96 text-center z-10">Project Currently</p>
+                        <p className="text-white text-3xl font-bold mx-64 text-center z-10 mt-5">We will be conducting research during fall quarter with the UW school of pharmacy to compare faculty vs. AI assesments.</p>
+                    </div>
 
 
                 <div className="bg-[#0B1338]">

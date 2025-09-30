@@ -29,7 +29,7 @@
     "**/*.ts",
     "**/*.tsx",
     "app/layout.jsx"
-  ],
+, "components/PasswordPromptModal.tsx", "app/api/verify-password/route.js"  ],
   "exclude": [
     "node_modules"
   ]

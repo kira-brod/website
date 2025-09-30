@@ -1,11 +1,11 @@
-import NavBar from "../components/NavBar"
-import { ProjectCards } from "../components/ProjectCardList"
+import NavBar from "../../components/NavBar"
+import { ProjectCards } from "../../components/ProjectCardList"
 import Image from "next/image"
 import { ArrowUpRightIcon } from "@heroicons/react/24/outline"
 import Link from "next/link"
-import { Footer } from "../components/Footer"
-import ScrollSection from "../components/ScrollSection"
-import { Cursor } from "../components/Cursor"
+import { Footer } from "../../comnpmponents/Footer"
+import ScrollSection from "../../components/ScrollSection"
+import { Cursor } from "../../components/Cursor"
 
 const projects = [{ title: "SFD Go Digital", description: "Design a platform for the Seattle Fire Department to easily track incidents and dispatch the proper resources.", image: "/img/SFD-go-digital.png", subtext: "Protothon", link: "/work/protothon" },
 { title: "SFD Go Digital", description: "Design a platform for the Seattle Fire Department to easily track incidents and dispatch the proper resources.", image: "/img/SFD-go-digital.png", subtext: "Protothon", link: "/work/protothon" },

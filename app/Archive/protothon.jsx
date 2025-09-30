@@ -1,5 +1,5 @@
 'use client'
-import NavBar from "../components/NavBar"
+import NavBar from "../../components/NavBar"
 import Image from "next/image"
 import Link from "next/link"
 import { motion } from "framer-motion"

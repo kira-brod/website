@@ -1,10 +1,10 @@
 'use client'
-import NavBar from "../components/NavBar";
+import NavBar from "../../components/NavBar";
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRightIcon } from "@heroicons/react/24/outline";
-import Modal from "../components/Modal";
+import Modal from "../../components/Modal";
 
 export default function Personal() {
 
