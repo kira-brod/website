@@ -170,6 +170,7 @@ export default function ProjectsPage() {
               </div>
             </div>
           </div>
+          
         </div>
       </main >
     </PasswordProtected>

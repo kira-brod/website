@@ -130,7 +130,7 @@ function Hero() {
             </Link>
           </div> */}
 
-          <div className={"grid grid-cols-1  lg:grid-cols-2 pt-2 " + bgColor} >
+          <div className={"grid grid-cols-1  lg:grid-cols-2 pt-2 " + bgColor} id="work">
             <Link href="/work/rxpert">
               <div className="rounded-3xl mr-1">
                 <Image className="dr rounded-3xl justify-self-end" src="/img/Rxpert.png" alt="Rxpert " width={600} height={500} />
