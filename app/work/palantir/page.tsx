@@ -104,7 +104,7 @@ export default function ProjectsPage() {
 
           <div className=" mt-28 bg-[#524DD9] py-16">
             <div className="max-w-7xl xl:mx-auto">
-              <p className="text-white text-xl mx-96 text-center z-10">How does Palantir's product fit into this?</p>
+              <p className="text-white text-xl mx-96 text-center z-10">How does Palantir&apos;s product fit into this?</p>
               <p className="text-white text-3xl font-bold mx-64 text-center z-10 mt-5">By building out a workflow for the coordinating body, we have the potential of gaining tactical units as a user for our overflight feature given the coordinating body&apos;s satisfaction.</p>
             </div>
           </div>
