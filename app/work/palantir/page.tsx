@@ -148,7 +148,8 @@ export default function ProjectsPage() {
 
           <div className=" mt-28 mb-10 max-w-7xl xl:mx-auto " id="conclusion">
             <p className="text-white text-xl mx-96 text-center z-10">Current Project State</p>
-            <p className="text-white text-3xl font-bold mx-64 text-center z-10 mt-5">This project was a vision mock of what can become of Palantir&apos;s satellite product in the future. It was successful in getting the team to start working on implementing SSRs within the product.</p>
+            <p className="text-white text-3xl font-bold mx-64 text-center z-10 mt-5 mb-5">This project was a vision mock of what can become of Palantir&apos;s satellite product in the future. It was successful in getting the team to start working on implementing SSRs within the product.</p>
+            <p className="text-white text-center mx-64 ">Reflection: This project had a very murky scope which proved to be challenging but it made me recognize the importance of collaborative decomp and how helpful it is to have team conversations.</p>
           </div>
 
 
