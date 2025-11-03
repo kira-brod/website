@@ -101,7 +101,7 @@ function Hero() {
                   Hello, I’m Kira
                 </p>
               </div>
-              <p className="mt-5 px-10 lg:px-64 text-center text-white text-xl ">A junior at the University of Washington studying Informatics. Check out my work! </p>
+              <p className="mt-5 px-10 lg:px-64 text-center text-white text-xl ">A senior at the University of Washington studying Informatics. Check out my work! </p>
               <div className="grid grid-cols-2 mt-24 mb-5 px-10 lg:mx-24 justify-items-center">
                 <p className="text-white text-sm">President of UX@UW</p>
                 <p className="text-white text-sm">Figma Campus Leader</p>
