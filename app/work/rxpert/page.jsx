@@ -46,7 +46,7 @@ export default function Rxpert() {
             <div className={" grid content-between overflow-x-hidden max-w-7xl xl:mx-auto "}>
                 <div className="grid grid-cols-1 justify-items-center mt-32">
                     <p className="text-5xl font-bold text-white mb-2  z-10">RxPert</p>
-                    <p className="text-white mb-5 z-10 text-sm">April 2024 - Present</p>
+                    <p className="text-white mb-5 z-10 text-sm">April 2024 - June 2025</p>
                     <p className="text-white text-xl mx-80 text-center z-10">A digital tool designed to act as a virtual pharmacy patient to help students better prepare for patient actor tests.</p>
                     <button onClick={scrollToTarget} className="bg-[#524DD9] text-white px-4 py-2 mt-10 rounded-lg z-10">Jump to Current Progress</button>
                     <Image className="-mt-24 " src="/img/hero rxpert.png" alt="dashboard" width={1200} height={1200} />

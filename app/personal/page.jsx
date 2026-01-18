@@ -52,24 +52,29 @@ export default function Personal() {
                     <NavBar project={true} scrolled={scrolled} color="bg-[#0B1338] " />
                 </div>
 
-                <div className="bg-gradient-to-r from-[#CD85B7]/25 from-10% via-[#CD8595]/50 via-30% to-[#C085CD]/25 to-90%  mt-16  rounded-2xl mx-10">
-                    <div className="mx-10 mt-14 lg:mx-auto lg:mt-0 max-w-5xl ">
+                <div className="  mt-20  mx-10">
+                    <div className="mx-10 mt-44 lg:mx-auto lg:mt-0 max-w-5xl ">
                         <div className="grid grid-cols-1 md:ml-0 lg:ml-10 xl:ml-0 md:grid-cols-2">
+                            <div className="content-end">
+                                <Image src="/img/nyc.jpg" className="rounded-lg" alt="under construction sign" width={400} height={400} />
+                            </div>
                             <div className="">
                                 <div>
-                                    <p className=" text-7xl  mt-44 font-bold leading-[3.5rem] text-white">
+                                    <p className=" text-5xl mt-10 font-bold leading-[3.5rem] text-white">
                                         More Me!
                                     </p>
                                 </div>
-                                <div className="mt-20 mb-20 grid grid-cols-1 lg:grid-cols-4">
-                                    <div className="col-span-3">
-                                        <p className="mb-5 text-white">Aside from being interested in UX/UI Design, I love all things arts and crafts. From crocheting to studying abroad in London for art history, I am a sucker for a good piece of art.</p>
-                                        <p className="text-white">I also go bouldering!</p>
+                                <div className="mt-10 mb-20 grid grid-cols-1 lg:grid-cols-4">
+                                    <div className="col-span-4">
+                                        <p className="mb-5 text-white">My name is Kira and I am currently a senior at the University of Washington, studying informatics. In my spare time, I serve as the president of the biggest UX club on campus (UX@UW), hosting events every Thursday! I am also a Figma Campus Leader, which involves hosting Figma related events for students.</p>
+                                        <p className="mb-5 text-white">My passion for product design leaks through to other areas in my life! I love all things arts and crafts. From crocheting and knitting to studying abroad in London for art history, I am a sucker for a good piece of art.</p>
+                                        <p className="text-white">I also go bouldering :)</p>
                                     </div>
                                 </div>
-                            </div>
-                            <div className="content-end">
-                                <Image src="/img/bunny.png" className="" alt="under construction sign" width={800} height={800} />
+                                <div>
+                                    <p className="text-white"><strong>Design:</strong> Figma, Adobe XD, Adobe Illustrator, Miro, Blender</p>
+                                    <p className="text-white"><strong>Programming:</strong> Proficiency in R, basics in JavaScript, CSS, HTML, and Java</p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -88,6 +93,7 @@ export default function Personal() {
                 <Modal open={isOpen1} onClose={handleToClose1} color={"bg-[#725B51]"} title={"INFO 340: Client-side Development"} description={"Design, Front-end, Filter/Upload features | Four members | SP '24"} github={"https://github.com/info340b-sp24/project-color-analysis"} linkName={"Website"} url={"https://info340-ced4a.web.app/"}>
                     <Image src="/img/info340.png" className="rounded-t-xl" alt="alt vision slide" width={750} height={750} />
                 </Modal>
+
 
                 <p className="text-3xl  mt-16  font-bold text-white">Additional Projects</p>
                 <div className="grid grid-cols-1 md:grid-cols-3 mt-5 gap-5 ">
@@ -152,6 +158,10 @@ export default function Personal() {
                             </div>
                             <div className="flex justify-start items-center py-2 pl-5">
                                 <Link className="hover:underline text-white" target="_blank" href="https://www.linkedin.com/in/kira-brodsky-90a11a275/">LinkedIn</Link>
+                                <ArrowUpRightIcon className="w-5 h-5 ml-2 text-white" />
+                            </div>
+                            <div className="flex justify-start items-center py-2 pl-5">
+                                <Link className="hover:underline text-white" target="_blank" href="/Resume Updated.pdf">Resume</Link>
                                 <ArrowUpRightIcon className="w-5 h-5 ml-2 text-white" />
                             </div>
                         </div>
