@@ -7,6 +7,7 @@ import { jakarta } from "./layout"
 import { Footer } from "../components/Footer"
 import { ArrowRightIcon, ArrowUpRightIcon } from "@heroicons/react/24/outline"
 import Image from "next/image"
+import Clock from "../components/Clock"
 // import { useState } from "react"
 //test
 
@@ -29,7 +30,7 @@ function Hero() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [cursorVariant, setCursorVariant] = useState('default');
 
-  const bgColor = "bg-[#12113D]"
+  const bgColor = "bg-[#d1d1d1]"
 
   const [scrolled, setScrolled] = useState(0);
 
@@ -96,15 +97,34 @@ function Hero() {
           </div>
           <div className="mt-3 mx-10">
             <div className="mx-10 xl:mx-auto mt-20 max-w-5xl">
-              <div>
-                <p className=" lg:mx-0 text-center text-5xl font-bold leading-[3.5rem] text-white">
+              <div className="grid grid-cols-1 md:grid-cols-2">
+                <div className="content-end mb-10 md:mb-0">
+                  <p className="accent-text">Create more, worry less</p>
+                  <Clock />
+                </div>
+                <div>
+                  <p className="text-4xl mb-5 font-medium ">Hey there!</p>
+                  <p className="text-2xl">I'm Kira, a digital designer who likes to create in and out of the digital realm.</p>
+
+                  {/* <p>Product visuals are not to be underestimated. From hands-on to digital design, presentation is what makes the product.</p> */}
+                </div>
+              </div>
+              <div className="flex mt-20 place-content-center">
+                <Image src="/img/arc1.jpg" className="grayscale hover:grayscale-0 hover:scale-105 transition duration-300 ease-in-out" alt="under construction sign" width={300} height={300} />
+                <Image src="/img/arc2.jpg" className="grayscale hover:grayscale-0 hover:scale-105 transition duration-300 ease-in-out" alt="under construction sign" width={300} height={300} />
+                <Image src="/img/arc3.jpg" className="grayscale hover:grayscale-0 hover:scale-105 transition duration-300 ease-in-out" alt="under construction sign" width={300} height={300} />
+                <Image src="/img/arc4.jpg" className="grayscale hover:grayscale-0 hover:scale-105 transition duration-300 ease-in-out" alt="under construction sign" width={300} height={300} />
+                {/* <Image src="/img/Valerie.jpg" className="" alt="under construction sign" width={300} height={300} /> */}
+              </div>
+              {/* <div>
+                <p className=" lg:mx-0 text-center text-5xl font-bold leading-[3.5rem] text-black">
                   Hello, I’m Kira
                 </p>
-              </div>
-              <p className="mt-5 px-10 lg:px-64 text-center text-white text-xl ">A senior at the University of Washington studying Informatics. Check out my work! </p>
+              </div> */}
+              {/* <p className="mt-5 px-10 lg:px-64 text-center text-black text-xl ">A senior at the University of Washington studying Informatics. Check out my work! </p> */}
               <div className="grid grid-cols-2 mt-24 mb-5 px-10 lg:mx-24 justify-items-center">
-                <p className="text-white text-sm">President of UX@UW</p>
-                <p className="text-white text-sm">Figma Campus Leader</p>
+                {/* <p className="text-white text-sm">President of UX@UW</p>
+                <p className="text-white text-sm">Figma Campus Leader</p> */}
               </div>
               {/* Current design director for <Link target="_blank" href="https://www.instagram.com/uxuw.club/?hl=en"><u><strong>UX@UW</strong></u></Link>, <strong>Figma Campus Leader</strong>, and</p> */}
               {/* <p>Figma Campus leader, and</p> */}
@@ -119,6 +139,11 @@ function Hero() {
             </div>
           </div>
           {/* <hr className="landing" /> */}
+        </div>
+        <div className={bgColor}>
+          <div className="mx-10 xl:mx-auto  max-w-6xl">
+            <p className="text-4xl pb-5 font-medium ">My Work</p>
+          </div>
         </div>
 
         <div className={"grid grid-cols-1 " + bgColor}>
@@ -143,7 +168,7 @@ function Hero() {
             </Link>
           </div>
 
-          
+
         </div>
 
         {/* <div className={bgColor} id="work">
@@ -209,15 +234,15 @@ function Hero() {
           {/* <hr className="landing" /> */}
           <div className="mx-auto max-w-5xl py-20">
             <div className="grid grid-cols-1 lg:grid-cols-2 justify-items-center">
-              <p className="text-4xl font-bold text-white">Keep in touch!</p>
+              <p className="text-4xl font-bold text-black">Keep in touch!</p>
               <div className="flex">
                 <div className="flex justify-start items-center py-2">
-                  <Link className="hover:underline text-white" href="mailto:kira.b@outlook.com">Email</Link>
-                  <ArrowUpRightIcon className="w-5 h-5 ml-2 text-white" />
+                  <Link className="hover:underline text-black" href="mailto:kira.b@outlook.com">Email</Link>
+                  <ArrowUpRightIcon className="w-5 h-5 ml-2 text-black" />
                 </div>
                 <div className="flex justify-start items-center py-2 pl-5">
-                  <Link className="hover:underline text-white" target="_blank" href="https://www.linkedin.com/in/kira-brodsky-90a11a275/">LinkedIn</Link>
-                  <ArrowUpRightIcon className="w-5 h-5 ml-2 text-white" />
+                  <Link className="hover:underline text-black" target="_blank" href="https://www.linkedin.com/in/kira-brodsky-90a11a275/">LinkedIn</Link>
+                  <ArrowUpRightIcon className="w-5 h-5 ml-2 text-black" />
                 </div>
               </div>
               {/* <div className="flex justify-center mt-10 ml-32 lg:mt-0">

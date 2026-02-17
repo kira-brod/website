@@ -46,41 +46,82 @@ export default function Personal() {
     }, []);
 
     return (
-        <div className="bg-[#0B1338] ">
+        <div className="bg-[#d1d1d1] ">
             <div className={" grid content-between overflow-x-hidden "}>
                 <div className="">
-                    <NavBar project={true} scrolled={scrolled} color="bg-[#0B1338] " />
+                    <NavBar project={true} scrolled={scrolled} color="bg-[#d1d1d1] " />
                 </div>
 
-                <div className="  mt-20  mx-10">
-                    <div className="mx-10 mt-44 lg:mx-auto lg:mt-0 max-w-5xl ">
-                        <div className="grid grid-cols-1 md:ml-0 lg:ml-10 xl:ml-0 md:grid-cols-2">
-                            <div className="content-end">
-                                <Image src="/img/nyc.jpg" className="rounded-lg" alt="under construction sign" width={400} height={400} />
-                            </div>
-                            <div className="">
-                                <div>
+                <div className="  mt-5  mx-10">
+                    {/* <div className="mx-10 mt-44 lg:mx-auto lg:mt-0 max-w-5xl "> */}
+                    <div className="grid grid-cols-1 md:ml-0 lg:ml-10 xl:ml-0 md:grid-cols-2">
+                        <div className="content-end">
+                            <Image src="/img/nyc.jpg" className="grayscale" alt="under construction sign" width={300} height={300} />
+                        </div>
+                        <div className="">
+                            {/* <div>
                                     <p className=" text-5xl mt-10 font-bold leading-[3.5rem] text-white">
                                         More Me!
                                     </p>
-                                </div>
-                                <div className="mt-10 mb-20 grid grid-cols-1 lg:grid-cols-4">
-                                    <div className="col-span-4">
-                                        <p className="mb-5 text-white">My name is Kira and I am currently a senior at the University of Washington, studying informatics. In my spare time, I serve as the president of the biggest UX club on campus (UX@UW), hosting events every Thursday! I am also a Figma Campus Leader, which involves hosting Figma related events for students.</p>
+                                </div> */}
+                            <div className="mt-10 mb-20 grid grid-cols-1 lg:grid-cols-4">
+                                <div className="col-span-4">
+                                    {/* <p className="mb-5 text-white">My name is Kira and I am currently a senior at the University of Washington, studying informatics. In my spare time, I serve as the president of the biggest UX club on campus (UX@UW), hosting events every Thursday! I am also a Figma Campus Leader, which involves hosting Figma related events for students.</p>
                                         <p className="mb-5 text-white">My passion for product design leaks through to other areas in my life! I love all things arts and crafts. From crocheting and knitting to studying abroad in London for art history, I am a sucker for a good piece of art.</p>
-                                        <p className="text-white">I also go bouldering :)</p>
+                                        <p className="text-white">I also go bouldering :)</p> */}
+                                    <p className="">Kira is a senior studying Informatics at the University of Washington and serves as president of UX@UW, where she hosts weekly events. She is also a Figma Campus Leader with Figma, organizing design-focused programming for students. Passionate about product design and the arts, she enjoys crafts like crocheting and knitting, studied art history abroad in London, and spends her free time bouldering.</p>
+                                </div>
+                            </div>
+                            <div>
+                                <div className="flex place-content-between">
+                                    <div>
+                                        <p className=" mb-1">UX@UW</p>
+                                        <p className="text-gray-500 mb-3 text-xs">President</p>
                                     </div>
+                                    <p className=" mb-3 text-black">Sept 2025 - Present </p>
                                 </div>
-                                <div>
-                                    <p className="text-white"><strong>Design:</strong> Figma, Adobe XD, Adobe Illustrator, Miro, Blender</p>
-                                    <p className="text-white"><strong>Programming:</strong> Proficiency in R, basics in JavaScript, CSS, HTML, and Java</p>
+                                <hr className="mb-5 border-black"></hr>
+                                <div className="flex place-content-between">
+                                    <div>
+                                        <p className=" mb-1">Figma</p>
+                                        <p className="text-gray-500 mb-3 text-xs">Campus Leader</p>
+                                    </div>
+                                    <p className=" mb-3">February 2025 - Present</p>
                                 </div>
+                                <hr className="mb-5 border-black"></hr>
+                                <div className="flex place-content-between">
+                                    <div>
+                                        <p className=" mb-1">Palantir</p>
+                                        <p className="text-gray-500 mb-3 text-xs">Product Design Intern</p>
+                                    </div>
+                                    <p className=" mb-3">June - Sept 2025</p>
+                                </div>
+                                <hr className="mb-5 border-black"></hr>
+                                <div className="flex place-content-between">
+                                    <div>
+                                        <p className=" mb-1">Caffeinated Design Studio</p>
+                                        <p className="text-gray-500 mb-3 text-xs">UX Design Intern</p>
+                                    </div>
+                                    <p className=" mb-3">June - Aug 2024</p>
+                                </div>
+                                <hr className="mb-5 border-black"></hr>
+                                {/* <p className="text-white"><strong>Design:</strong> Figma, Adobe XD, Adobe Illustrator, Miro, Blender</p>
+                                    <p className="text-white"><strong>Programming:</strong> Proficiency in R, basics in JavaScript, CSS, HTML, and Java</p> */}
                             </div>
                         </div>
                     </div>
+                    {/* </div> */}
                 </div>
                 {/* <hr className="landing" /> */}
 
+            </div>
+            <div className="flex mt-20 place-content-center">
+                {/* <Image src="/img/knitting.jpg" className="" alt="under construction sign" width={300} height={300} /> */}
+                <Image src="/img/knitting.jpg" alt="under construction sign" width={300} height={300} className="grayscale hover:grayscale-0 hover:scale-105 transition duration-300 ease-in-out"/>
+                <Image src="/img/Louvre.jpg" className="grayscale hover:grayscale-0 hover:scale-105 transition duration-300 ease-in-out" alt="under construction sign" width={300} height={300} />
+                <Image src="/img/Valerie.jpg" className="grayscale hover:grayscale-0 hover:scale-105 transition duration-300 ease-in-out" alt="under construction sign" width={300} height={300} />
+                <Image src="/img/Terazzo.jpg" className="grayscale hover:grayscale-0 hover:scale-105 transition duration-300 ease-in-out" alt="under construction sign" width={300} height={300} />
+                {/* <Image src="/img/Valerie.jpg" className="" alt="under construction sign" width={300} height={300} /> */}
             </div>
 
 
@@ -95,7 +136,8 @@ export default function Personal() {
                 </Modal>
 
 
-                <p className="text-3xl  mt-16  font-bold text-white">Additional Projects</p>
+
+                <p className="text-3xl  mt-16  font-bold text-black">Additional Side Projects</p>
                 <div className="grid grid-cols-1 md:grid-cols-3 mt-5 gap-5 ">
                     <button onClick={handleClicktoOpen}>
                         <div className="bg-[#BD9BF9] h-80 rounded-lg p-7 pt-20 content-end">
@@ -146,23 +188,23 @@ export default function Personal() {
                 </div>
             </div> */}
 
-            <div className="bg-[#0B1338]">
+            <div className="bg-[#d1d1d1]">
                 {/* <hr className="landing" /> */}
                 <div className="mx-auto max-w-5xl py-20">
                     <div className="grid grid-cols-1 lg:grid-cols-2 justify-items-center">
-                        <p className="text-4xl font-bold text-white">Keep in touch!</p>
+                        <p className="text-4xl font-bold text-black">Keep in touch!</p>
                         <div className="flex">
                             <div className="flex justify-start items-center py-2">
-                                <Link className="hover:underline text-white" href="mailto:kira.b@outlook.com">Email</Link>
-                                <ArrowUpRightIcon className="w-5 h-5 ml-2 text-white" />
+                                <Link className="hover:underline text-black" href="mailto:kira.b@outlook.com">Email</Link>
+                                <ArrowUpRightIcon className="w-5 h-5 ml-2 text-black" />
                             </div>
                             <div className="flex justify-start items-center py-2 pl-5">
-                                <Link className="hover:underline text-white" target="_blank" href="https://www.linkedin.com/in/kira-brodsky-90a11a275/">LinkedIn</Link>
-                                <ArrowUpRightIcon className="w-5 h-5 ml-2 text-white" />
+                                <Link className="hover:underline text-black" target="_blank" href="https://www.linkedin.com/in/kira-brodsky-90a11a275/">LinkedIn</Link>
+                                <ArrowUpRightIcon className="w-5 h-5 ml-2 text-black" />
                             </div>
                             <div className="flex justify-start items-center py-2 pl-5">
-                                <Link className="hover:underline text-white" target="_blank" href="/Resume Updated.pdf">Resume</Link>
-                                <ArrowUpRightIcon className="w-5 h-5 ml-2 text-white" />
+                                <Link className="hover:underline text-black" target="_blank" href="/Resume Updated.pdf">Resume</Link>
+                                <ArrowUpRightIcon className="w-5 h-5 ml-2 text-black" />
                             </div>
                         </div>
                     </div>

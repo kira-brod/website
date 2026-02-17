@@ -6,6 +6,18 @@
   /* cursor:none; */
 }
 
+body {
+  font-family: var(--font-main);
+}
+
+.accent-text {
+  font-family: var(--font-accent);
+}
+
+.bric {
+  font-family: var(--bric);
+}
+
 
 h1 {
   font-size: 7rem;

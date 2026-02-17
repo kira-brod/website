@@ -129,7 +129,7 @@ export default function Rxpert() {
                 </div>
 
                 <div className=" mt-28  mb-10" id="conclusion">
-                        <p className="text-white text-xl mx-96 text-center z-10">Project Currently</p>
+                        <p className="text-white text-xl mx-96 text-center z-10">Current Project State</p>
                         <p className="text-white text-3xl font-bold mx-64 text-center z-10 mt-5">We will be conducting research during fall quarter with the UW school of pharmacy to compare faculty vs. AI assesments.</p>
                     </div>
 
