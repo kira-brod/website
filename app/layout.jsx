@@ -34,11 +34,11 @@ export const accentFont = Sometype_Mono({
   variable: "--font-accent",
 })
 
-export const bric = Bricolage_Grotesque({
-  subsets: ["latin"],
-  weight: ['300', '400', '500', '700', '800'],
-  variable: "--bric",
-})
+// export const bric = Bricolage_Grotesque({
+//   subsets: ["latin"],
+//   weight: ['300', '400', '500', '700', '800'],
+//   variable: "--bric",
+// })
 
 
 // export const jakarta = Plus_Jakarta_Sans({
