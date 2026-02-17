@@ -104,7 +104,7 @@ function Hero() {
                 </div>
                 <div>
                   <p className="text-4xl mb-5 font-medium ">Hey there!</p>
-                  <p className="text-2xl">I'm Kira, a digital designer who likes to create in and out of the digital realm.</p>
+                  <p className="text-2xl">I&apos;m Kira, a digital designer who likes to create in and out of the digital realm.</p>
 
                   {/* <p>Product visuals are not to be underestimated. From hands-on to digital design, presentation is what makes the product.</p> */}
                 </div>
