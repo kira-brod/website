@@ -23,12 +23,12 @@ const dmSans = DM_Sans({
   subsets: ['latin']
 })
 
-export const mainFont = Geist({
+ const mainFont = Geist({
   subsets: ["latin"],
   variable: "--font-main",
 });
 
-export const accentFont = Sometype_Mono({
+ const accentFont = Sometype_Mono({
   subsets: ["latin"],
   weight: "400",
   variable: "--font-accent",
