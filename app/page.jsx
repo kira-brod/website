@@ -30,7 +30,7 @@ function Hero() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [cursorVariant, setCursorVariant] = useState('default');
 
-  const bgColor = "bg-[#d1d1d1]"
+  const bgColor = "bg-[#F5F5F5]"
 
   const [scrolled, setScrolled] = useState(0);
 
@@ -96,7 +96,7 @@ function Hero() {
             <NavBar color={"bg-[#f6e8ee]" + bgColor} />
           </div>
           <div className="mt-3 mx-10">
-            <div className="mx-10 xl:mx-auto mt-20 max-w-5xl">
+            <div className="mx-10 xl:mx-auto mt-20 max-w-6xl">
               <div className="grid grid-cols-1 md:grid-cols-2">
                 <div className="content-end mb-10 md:mb-0">
                   <p className="accent-text">Create more, worry less</p>
@@ -109,13 +109,13 @@ function Hero() {
                   {/* <p>Product visuals are not to be underestimated. From hands-on to digital design, presentation is what makes the product.</p> */}
                 </div>
               </div>
-              <div className="flex mt-20 place-content-center">
+              {/* <div className="flex mt-20 place-content-center">
                 <Image src="/img/arc1.jpg" className="grayscale hover:grayscale-0 hover:scale-105 transition duration-300 ease-in-out" alt="under construction sign" width={300} height={300} />
                 <Image src="/img/arc2.jpg" className="grayscale hover:grayscale-0 hover:scale-105 transition duration-300 ease-in-out" alt="under construction sign" width={300} height={300} />
                 <Image src="/img/arc3.jpg" className="grayscale hover:grayscale-0 hover:scale-105 transition duration-300 ease-in-out" alt="under construction sign" width={300} height={300} />
                 <Image src="/img/arc4.jpg" className="grayscale hover:grayscale-0 hover:scale-105 transition duration-300 ease-in-out" alt="under construction sign" width={300} height={300} />
-                {/* <Image src="/img/Valerie.jpg" className="" alt="under construction sign" width={300} height={300} /> */}
-              </div>
+                <Image src="/img/Valerie.jpg" className="" alt="under construction sign" width={300} height={300} />
+              </div> */}
               {/* <div>
                 <p className=" lg:mx-0 text-center text-5xl font-bold leading-[3.5rem] text-black">
                   Hello, I’m Kira
@@ -142,7 +142,143 @@ function Hero() {
         </div>
         <div className={bgColor}>
           <div className="mx-10 xl:mx-auto  max-w-6xl">
-            <p className="text-4xl pb-5 font-medium ">My Work</p>
+            {/* <p className="text-4xl pb-5 font-medium ">My Work</p> */}
+          </div>
+        </div>
+
+        <div className={" " + bgColor}>
+          <div className="mx-10 xl:mx-auto  max-w-6xl">
+
+            {/* <!-- Header --> */}
+            <div className="flex justify-between items-start mb-8">
+              <h1 className="font-serif text-2xl font-normal leading-tight">My Work</h1>
+              <div className="text-right">
+                {/* <p className="font-serif text-2xl italic font-normal">Category Specimen</p> */}
+                {/* <p className="text-xs tracking-widest text-parchment-400 uppercase mt-1">Three-Column Edition</p> */}
+              </div>
+            </div>
+
+            {/* <!-- Grid --> */}
+            <div className="grid grid-cols-3 border-t border-black">
+
+              {/* <!-- Column 1 --> */}
+              <Link href="/work/rxpert">
+                <div className="border-r border-black pr-6 pb-8 relative">
+                  <div className="absolute -top-[3px] left-0 w-1.5 h-1.5 rounded-full bg-neutral-900"></div>
+                  <span className="font-serif text-8xl font-bold leading-none block mt-2 mb-4">1</span>
+                  <Image className=" " src="/img/Slide 1.png" alt="dashboard" width={500} height={500} />
+
+
+                  {/* <hr className="border-parchment-200 my-3" /> */}
+
+                  <ul className="space-y-0.5 text-[11px] my-1">
+                    <li className="flex items-baseline gap-1">
+                      <span>Project Name</span>
+                      <span className="flex-1 border-b border-dotted border-parchment-300 mb-0.5"></span>
+                      <span className="text-parchment-400  text-right">RxPert</span>
+                    </li>
+                    <li className="flex items-baseline gap-1">
+                      <span>Team</span>
+                      <span className="flex-1 border-b border-dotted border-parchment-300 mb-0.5"></span>
+                      <span className="text-parchment-400 w-5 text-right">04</span>
+                    </li>
+                  </ul>
+
+                  {/* <hr className="border-parchment-200 my-3" /> */}
+
+                  <ul className="space-y-0.5 text-[11px] ">
+                    <li className="flex items-baseline gap-1">
+                      <span>Role</span>
+                      <span className="flex-1 border-b border-dotted border-parchment-300 mb-0.5"></span>
+                      <span className="text-parchment-400 text-right">Product Designer</span>
+                    </li>
+                    
+                  </ul>
+                </div>
+              </Link>
+
+              {/* <!-- Column 2 --> */}
+              <Link href="/work/palantir">
+                <div className="border-r border-black px-6 pb-8 relative">
+                  <div className="absolute -top-[3px] left-0 w-1.5 h-1.5 rounded-full bg-neutral-900"></div>
+                  <span className="font-serif text-8xl font-bold leading-none block mt-2 mb-4">2</span>
+
+                  <ul className="space-y-0.5 text-[11px] my-3">
+                    <li className="flex items-baseline gap-1">
+                      <span>Company</span>
+                      <span className="flex-1 border-b border-dotted border-parchment-300 mb-0.5"></span>
+                      <span className="text-parchment-400  text-right">Palantir</span>
+                    </li>
+                    <li className="flex items-baseline gap-1">
+                      <span>Team</span>
+                      <span className="flex-1 border-b border-dotted border-parchment-300 mb-0.5"></span>
+                      <span className="text-parchment-400 w-5 text-right">06</span>
+                    </li>
+                    <li className="flex items-baseline gap-1">
+                      <span>Role</span>
+                      <span className="flex-1 border-b border-dotted border-parchment-300 mb-0.5"></span>
+                      <span className="text-parchment-400 text-right">Product Designer</span>
+                    </li>
+                  </ul>
+
+                  {/* <!-- Illustration --> */}
+                   <Image className=" " src="/img/Gotham small.png" alt="dashboard" width={500} height={500} />
+
+                 
+
+                  
+
+                  
+                </div>
+              </Link>
+
+              {/* <!-- Column 3 --> */}
+              <Link href="/work/capstone">
+                <div className="pl-6 pb-8 relative">
+                  <div className="absolute -top-[3px] left-0 w-1.5 h-1.5 rounded-full bg-neutral-900"></div>
+                  <span className="font-serif text-8xl font-bold leading-none block mt-2 mb-4">3</span>
+                  {/* <!-- Illustration --> */}
+                   <Image className=" " src="/img/Capstone.png" alt="dashboard" width={500} height={500} />
+
+                  {/* <div className="w-full aspect-[4/3] rounded bg-[#e2d8c8] flex items-center justify-center mb-4">
+                    <svg viewBox="0 0 180 130" width="160" xmlns="http://www.w3.org/2000/svg">
+                      <line x1="90" y1="20" x2="60" y2="110" stroke="#a0a8b0" stroke-width="4" stroke-linecap="round" />
+                      <line x1="90" y1="20" x2="120" y2="110" stroke="#a0a8b0" stroke-width="4" stroke-linecap="round" />
+                      <circle cx="90" cy="20" r="6" fill="#7088a0" />
+                      <circle cx="60" cy="110" r="4" fill="#506878" />
+                      <circle cx="120" cy="110" r="4" fill="#506878" />
+                      <path d="M 62 100 Q 90 120 118 100" fill="none" stroke="#c05878" stroke-width="2.5" stroke-linecap="round" />
+                      <circle cx="90" cy="44" r="5" fill="#c8d0d8" />
+                      <circle cx="90" cy="44" r="2" fill="#88a0b0" />
+                    </svg>
+                  </div> */}
+
+                  <ul className="space-y-0.5 text-[11px] my-1">
+                    <li className="flex items-baseline gap-1">
+                      <span>Project Name</span>
+                      <span className="flex-1 border-b border-dotted border-parchment-300 mb-0.5"></span>
+                      <span className="text-parchment-400  text-right">Husky Support</span>
+                    </li>
+                    <li className="flex items-baseline gap-1">
+                      <span>Team</span>
+                      <span className="flex-1 border-b border-dotted border-parchment-300 mb-0.5"></span>
+                      <span className="text-parchment-400 w-5 text-right">05</span>
+                    </li>
+                  </ul>
+
+                  {/* <hr className="border-parchment-200 my-3" /> */}
+
+                  <ul className="space-y-0.5 text-[11px] ">
+                    <li className="flex items-baseline gap-1">
+                      <span>Role</span>
+                      <span className="flex-1 border-b border-dotted border-parchment-300 mb-0.5"></span>
+                      <span className="text-parchment-400 text-right">Product Designer and Researcher</span>
+                    </li>
+                  </ul>
+                </div>
+              </Link>
+
+            </div>
           </div>
         </div>
 
@@ -155,7 +291,9 @@ function Hero() {
             </Link>
           </div> */}
 
-          <div className={"grid grid-cols-1  lg:grid-cols-2 pt-2 " + bgColor} id="work">
+          {/* Images recently used */}
+
+          {/* <div className={"grid grid-cols-1  lg:grid-cols-2 pt-2 " + bgColor} id="work">
             <Link href="/work/rxpert">
               <div className="rounded-3xl mr-1">
                 <Image className="dr rounded-3xl justify-self-end" src="/img/Rxpert.png" alt="Rxpert " width={600} height={500} />
@@ -166,7 +304,7 @@ function Hero() {
                 <Image className="dr rounded-3xl" src="/img/Gotham small.png" alt="Protothon" width={600} height={500} />
               </div>
             </Link>
-          </div>
+          </div> */}
 
 
         </div>

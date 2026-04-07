@@ -29,7 +29,7 @@
     "**/*.ts",
     "**/*.tsx",
     "app/layout.jsx"
-, "components/PasswordPromptModal.tsx", "app/api/verify-password/route.js"  ],
+, "components/PasswordPromptModal.tsx", "app/api/verify-password/route.js", "app/work/palantir/page.jsx"  ],
   "exclude": [
     "node_modules"
   ]

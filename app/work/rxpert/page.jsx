@@ -82,7 +82,7 @@ export default function Rxpert() {
                             setSlide2(false);
                             setSlide3(false);
                         }} className={slide1 ? "bg-[#0F2263] border-[#0564FC]" : " "}>
-                            <p className="font-bold text-white">Personlized Practice</p>
+                            <p className="font-bold text-white">Personalized Practice</p>
                             <p className="text-white mt-3">Students get to pick whether they want to work through a full patient visit or focus on specific parts to address their pitfalls.</p>
                         </li>
                         <li onMouseEnter={() => {
