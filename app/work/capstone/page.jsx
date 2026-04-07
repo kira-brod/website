@@ -57,7 +57,7 @@ export default function Capstone() {
 
                 <div className="mt-28 px-8 md:px-32 lg:px-64 grid grid-cols-2">
                     <div>
-                        <p className="text-white text-xl text-center z-10">My Contributions</p>
+                        <p className="text-white text-xl text-center z-10">My Contributions/Learnings</p>
                         <ul className="list-decimal list-outside text-white mt-5 pl-6">
                             <li className="mt-5">
                                 Help the discovery and scoping of our project through drafting user surveys and interview scripts, to then helping conduct interviews
@@ -67,6 +67,9 @@ export default function Capstone() {
                             </li>
                             <li className="mt-5">
                                 Navigate the team through completing capstone assignments, making sure that they meet the rubric.
+                            </li>
+                            <li className="mt-5">
+                                Project direction and validation should come from testing
                             </li>
                         </ul>
                     </div>

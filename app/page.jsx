@@ -163,7 +163,7 @@ function Hero() {
 
               {/* <!-- Column 1 --> */}
               <Link href="/work/rxpert">
-                <div className="border-r border-black pr-6 pb-8 relative">
+                <div className="border-r border-black pr-6 pb-28 relative">
                   <div className="absolute -top-[3px] left-0 w-1.5 h-1.5 rounded-full bg-neutral-900"></div>
                   <span className="font-serif text-8xl font-bold leading-none block mt-2 mb-4">1</span>
                   <Image className=" " src="/img/Slide 1.png" alt="dashboard" width={500} height={500} />
