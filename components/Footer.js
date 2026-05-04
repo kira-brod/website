@@ -2,7 +2,7 @@
 import Link from "next/link"
 import Image from "next/image"
 
-export default function Footer() {
+export function Footer() {
 
     return (
         <footer className="overflow-y-hidden">
