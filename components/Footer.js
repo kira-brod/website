@@ -1,7 +1,8 @@
+'use client'
 import Link from "next/link"
 import Image from "next/image"
 
-export function Footer() {
+export default function Footer() {
 
     return (
         <footer className="overflow-y-hidden">
