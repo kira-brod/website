@@ -100,7 +100,7 @@ function Hero() {
             <div className="mx-10 xl:mx-auto max-w-6xl">
               <div className="grid grid-cols-1 md:grid-cols-2">
                 <div className="content-end mb-10 md:mb-0">
-                  <img className="-mt-[500px] -ml-[55px]" src="/img/fullhandlogo.png" alt="dashboard" width={450} height={450} />
+                  <Image className="-mt-[500px] -ml-[55px]" src="/img/fullhandlogo.png" alt="dashboard" width={450} height={450} />
                   <p className="text-[90px] ml-[50%] -mt-[20px]">Creator</p>
                   <p className="title-text text-[150px] -mt-[40px] leading-snug">
                     Designer
