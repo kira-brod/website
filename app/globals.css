@@ -14,6 +14,10 @@ body {
   font-family: var(--font-accent);
 }
 
+.title-text {
+  font-family: var(--font-title);
+}
+
 /* .bric {
   font-family: var(--bric);
 } */

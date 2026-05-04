@@ -30,7 +30,7 @@ function Hero() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [cursorVariant, setCursorVariant] = useState('default');
 
-  const bgColor = "bg-[#F5F5F5]"
+  const bgColor = "bg-[#FFFFFF]"
 
   const [scrolled, setScrolled] = useState(0);
 
@@ -91,196 +91,68 @@ function Hero() {
       ></motion.div> */}
 
 
-        <div className={" grid content-between overflow-x-hidden " + bgColor}>
-          <div className="">
-            <NavBar color={"bg-[#f6e8ee]" + bgColor} />
-          </div>
-          <div className="mt-3 mx-10">
-            <div className="mx-10 xl:mx-auto mt-20 max-w-6xl">
+
+        <div className={" overflow-x-hidden " + bgColor}>
+          <div className="bg-[#cfff49] min-h-[650px] grid content-between ">
+            <div className="">
+              <NavBar color={"bg-[#f6e8ee]" + bgColor} />
+            </div>
+            <div className="mx-10 xl:mx-auto max-w-6xl">
               <div className="grid grid-cols-1 md:grid-cols-2">
                 <div className="content-end mb-10 md:mb-0">
-                  <p className="accent-text">Create more, worry less</p>
-                  <Clock />
-                </div>
-                <div>
-                  <p className="text-4xl mb-5 font-medium ">Hey there!</p>
-                  <p className="text-2xl">I&apos;m Kira, a digital designer who likes to create in and out of the digital realm.</p>
+                  <Image className="-mt-[500px] -ml-[55px]" src="/img/full hand logo.png" alt="dashboard" width={450} height={450} />
+                  <p className="text-[90px] ml-[50%] -mt-[20px]">Creator</p>
+                  <p className="title-text text-[150px] -mt-[40px] leading-snug">
+                    Designer
+                  </p>
 
-                  {/* <p>Product visuals are not to be underestimated. From hands-on to digital design, presentation is what makes the product.</p> */}
                 </div>
+                {/* <Image className="-mt-[500px] " src="/img/background hand.png" alt="dashboard" width={700} height={700} /> */}
+
               </div>
-              {/* <div className="flex mt-20 place-content-center">
-                <Image src="/img/arc1.jpg" className="grayscale hover:grayscale-0 hover:scale-105 transition duration-300 ease-in-out" alt="under construction sign" width={300} height={300} />
-                <Image src="/img/arc2.jpg" className="grayscale hover:grayscale-0 hover:scale-105 transition duration-300 ease-in-out" alt="under construction sign" width={300} height={300} />
-                <Image src="/img/arc3.jpg" className="grayscale hover:grayscale-0 hover:scale-105 transition duration-300 ease-in-out" alt="under construction sign" width={300} height={300} />
-                <Image src="/img/arc4.jpg" className="grayscale hover:grayscale-0 hover:scale-105 transition duration-300 ease-in-out" alt="under construction sign" width={300} height={300} />
-                <Image src="/img/Valerie.jpg" className="" alt="under construction sign" width={300} height={300} />
-              </div> */}
-              {/* <div>
-                <p className=" lg:mx-0 text-center text-5xl font-bold leading-[3.5rem] text-black">
-                  Hello, I’m Kira
-                </p>
-              </div> */}
-              {/* <p className="mt-5 px-10 lg:px-64 text-center text-black text-xl ">A senior at the University of Washington studying Informatics. Check out my work! </p> */}
-              <div className="grid grid-cols-2 mt-24 mb-5 px-10 lg:mx-24 justify-items-center">
-                {/* <p className="text-white text-sm">President of UX@UW</p>
-                <p className="text-white text-sm">Figma Campus Leader</p> */}
-              </div>
-              {/* Current design director for <Link target="_blank" href="https://www.instagram.com/uxuw.club/?hl=en"><u><strong>UX@UW</strong></u></Link>, <strong>Figma Campus Leader</strong>, and</p> */}
-              {/* <p>Figma Campus leader, and</p> */}
-              {/* <p>event coordinator for <Link target="_blank" href="https://www.instagram.com/womeninux_uw/"><u><strong>Women in User Experience</strong></u> </Link>!</p> */}
-              {/* <div>
-                <div className="flex  items-center mt-10 y-2">
-                  <Link className="hover:underline" href="/personal">About me</Link>
-                  <ArrowUpRightIcon className="w-5 h-5 ml-2" />
-                </div>
-                <p className="leading-3 mb-20">Make what your heart desires.</p>
-              </div> */}
             </div>
           </div>
+
+          <div className="mt-3 mx-10 mb-10 " id="work">
+            <div className="mx-10 xl:mx-auto mt-20 max-w-6xl">
+              <p className="title-text text-[50px] leading-normal">My Work</p>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
+                <Link href="/work/rxpert">
+                  <div className="relative overflow-hidden group">
+                    <Image className="w-full h-auto transition duration-300 group-hover:brightness-50" src="/img/Proj1.png" alt="dashboard" width={600} height={600} />
+                    <div className="absolute inset-0 flex flex-col items-left justify-end mb-10 ml-10 opacity-0 transition duration-300 group-hover:opacity-100">
+                      <h3 className="text-white text-6xl font-medium title-text mb-3">RxPert</h3>
+                      <p className="text-white text-sm mr-20">A digital tool designed to act as a virtual pharmacy patient to help students better prepare for patient actor tests.</p>
+                    </div>
+                  </div>
+                </Link>
+                <Link href="/work/palantir">
+                  <div className="relative overflow-hidden group">
+                    <Image className="w-full h-auto transition duration-300 group-hover:brightness-50" src="/img/Proj2.png" alt="dashboard" width={600} height={600} />
+                    <div className="absolute inset-0 flex flex-col items-left justify-end mb-10 ml-10 opacity-0 transition duration-300 group-hover:opacity-100">
+                      <h3 className="text-white text-6xl font-medium title-text mb-3">Product Design Internship</h3>
+                      <p className="text-white text-sm mr-20">Select project from my time at Palantir</p>
+                    </div>
+                  </div>
+                </Link>
+                <Link href="/work/capstone">
+                  <div className="relative overflow-hidden group">
+                    <Image className="w-full h-auto transition duration-300 group-hover:brightness-50" src="/img/Proj3.png" alt="dashboard" width={600} height={600} />
+                    <div className="absolute inset-0 flex flex-col items-left justify-end mb-10 ml-10 opacity-0 transition duration-300 group-hover:opacity-100">
+                      <h3 className="text-white text-6xl font-medium title-text mb-3">Amazon Capstone</h3>
+                      <p className="text-white text-sm mr-20">IT support slack bot that uses diagnostics data</p>
+                    </div>
+                  </div>
+                </Link>
+              </div>
+            </div>
+          </div>
+
+          
           {/* <hr className="landing" /> */}
         </div>
-        <div className={bgColor}>
-          <div className="mx-10 xl:mx-auto  max-w-6xl">
-            {/* <p className="text-4xl pb-5 font-medium ">My Work</p> */}
-          </div>
-        </div>
+        
 
-        <div className={" " + bgColor}>
-          <div className="mx-10 xl:mx-auto  max-w-6xl">
-
-            {/* <!-- Header --> */}
-            <div className="flex justify-between items-start mb-8">
-              <h1 className="font-serif text-2xl font-normal leading-tight">My Work</h1>
-              <div className="text-right">
-                {/* <p className="font-serif text-2xl italic font-normal">Category Specimen</p> */}
-                {/* <p className="text-xs tracking-widest text-parchment-400 uppercase mt-1">Three-Column Edition</p> */}
-              </div>
-            </div>
-
-            {/* <!-- Grid --> */}
-            <div className="grid grid-cols-3 border-t border-black">
-
-              {/* <!-- Column 1 --> */}
-              <Link href="/work/rxpert">
-                <div className="border-r border-black pr-6 pb-28 relative">
-                  <div className="absolute -top-[3px] left-0 w-1.5 h-1.5 rounded-full bg-neutral-900"></div>
-                  <span className="font-serif text-8xl font-bold leading-none block mt-2 mb-4">1</span>
-                  <Image className=" " src="/img/Slide 1.png" alt="dashboard" width={500} height={500} />
-
-
-                  {/* <hr className="border-parchment-200 my-3" /> */}
-
-                  <ul className="space-y-0.5 text-[11px] my-1">
-                    <li className="flex items-baseline gap-1">
-                      <span>Project Name</span>
-                      <span className="flex-1 border-b border-dotted border-parchment-300 mb-0.5"></span>
-                      <span className="text-parchment-400  text-right">RxPert</span>
-                    </li>
-                    <li className="flex items-baseline gap-1">
-                      <span>Team</span>
-                      <span className="flex-1 border-b border-dotted border-parchment-300 mb-0.5"></span>
-                      <span className="text-parchment-400 w-5 text-right">04</span>
-                    </li>
-                  </ul>
-
-                  {/* <hr className="border-parchment-200 my-3" /> */}
-
-                  <ul className="space-y-0.5 text-[11px] ">
-                    <li className="flex items-baseline gap-1">
-                      <span>Role</span>
-                      <span className="flex-1 border-b border-dotted border-parchment-300 mb-0.5"></span>
-                      <span className="text-parchment-400 text-right">Product Designer</span>
-                    </li>
-                    
-                  </ul>
-                </div>
-              </Link>
-
-              {/* <!-- Column 2 --> */}
-              <Link href="/work/palantir">
-                <div className="border-r border-black px-6 pb-8 relative">
-                  <div className="absolute -top-[3px] left-0 w-1.5 h-1.5 rounded-full bg-neutral-900"></div>
-                  <span className="font-serif text-8xl font-bold leading-none block mt-2 mb-4">2</span>
-
-                  <ul className="space-y-0.5 text-[11px] my-3">
-                    <li className="flex items-baseline gap-1">
-                      <span>Company</span>
-                      <span className="flex-1 border-b border-dotted border-parchment-300 mb-0.5"></span>
-                      <span className="text-parchment-400  text-right">Palantir</span>
-                    </li>
-                    <li className="flex items-baseline gap-1">
-                      <span>Team</span>
-                      <span className="flex-1 border-b border-dotted border-parchment-300 mb-0.5"></span>
-                      <span className="text-parchment-400 w-5 text-right">06</span>
-                    </li>
-                    <li className="flex items-baseline gap-1">
-                      <span>Role</span>
-                      <span className="flex-1 border-b border-dotted border-parchment-300 mb-0.5"></span>
-                      <span className="text-parchment-400 text-right">Product Designer</span>
-                    </li>
-                  </ul>
-
-                  {/* <!-- Illustration --> */}
-                   <Image className=" " src="/img/Gotham small.png" alt="dashboard" width={500} height={500} />
-
-                 
-
-                  
-
-                  
-                </div>
-              </Link>
-
-              {/* <!-- Column 3 --> */}
-              <Link href="/work/capstone">
-                <div className="pl-6 pb-8 relative">
-                  <div className="absolute -top-[3px] left-0 w-1.5 h-1.5 rounded-full bg-neutral-900"></div>
-                  <span className="font-serif text-8xl font-bold leading-none block mt-2 mb-4">3</span>
-                  {/* <!-- Illustration --> */}
-                   <Image className=" " src="/img/Capstone.png" alt="dashboard" width={500} height={500} />
-
-                  {/* <div className="w-full aspect-[4/3] rounded bg-[#e2d8c8] flex items-center justify-center mb-4">
-                    <svg viewBox="0 0 180 130" width="160" xmlns="http://www.w3.org/2000/svg">
-                      <line x1="90" y1="20" x2="60" y2="110" stroke="#a0a8b0" stroke-width="4" stroke-linecap="round" />
-                      <line x1="90" y1="20" x2="120" y2="110" stroke="#a0a8b0" stroke-width="4" stroke-linecap="round" />
-                      <circle cx="90" cy="20" r="6" fill="#7088a0" />
-                      <circle cx="60" cy="110" r="4" fill="#506878" />
-                      <circle cx="120" cy="110" r="4" fill="#506878" />
-                      <path d="M 62 100 Q 90 120 118 100" fill="none" stroke="#c05878" stroke-width="2.5" stroke-linecap="round" />
-                      <circle cx="90" cy="44" r="5" fill="#c8d0d8" />
-                      <circle cx="90" cy="44" r="2" fill="#88a0b0" />
-                    </svg>
-                  </div> */}
-
-                  <ul className="space-y-0.5 text-[11px] my-1">
-                    <li className="flex items-baseline gap-1">
-                      <span>Project Name</span>
-                      <span className="flex-1 border-b border-dotted border-parchment-300 mb-0.5"></span>
-                      <span className="text-parchment-400  text-right">Husky Support</span>
-                    </li>
-                    <li className="flex items-baseline gap-1">
-                      <span>Team</span>
-                      <span className="flex-1 border-b border-dotted border-parchment-300 mb-0.5"></span>
-                      <span className="text-parchment-400 w-5 text-right">05</span>
-                    </li>
-                  </ul>
-
-                  {/* <hr className="border-parchment-200 my-3" /> */}
-
-                  <ul className="space-y-0.5 text-[11px] ">
-                    <li className="flex items-baseline gap-1">
-                      <span>Role</span>
-                      <span className="flex-1 border-b border-dotted border-parchment-300 mb-0.5"></span>
-                      <span className="text-parchment-400 text-right">Product Designer and Researcher</span>
-                    </li>
-                  </ul>
-                </div>
-              </Link>
-
-            </div>
-          </div>
-        </div>
 
         <div className={"grid grid-cols-1 " + bgColor}>
           {/* <div className={ bgColor}>
@@ -368,8 +240,8 @@ function Hero() {
           <hr className="landing" />
         </div> */}
 
-        <div className={bgColor}>
-          {/* <hr className="landing" /> */}
+        {/* <div className={bgColor}>
+        
           <div className="mx-auto max-w-5xl py-20">
             <div className="grid grid-cols-1 lg:grid-cols-2 justify-items-center">
               <p className="text-4xl font-bold text-black">Keep in touch!</p>
@@ -383,16 +255,18 @@ function Hero() {
                   <ArrowUpRightIcon className="w-5 h-5 ml-2 text-black" />
                 </div>
               </div>
-              {/* <div className="flex justify-center mt-10 ml-32 lg:mt-0">
-                <Image className="dr" src="/img/icon.png" alt="Rxpert home page" width={200} height={200} />
-              </div> */}
+              
             </div>
           </div>
-        </div>
+        </div> */}
 
-        <div className={bgColor + " grid justify-center"}>
+        {/* <div className={bgColor + " grid justify-center"}>
           <p className="text-[#999999] pb-3">made @ home</p>
-        </div>
+        </div> */}
+
+        <Footer />
+
+
 
         {/* OG WEBSITE FRONT */}
 
@@ -422,7 +296,7 @@ function Hero() {
         {/* <Footer /> */}
         {/* </div> */}
       </div>
-    </section>
+    </section >
   )
 }
 
