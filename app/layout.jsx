@@ -1,5 +1,5 @@
 import './globals.css'
-import { Inter, Open_Sans, Roboto, Source_Serif_4, DM_Sans, Geist, Ms_Madi, Bricolage_Grotesque, Sometype_Mono, Playfair_Display, Instrument_Sans } from 'next/font/google'
+import { Inter, Open_Sans, Roboto, Source_Serif_4, DM_Sans, Geist, Ms_Madi, Bricolage_Grotesque, Sometype_Mono, Playfair_Display, Instrument_Sans, Bricolage_Grotesque } from 'next/font/google'
 import { Plus_Jakarta_Sans } from 'next/font/google'
 // import Head from 'next/head'
 
@@ -17,27 +17,36 @@ const openSans = Open_Sans({
   display: 'swap',
 })
 
+
+const bricolage = Bricolage_Grotesque({
+  // weight: ['300', '400', '500', '700', '800'],
+  style: ['normal'],
+  subsets: ['latin'],
+  // display: 'swap',
+  variable: "--font-accent",
+})
+
 const dmSans = DM_Sans({
   weight: ['300', '400', '500', '700', '800'],
   style: ['normal', 'italic'],
   subsets: ['latin']
 })
 
- const mainFont = Instrument_Sans({
+ const accentFont = Instrument_Sans({
   subsets: ["latin"],
-  variable: "--font-main",
+  // variable: "--font-main",
 });
 
- const accentFont = Sometype_Mono({
+ const titleFont = Sometype_Mono({
   subsets: ["latin"],
   weight: "400",
-  variable: "--font-accent",
+  variable: "--font-main",
 })
 
-const titleFont = Playfair_Display({
+const mainFont = Playfair_Display({
   subsets: ["latin"],
   weight: "400",
-  variable: "--font-title",
+  variable: "--main-title",
 })
 
 // export const bric = Bricolage_Grotesque({
@@ -79,7 +88,7 @@ export default function RootLayout({ children }) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
       </Head> */}
       {/* <body className={geist.className}> */}
-      <body className={`${mainFont.variable} ${accentFont.variable} ${titleFont.variable}` }>
+      <body className={`${mainFont.variable} ${bricolage.variable} ${titleFont.variable}` }>
         {children}
       </body>
     </html>

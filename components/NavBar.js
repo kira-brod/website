@@ -23,7 +23,7 @@ export default function NavBar(props) {
         <div className={(project ? 'fixed z-20 ' : '') + "justify-between py-2 w-screen mx-auto px-10 " + (isOpen ? 'flex-col' : 'md:flex') + (scrolled > 0 ? ' drop-shadow-md' : '') + " " + color}>
             <div className="flex justify-between items-center">
                 <Link href="/" className="kb">
-                    <Image className=" " src="/img/hand logo.png" alt="dashboard" width={60} height={60} />
+                    {/* <Image className=" " src="/img/hand logo.png" alt="dashboard" width={60} height={60} /> */}
                 </Link>
                 <button onClick={handleClick}>
                     <Bars3Icon className="h-6 w-6 text-black md:hidden" />

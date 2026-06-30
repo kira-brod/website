@@ -4,7 +4,7 @@ import NavBar from "../components/NavBar"
 // import { ProjectCards } from "../components/ProjectCardList"
 // import { DescriptionPill } from "../components/ProjectCardList"
 // import { jakarta } from "./layout"
-import { Footer }  from "../components/Footer"
+import { Footer } from "../components/Footer"
 import { ArrowRightIcon, ArrowUpRightIcon } from "@heroicons/react/24/outline"
 import Image from "next/image"
 import Clock from "../components/Clock"
@@ -16,6 +16,8 @@ import { source } from "./layout"
 import { useEffect, useState } from "react"
 import { color, motion } from "framer-motion"
 import { Cursor } from "../components/Cursor"
+import Shuffle from '../components/Shuffle'
+import ScrambledText from '../components/ScrambledText'
 
 
 const projects = [{ title: "SFD Go Digital", description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua", image: "/img/SFD-go-digital.png" },
@@ -82,8 +84,9 @@ function Hero() {
 
   return (
     // <div className={inter.className}>
-    <section>
-      <div className="">
+    <section className="overflow-x-hidden">
+      <NavBar />
+      <div className="overflow-x-hidden">
         {/* <motion.div className="cursor"
         variants={variants}
         animate={cursorVariant} 
@@ -92,28 +95,77 @@ function Hero() {
 
 
 
-        <div className={" overflow-x-hidden " + bgColor}>
-          <div className="bg-[#cfff49] min-h-[650px] grid content-between ">
-            <div className="">
-              <NavBar color={"bg-[#f6e8ee]" + bgColor} />
-            </div>
-            <div className="mx-10 xl:mx-auto max-w-6xl">
-              <div className="grid grid-cols-1 md:grid-cols-2">
-                <div className="content-end mb-10 md:mb-0">
-                  <Image className="-mt-[500px] -ml-[55px]" src="/img/fullhandlogo.png" alt="dashboard" width={450} height={450} />
-                  <p className="text-[90px] ml-[50%] -mt-[20px]">Creator</p>
-                  <p className="title-text text-[150px] -mt-[40px] leading-snug">
-                    Designer
-                  </p>
+        <div className={"overflow-hidden h-dvh " + bgColor}>
+          <div className="h-full mx-10 xl:mx-auto max-w-6xl py-5">
+            <div className="pt-16">
+              <ScrambledText
+                radius={140}
+                duration={0.8}
+                speed={0.35}
+                scrambleChars="ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+                className="mb-20 max-w-[16ch] md:max-w-[14ch]"
+                style={{ fontFamily: 'var(--font-accent)', fontSize: 'clamp(1.5rem, 3vw, 3rem)', lineHeight: 0.9, color: '#374151' }}
+              >
+                Hi I'm Kira - a curious designer that loves to create
+              </ScrambledText>
 
-                </div>
-                {/* <Image className="-mt-[500px] " src="/img/background hand.png" alt="dashboard" width={700} height={700} /> */}
+              <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-3" id="work">
+                <Link href="/work/rxpert" className="h-64">
+                  <div className="relative overflow-hidden group h-full rounded-lg">
+                    <img className="w-full h-full object-cover transition duration-300" src="/img/Proj1.png" alt="dashboard" />
+                    <div className="absolute inset-0 flex flex-col justify-end opacity-0 transition duration-300 group-hover:opacity-100">
+                      <video
+                        className="w-full h-full object-cover transition duration-300"
+                        src="/img/Proj1 video.mp4"
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                      />
+                    </div>
+                  </div>
+                </Link>
 
+                <Link href="/work/palantir" className="h-64">
+                  <div className="relative overflow-hidden group h-full rounded-lg">
+                    <img className="w-full h-full object-cover transition duration-300" src="/img/Proj2.png" alt="dashboard" />
+                    <div className="absolute inset-0 flex flex-col justify-end opacity-0 transition duration-300 group-hover:opacity-100">
+                      <video
+                        className="w-full h-full object-cover transition duration-300"
+                        src="/img/Proj2 video.mp4"
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                      />
+                    </div>
+                  </div>
+                </Link>
+
+                <Link href="/work/capstone" className="h-64">
+                  <div className="relative overflow-hidden group h-full rounded-lg">
+                    <img className="w-full h-full object-cover transition duration-300" src="/img/Proj3.png" alt="dashboard" />
+                    <div className="absolute inset-0 flex flex-col justify-end opacity-0 transition duration-300 group-hover:opacity-100">
+                      <video
+                        className="w-full h-full object-cover transition duration-300"
+                        src="/img/Proj3 video.mp4"
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                      />
+                    </div>
+                  </div>
+                </Link>
               </div>
+
+
             </div>
           </div>
+        </div>
 
-          <div className="mt-3 mx-10 mb-10 " id="work">
+
+        {/* <div className="mt-3 mx-10 mb-10 " id="work">
             <div className="mx-10 xl:mx-auto mt-20 max-w-6xl">
               <p className="title-text text-[50px] leading-normal">My Work</p>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
@@ -146,16 +198,16 @@ function Hero() {
                 </Link>
               </div>
             </div>
-          </div>
+          </div> */}
 
 
-          {/* <hr className="landing" /> */}
-        </div>
+        {/* <hr className="landing" /> */}
+      </div>
 
 
 
-        <div className={"grid grid-cols-1 " + bgColor}>
-          {/* <div className={ bgColor}>
+      <div className={"grid grid-cols-1 " + bgColor}>
+        {/* <div className={ bgColor}>
             <Link href="/work/palantir">
               <div className={"rounded-3xl ml-1" + bgColor}>
                 <Image className="dr rounded-3xl justify-self-center" src="/img/Gotham small.png" alt="Gotham" width={1210} height={1210} />
@@ -163,9 +215,9 @@ function Hero() {
             </Link>
           </div> */}
 
-          {/* Images recently used */}
+        {/* Images recently used */}
 
-          {/* <div className={"grid grid-cols-1  lg:grid-cols-2 pt-2 " + bgColor} id="work">
+        {/* <div className={"grid grid-cols-1  lg:grid-cols-2 pt-2 " + bgColor} id="work">
             <Link href="/work/rxpert">
               <div className="rounded-3xl mr-1">
                 <Image className="dr rounded-3xl justify-self-end" src="/img/Rxpert.png" alt="Rxpert " width={600} height={500} />
@@ -179,9 +231,9 @@ function Hero() {
           </div> */}
 
 
-        </div>
+      </div>
 
-        {/* <div className={bgColor} id="work">
+      {/* <div className={bgColor} id="work">
           <Link href="/work/rxpert">
             <div className="mx-10 md:ml-10 xl:mx-auto max-w-5xl">
               <div className="grid grid-cols-1 lg:grid-cols-3 py-20">
@@ -200,47 +252,11 @@ function Hero() {
           </Link>
         </div> */}
 
-        {/* <div className={bgColor}>
-          <Link href="/work/protothon">
-            <div className="mx-10 md:ml-10 xl:mx-auto max-w-5xl">
-              <div className="grid grid-cols-1 lg:grid-cols-3 py-20">
-                <div className="col-span-2 lg:flex justify-self-start hidden -ml-7 ">
 
-                  <Image className="dr" src="/img/sfdCover.png" alt="Protothon" width={700} height={500} />
 
-                </div>
-                <div className="pl-0 lg:pl-10 col-span-1 place-content-center">
-                  <p className="text-4xl font-bold text-center lg:text-left">Track and dispatch with ease.</p>
-                  <p className="text-xl font-bold mt-14 text-center lg:text-left">Protothon</p>
-                  <p className="mt-3 text-sm text-center lg:text-left">A web app designed for resource and event tracking for the Seattle Fire Department </p>
-                </div>
-                <div className="col-span-2 flex justify-center lg:hidden">
-                  <Image className="dr" src="/img/sfdCover.png" alt="Protothon" width={700} height={500} />
-                </div>
-              </div>
-            </div>
-          </Link>
-        </div> */}
 
-        {/* <div className={bgColor}>
-          <div className="mx-auto max-w-5xl">
-            <div className="grid grid-cols-1 lg:grid-cols-3 py-20">
-              <div className="pr-0 lg:pr-10 col-span-1 place-content-center">
-                <p className="text-4xl font-bold text-center lg:text-left">Listen. Share. Repeat.</p>
-                <p className="text-xl font-bold mt-14 text-center lg:text-left">Jam Sesh</p>
-                <p className="mt-3 text-sm text-center lg:text-left">A tool meant to help professors develop patient cases for their curriculums </p>
-              </div>
-              <div className="col-span-2 flex  justify-center ">
-                <Link href="/work/jamsesh">
-                  <Image className="dr" src="/img/newJamSesh.png" alt="Jam Sesh" width={700} height={500} />
-                </Link>
-              </div>
-            </div>
-          </div>
-          <hr className="landing" />
-        </div> */}
 
-        {/* <div className={bgColor}>
+      {/* <div className={bgColor}>
         
           <div className="mx-auto max-w-5xl py-20">
             <div className="grid grid-cols-1 lg:grid-cols-2 justify-items-center">
@@ -260,42 +276,41 @@ function Hero() {
           </div>
         </div> */}
 
-        {/* <div className={bgColor + " grid justify-center"}>
+      {/* <div className={bgColor + " grid justify-center"}>
           <p className="text-[#999999] pb-3">made @ home</p>
         </div> */}
 
-        <Footer />
+      {/* <Footer /> */}
 
 
 
-        {/* OG WEBSITE FRONT */}
+      {/* OG WEBSITE FRONT */}
 
-        {/* <div className="h-screen grid content-between"> */}
-        {/* <NavBar /> */}
-        {/* <Cursor/> */}
-        {/* <div onMouseEnter={textEnter} onMouseLeave={textLeave}  className=" grid grid-cols-1 justify-items-center"> */}
-        {/* <div  className="grid justify-items-center "> */}
-        {/* <h1 className={source.className + "text-white"}><strong className={jakarta.className}>Make</strong> what</h1> */}
-        {/* <h1>your heart desires</h1> */}
-        {/* </div> */}
-        {/* <div className="flex place-content-center"> */}
-        {/* <h1 className="variant place-content-center">Make what</h1> */}
-        {/* <h1 className={source.className}>your <strong className={jakarta.className}>heart </strong>desires</h1> */}
-        {/* </div> */}
-        {/* </div> */}
-        {/* <div className="grid place-content-center explore"> */}
-        {/* <Link href="/work"> */}
-        {/* <button className={'rounded-full button text-2xl space-x-2'}> */}
-        {/* <div className="flex justify-start items-center px-6 py-2"> */}
-        {/* Explore */}
-        {/* <ArrowRightIcon className="w-5 h-5 ml-2" /> */}
-        {/* </div> */}
-        {/* </button> */}
-        {/* </Link> */}
-        {/* </div> */}
-        {/* <Footer /> */}
-        {/* </div> */}
-      </div>
+      {/* <div className="h-screen grid content-between"> */}
+      {/* <NavBar /> */}
+      {/* <Cursor/> */}
+      {/* <div onMouseEnter={textEnter} onMouseLeave={textLeave}  className=" grid grid-cols-1 justify-items-center"> */}
+      {/* <div  className="grid justify-items-center "> */}
+      {/* <h1 className={source.className + "text-white"}><strong className={jakarta.className}>Make</strong> what</h1> */}
+      {/* <h1>your heart desires</h1> */}
+      {/* </div> */}
+      {/* <div className="flex place-content-center"> */}
+      {/* <h1 className="variant place-content-center">Make what</h1> */}
+      {/* <h1 className={source.className}>your <strong className={jakarta.className}>heart </strong>desires</h1> */}
+      {/* </div> */}
+      {/* </div> */}
+      {/* <div className="grid place-content-center explore"> */}
+      {/* <Link href="/work"> */}
+      {/* <button className={'rounded-full button text-2xl space-x-2'}> */}
+      {/* <div className="flex justify-start items-center px-6 py-2"> */}
+      {/* Explore */}
+      {/* <ArrowRightIcon className="w-5 h-5 ml-2" /> */}
+      {/* </div> */}
+      {/* </button> */}
+      {/* </Link> */}
+      {/* </div> */}
+      {/* <Footer /> */}
+      {/* </div> */}
     </section >
   )
 }
