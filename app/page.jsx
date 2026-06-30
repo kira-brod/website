@@ -99,20 +99,19 @@ function Hero() {
           <div className="h-full mx-10 xl:mx-auto max-w-6xl py-5">
             <div className="pt-16">
               <ScrambledText
-                radius={140}
-                duration={0.8}
-                speed={0.35}
-                scrambleChars="ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
-                className="mb-20 max-w-[16ch] md:max-w-[14ch]"
-                style={{ fontFamily: 'var(--font-accent)', fontSize: 'clamp(1.5rem, 3vw, 3rem)', lineHeight: 0.9, color: '#374151' }}
+                className="mb-20 max-w-[16ch] md:max-w-[14ch] scrambled-text-demo"
+                radius={100}
+                duration={1.2}
+                speed={0.5}
+                scrambleChars=".:"
               >
-                Hi I'm Kira - a curious designer that loves to create
+                Hi I&apos;m Kira - a curious designer that loves to create
               </ScrambledText>
 
               <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-3" id="work">
                 <Link href="/work/rxpert" className="h-64">
                   <div className="relative overflow-hidden group h-full rounded-lg">
-                    <img className="w-full h-full object-cover transition duration-300" src="/img/Proj1.png" alt="dashboard" />
+                    <Image className="w-full h-full object-cover transition duration-300" src="/img/Proj1.png" alt="dashboard" width={600} height={600} />
                     <div className="absolute inset-0 flex flex-col justify-end opacity-0 transition duration-300 group-hover:opacity-100">
                       <video
                         className="w-full h-full object-cover transition duration-300"
@@ -128,7 +127,7 @@ function Hero() {
 
                 <Link href="/work/palantir" className="h-64">
                   <div className="relative overflow-hidden group h-full rounded-lg">
-                    <img className="w-full h-full object-cover transition duration-300" src="/img/Proj2.png" alt="dashboard" />
+                    <Image className="w-full h-full object-cover transition duration-300" src="/img/Proj2.png" alt="dashboard" width={600} height={600} />
                     <div className="absolute inset-0 flex flex-col justify-end opacity-0 transition duration-300 group-hover:opacity-100">
                       <video
                         className="w-full h-full object-cover transition duration-300"
@@ -144,7 +143,7 @@ function Hero() {
 
                 <Link href="/work/capstone" className="h-64">
                   <div className="relative overflow-hidden group h-full rounded-lg">
-                    <img className="w-full h-full object-cover transition duration-300" src="/img/Proj3.png" alt="dashboard" />
+                    <Image className="w-full h-full object-cover transition duration-300" src="/img/Proj3.png" alt="dashboard" width={600} height={600} />
                     <div className="absolute inset-0 flex flex-col justify-end opacity-0 transition duration-300 group-hover:opacity-100">
                       <video
                         className="w-full h-full object-cover transition duration-300"
